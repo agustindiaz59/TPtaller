@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestion Gym", "Gestion Gym\Gestion Gym.csproj", "{966866E1-387D-4157-81CC-96D01C4413FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionGYMTests", "GestionGYMTests\GestionGYMTests.csproj", "{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{966866E1-387D-4157-81CC-96D01C4413FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{966866E1-387D-4157-81CC-96D01C4413FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{966866E1-387D-4157-81CC-96D01C4413FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{966866E1-387D-4157-81CC-96D01C4413FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {181FC09D-0529-48B8-910A-A2EBC0458CAB}
+	EndGlobalSection
+EndGlobal

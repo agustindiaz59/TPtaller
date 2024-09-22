@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{966866E1-387D-4157-81CC-96D01C4413FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gestion_Gym</RootNamespace>
+    <AssemblyName>Gestion Gym</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.3.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.26.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.26.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=7.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.7.0.1\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=9.0.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.9.0.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.2.3.7\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdSharp, Version=0.8.0.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.8.0\lib\net462\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modelos\Membresia.cs" />
+    <Compile Include="Modelos\Miembro.cs" />
+    <Compile Include="Modelos\Persona.cs" />
+    <Compile Include="Modelos\Personal.cs" />
+    <Compile Include="Modelos\Usuario.cs" />
+    <Compile Include="Servicios\Persistencias\MiembroDAO.cs" />
+    <Compile Include="Servicios\Persistencias\PersonalDAO.cs" />
+    <Compile Include="Servicios\Persistencias\DAO.cs" />
+    <Compile Include="Servicios\Validacion.cs" />
+    <Compile Include="Vistas\Acceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Acceso.Designer.cs">
+      <DependentUpon>Acceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Buscar Miembro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Buscar Miembro.Designer.cs">
+      <DependentUpon>Buscar Miembro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentesRJ\Class1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vistas\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Inicio.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Vistas\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Vistas\Nuevo Miembro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Nuevo Miembro.Designer.cs">
+      <DependentUpon>Nuevo Miembro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Nuevo Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Nuevo Personal.Designer.cs">
+      <DependentUpon>Nuevo Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Vistas\Acceso.resx">
+      <DependentUpon>Acceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Buscar Miembro.resx">
+      <DependentUpon>Buscar Miembro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Dashboard.aa.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Nuevo Miembro.resx">
+      <DependentUpon>Nuevo Miembro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Nuevo Personal.resx">
+      <DependentUpon>Nuevo Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\fef.avif" />
+    <None Include="Resources\Images\fondo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\chica.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Images\202978.jpg" />
+    <Content Include="Resources\Images\63713515-3d-rendering-metal-dumbbell-with-gym-background.jpg" />
+    <Content Include="Resources\Images\a.png" />
+    <Content Include="Resources\Images\cde.jpg" />
+    <Content Include="Resources\Images\chica gim.jpg" />
+    <Content Include="Resources\Images\chico gim.jpg" />
+    <Content Include="Resources\Images\cover-image-45-1.jpg" />
+    <Content Include="Resources\Images\fa7fe0e1b123aee12d0a7f5c3142fb41.jpg" />
+    <Content Include="Resources\Images\fodn3.jpg" />
+    <Content Include="Resources\Images\fondo.jpg" />
+    <Content Include="Resources\Images\fondo2.jpg" />
+    <Content Include="Resources\Images\fondo34.jpg" />
+    <Content Include="Resources\Images\fondo5.jpg" />
+    <Content Include="Resources\Images\gof23.png" />
+    <Content Include="Resources\Images\gof233.jpg" />
+    <Content Include="Resources\Images\gym_backgrounds_001.jpg" />
+    <Content Include="Resources\Images\Hd-Wallpapers-Cool-Plain-Backgrounds-Download.jpg" />
+    <Content Include="Resources\Images\inicio sesion.jpg" />
+    <Content Include="Resources\Images\Name-48-50px\603_-_Search_User-512.png" />
+    <Content Include="Resources\Images\Name-48-50px\add_user_group-512.png" />
+    <Content Include="Resources\Images\Name-48-50px\barbell_dumbbell_strength_workout_weight_gym_weightlifting_equipment_bodybuilding_fitness_lifting_strong_sport_exercise_training_flat_design_icon-512.png" />
+    <Content Include="Resources\Images\Name-48-50px\download %281%29.png" />
+    <Content Include="Resources\Images\Name-48-50px\exit.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-address-30.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-close-window-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-date-to-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-email-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-gender-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-membership-card-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-name-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-name-48.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-name-50.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-number-pad-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-pay-date-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-reset-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-tick-box-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\icons8-time-25.png" />
+    <Content Include="Resources\Images\Name-48-50px\img.png" />
+    <Content Include="Resources\Images\Name-48-50px\img1.png" />
+    <Content Include="Resources\Images\Name-48-50px\img2.jpg" />
+    <Content Include="Resources\Images\Name-48-50px\img3.jpg" />
+    <Content Include="Resources\Images\Name-48-50px\kissclipart-dumbbell-icon-png-white-clipart-dumbbell-computer-f573278ceace17b7.png" />
+    <Content Include="Resources\Images\Name-48-50px\member-add-on-300x300.png" />
+    <Content Include="Resources\Images\Name-48-50px\user_remove_man_male_profile_account_person-512.png" />
+    <Content Include="Resources\Images\_823991ff-a00b-4a43-a694-bb771dbe6e89.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
