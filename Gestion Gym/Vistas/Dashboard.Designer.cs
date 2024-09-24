@@ -36,8 +36,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panelRedondo9 = new Gestion_Gym.ComponentesRJ.PanelRedondo();
             this.panelRedondo10 = new Gestion_Gym.ComponentesRJ.PanelRedondo();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.panelRedondo11 = new Gestion_Gym.ComponentesRJ.PanelRedondo();
             this.panelRedondo12 = new Gestion_Gym.ComponentesRJ.PanelRedondo();
             this.label6 = new System.Windows.Forms.Label();
@@ -100,8 +98,6 @@
             this.panelRedondo9.BorderColor = System.Drawing.Color.Transparent;
             this.panelRedondo9.BorderWidth = 2;
             this.panelRedondo9.Controls.Add(this.panelRedondo10);
-            this.panelRedondo9.Controls.Add(this.panel5);
-            this.panelRedondo9.Controls.Add(this.label5);
             this.panelRedondo9.Name = "panelRedondo9";
             this.panelRedondo9.Radio = 20;
             // 
@@ -113,16 +109,6 @@
             resources.ApplyResources(this.panelRedondo10, "panelRedondo10");
             this.panelRedondo10.Name = "panelRedondo10";
             this.panelRedondo10.Radio = 20;
-            // 
-            // panel5
-            // 
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
             // 
             // panelRedondo11
             // 
@@ -267,7 +253,6 @@
             this.panelRedondo7.ResumeLayout(false);
             this.panelRedondo7.PerformLayout();
             this.panelRedondo9.ResumeLayout(false);
-            this.panelRedondo9.PerformLayout();
             this.panelRedondo11.ResumeLayout(false);
             this.panelRedondo11.PerformLayout();
             this.panelRedondo3.ResumeLayout(false);
@@ -302,8 +287,6 @@
         private System.Windows.Forms.Label label4;
         private ComponentesRJ.PanelRedondo panelRedondo9;
         private ComponentesRJ.PanelRedondo panelRedondo10;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label5;
         private ComponentesRJ.PanelRedondo panelRedondo11;
         private ComponentesRJ.PanelRedondo panelRedondo12;
         private System.Windows.Forms.Label label6;
