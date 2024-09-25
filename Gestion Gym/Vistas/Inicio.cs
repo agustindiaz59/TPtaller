@@ -99,5 +99,10 @@ namespace Gestion_Gym
         {
             sidebardtimer.Start();
         }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

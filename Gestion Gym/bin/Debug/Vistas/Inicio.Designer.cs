@@ -33,6 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelRedondo1 = new System.Windows.Forms.Panel();
             this.menuvertical = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btmenu = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.salirbtn = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.nuevo1btn = new System.Windows.Forms.Button();
             this.sidebardtimer = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.menuvertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btmenu)).BeginInit();
@@ -95,6 +95,16 @@
             this.menuvertical.Size = new System.Drawing.Size(66, 761);
             this.menuvertical.TabIndex = 3;
             this.menuvertical.Paint += new System.Windows.Forms.PaintEventHandler(this.menuvertical_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label1.Location = new System.Drawing.Point(71, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Menu";
             // 
             // btmenu
             // 
@@ -238,16 +248,6 @@
             this.sidebardtimer.Interval = 5;
             this.sidebardtimer.Tick += new System.EventHandler(this.sidebard_tick);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label1.Location = new System.Drawing.Point(71, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Menu";
-            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +261,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Inicio_Load);
             this.panel1.ResumeLayout(false);
             this.menuvertical.ResumeLayout(false);
             this.menuvertical.PerformLayout();
