@@ -11,16 +11,17 @@ namespace Gestion_Gym.Servicios.Persistencia
 
         public override int Editar(Personal Entidad)
         {
-            throw new NotImplementedException();
+            Eliminar(Entidad.Cuil);
+
+            return Guardar(Entidad);
         }
 
         public override int Eliminar(string cuil)
         {
-            if (Traer(cuil) != null)
-            {
                 int idPersona = 0;
-                string sql1 = "SELECT * FROM Personal WHERE cuil = cuil;";
-                string sql2 = "DELETE FROM Persona WHERE id_persona = @id_persona; DELETE FROM Personal WHERE cuil = @cuil;";
+                string sql1 = "SELECT * FROM personal WHERE cuil = @cuil;";
+                string sql2 = "DELETE FROM Personal WHERE cuil = @cuil;";
+                string sql3 = "DELETE FROM Persona WHERE id_persona = @id_persona;";
 
                 Command.Parameters.AddWithValue("@cuil", cuil); 
 
@@ -36,13 +37,12 @@ namespace Gestion_Gym.Servicios.Persistencia
 
                 //Elimino el registro de la tabla persona y de la tabla personal 
                 Command.CommandText = sql2;
-                Command.Parameters.AddWithValue("@id_persona", idPersona);
+                CommitNonQuery();
 
+            Command.CommandText = sql3;
+            Command.Parameters.AddWithValue("@id_persona", idPersona);
 
-                return CommitNonQuery();
-            }
-            else
-                return -1;
+            return CommitNonQuery();
         }
 
         public override int Guardar(Personal Entidad)

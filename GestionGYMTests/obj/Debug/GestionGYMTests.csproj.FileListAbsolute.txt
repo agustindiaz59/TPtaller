@@ -105,3 +105,7 @@ D:\proyectos\C#\Gestion Gym - Copy\Gestion Gym - Copy\Gestion Gym\GestionGYMTest
 D:\proyectos\C#\Gestion Gym - Copy\Gestion Gym - Copy\Gestion Gym\GestionGYMTests\obj\Debug\GestionG.32D08EEE.Up2Date
 D:\proyectos\C#\Gestion Gym - Copy\Gestion Gym - Copy\Gestion Gym\GestionGYMTests\obj\Debug\GestionGYMTests.dll
 D:\proyectos\C#\Gestion Gym - Copy\Gestion Gym - Copy\Gestion Gym\GestionGYMTests\obj\Debug\GestionGYMTests.pdb
+D:\proyectos\C#\Gestion Gym - Copy\Gestion Gym - Copy\Gestion Gym\GestionGYMTests\bin\Debug\GestionGYMTests.dll.config
+D:\proyectos\C#\Gestion Gym - Copy\Gestion Gym - Copy\Gestion Gym\GestionGYMTests\bin\Debug\FluentAssertions.dll
+D:\proyectos\C#\Gestion Gym - Copy\Gestion Gym - Copy\Gestion Gym\GestionGYMTests\bin\Debug\FluentAssertions.pdb
+D:\proyectos\C#\Gestion Gym - Copy\Gestion Gym - Copy\Gestion Gym\GestionGYMTests\bin\Debug\FluentAssertions.xml
