@@ -10,23 +10,12 @@ namespace Gestion_Gym.Vistas
             InitializeComponent();
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelRedondo1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             if (txtBoxUsuario.Text == "admin" && txtBoxContraseña.Text == "1234")
             {
-                Inicio fi = new Inicio();
-                fi.Show();
-                
+                Inicio inicio = new Inicio();
+                inicio.Show();
                 this.Hide();
             }
             else

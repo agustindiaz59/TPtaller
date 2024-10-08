@@ -3,6 +3,7 @@ using Gestion_Gym.Servicios.Persistencia;
 using Gestion_Gym.Modelos;
 using System;
 using FluentAssertions;
+using System.Collections.Generic;
 
 namespace GestionGYMTests
 {
@@ -48,6 +49,18 @@ namespace GestionGYMTests
             int estado = miembroDAO.Eliminar("44617444");
 
             estado.Should().BeGreaterThan(0);
+        }
+
+        [TestMethod]
+        public void TraerTodos()
+        {
+            List<Miembro> lista = miembroDAO.TraerTodos();
+
+            foreach (Miembro m in lista) 
+            {
+                Console.WriteLine(m.ToString());
+            }
+            lista.Should().NotBeNullOrEmpty();
         }
 
     }

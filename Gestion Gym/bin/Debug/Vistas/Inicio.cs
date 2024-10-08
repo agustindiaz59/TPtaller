@@ -61,7 +61,7 @@ namespace Gestion_Gym
 
         private void salirbtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void panelRedondo1_Paint(object sender, PaintEventArgs e)
@@ -98,6 +98,11 @@ namespace Gestion_Gym
         private void btmenu_Click(object sender, EventArgs e)
         {
             sidebardtimer.Start();
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

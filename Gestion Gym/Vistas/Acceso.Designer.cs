@@ -59,7 +59,6 @@
             this.panelRedondo1.Radio = 25;
             this.panelRedondo1.Size = new System.Drawing.Size(579, 399);
             this.panelRedondo1.TabIndex = 52;
-            this.panelRedondo1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRedondo1_Paint);
             // 
             // panelRedondo3
             // 
@@ -86,7 +85,6 @@
             this.label11.Size = new System.Drawing.Size(170, 30);
             this.label11.TabIndex = 0;
             this.label11.Text = "Iniciar Sesion";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // btnIniciarSesion
             // 

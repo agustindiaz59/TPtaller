@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}|GestionGYMTests\\GestionGYMTests.csproj|d:\\proyectos\\c#\\gestion gym - copy\\gestion gym - copy\\gestion gym\\gestiongymtests\\miembrodaotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}|GestionGYMTests\\GestionGYMTests.csproj|solutionrelative:gestiongymtests\\miembrodaotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|d:\\proyectos\\c#\\gestion gym - copy\\gestion gym - copy\\gestion gym\\gestion gym\\vistas\\buscar miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\buscar miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}|GestionGYMTests\\GestionGYMTests.csproj|d:\\proyectos\\c#\\gestion gym - copy\\gestion gym - copy\\gestion gym\\gestiongymtests\\personaldaotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}|GestionGYMTests\\GestionGYMTests.csproj|solutionrelative:gestiongymtests\\personaldaotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|d:\\proyectos\\c#\\gestion gym - copy\\gestion gym - copy\\gestion gym\\gestion gym\\servicios\\persistencias\\personaldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\servicios\\persistencias\\personaldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\gestion gym\\vistas\\buscar miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\buscar miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +17,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 169,
+          "DockedHeight": 364,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -31,51 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MiembroDAOTests.cs",
-              "DocumentMoniker": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\GestionGYMTests\\MiembroDAOTests.cs",
-              "RelativeDocumentMoniker": "GestionGYMTests\\MiembroDAOTests.cs",
-              "ToolTip": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\GestionGYMTests\\MiembroDAOTests.cs",
-              "RelativeToolTip": "GestionGYMTests\\MiembroDAOTests.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAgwDEAAAAtAAAA",
+              "Title": "Buscar Miembro.cs",
+              "DocumentMoniker": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\Gestion Gym\\Vistas\\Buscar Miembro.cs",
+              "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Buscar Miembro.cs",
+              "ToolTip": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\Gestion Gym\\Vistas\\Buscar Miembro.cs",
+              "RelativeToolTip": "Gestion Gym\\Vistas\\Buscar Miembro.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAwwB4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T03:19:46.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonalDAO.cs",
-              "DocumentMoniker": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\Gestion Gym\\Servicios\\Persistencias\\PersonalDAO.cs",
-              "RelativeDocumentMoniker": "Gestion Gym\\Servicios\\Persistencias\\PersonalDAO.cs",
-              "ToolTip": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\Gestion Gym\\Servicios\\Persistencias\\PersonalDAO.cs",
-              "RelativeToolTip": "Gestion Gym\\Servicios\\Persistencias\\PersonalDAO.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAAAHIAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T03:19:46.323Z",
+              "WhenOpened": "2024-10-06T17:08:51.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PersonalDAOTests.cs",
-              "DocumentMoniker": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\GestionGYMTests\\PersonalDAOTests.cs",
-              "RelativeDocumentMoniker": "GestionGYMTests\\PersonalDAOTests.cs",
-              "ToolTip": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\GestionGYMTests\\PersonalDAOTests.cs",
-              "RelativeToolTip": "GestionGYMTests\\PersonalDAOTests.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAmwCgAAAAzAAAA",
+              "Title": "Buscar Miembro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\Gestion Gym\\Vistas\\Buscar Miembro.cs",
+              "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Buscar Miembro.cs",
+              "ToolTip": "D:\\proyectos\\C#\\Gestion Gym - Copy\\Gestion Gym - Copy\\Gestion Gym\\Gestion Gym\\Vistas\\Buscar Miembro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion Gym\\Vistas\\Buscar Miembro.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T03:06:47.219Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 382,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "WhenOpened": "2024-10-06T17:08:41.65Z"
             }
           ]
         }

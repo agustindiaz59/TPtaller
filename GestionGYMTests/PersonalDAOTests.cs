@@ -3,6 +3,7 @@ using Gestion_Gym.Modelos;
 using Gestion_Gym.Servicios.Persistencia;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 
 namespace GestionGYMTests
 {
@@ -51,6 +52,17 @@ namespace GestionGYMTests
             estado.Should().BeGreaterThan(0);
             
             //Assert.AreEqual(estado.GetType(), aux.GetType());
+        }
+        [TestMethod]
+        public void TraerTodos()
+        {
+            List<Personal> lista = PersonalDAO.TraerTodos();
+
+            foreach (Personal m in lista)
+            {
+                Console.WriteLine(m.ToString());
+            }
+            lista.Should().NotBeNullOrEmpty();
         }
 
     }
