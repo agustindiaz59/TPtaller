@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Gestion_Gym.Servicios.Persistencia
 {
@@ -163,6 +164,54 @@ namespace Gestion_Gym.Servicios.Persistencia
                 return Miembros;
             }
 
+
+        }
+        public List<Miembro> buscarPorNombre(string Campo) 
+        { 
+            List<Miembro> todos = TraerTodos();
+            List<Miembro> coincidencias = new List<Miembro>();
+
+            foreach (Miembro m in todos) 
+            {
+                if (m.Nombre.Contains(Campo)) 
+                {
+                    coincidencias.Add(m);
+                }
+            }
+
+            return coincidencias;
+        }
+
+        public List<Miembro> buscarPorApellido(string Apellido)
+        {
+            List<Miembro> todos = TraerTodos();
+            List<Miembro> coincidencias = new List<Miembro>();
+
+            foreach (Miembro m in todos)
+            {
+                if (m.Apellido.Contains(Apellido))
+                {
+                    coincidencias.Add(m);
+                }
+            }
+
+            return coincidencias;
+        }
+
+        public List<Miembro> buscarPorDNI(string DNI)
+        {
+            List<Miembro> todos = TraerTodos();
+            List<Miembro> coincidencias = new List<Miembro>();
+
+            foreach (Miembro m in todos)
+            {
+                if (m.DNI.Contains(DNI))
+                {
+                    coincidencias.Add(m);
+                }
+            }
+
+            return coincidencias;
         }
     }
 }

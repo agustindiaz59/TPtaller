@@ -80,8 +80,9 @@
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(0, 0);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(107, 59);
+            this.btnGuardar.Size = new System.Drawing.Size(160, 91);
             this.btnGuardar.TabIndex = 22;
             this.btnGuardar.Text = " Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -98,9 +99,10 @@
             this.btnReiniciar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnReiniciar.Image = ((System.Drawing.Image)(resources.GetObject("btnReiniciar.Image")));
             this.btnReiniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReiniciar.Location = new System.Drawing.Point(105, 0);
+            this.btnReiniciar.Location = new System.Drawing.Point(158, 0);
+            this.btnReiniciar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(109, 59);
+            this.btnReiniciar.Size = new System.Drawing.Size(164, 91);
             this.btnReiniciar.TabIndex = 23;
             this.btnReiniciar.Text = "Reiniciar";
             this.btnReiniciar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -120,10 +122,11 @@
             this.panelRedondo3.BorderColor = System.Drawing.Color.Transparent;
             this.panelRedondo3.BorderWidth = 0;
             this.panelRedondo3.Controls.Add(this.label1);
-            this.panelRedondo3.Location = new System.Drawing.Point(471, 21);
+            this.panelRedondo3.Location = new System.Drawing.Point(706, 32);
+            this.panelRedondo3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelRedondo3.Name = "panelRedondo3";
             this.panelRedondo3.Radio = 20;
-            this.panelRedondo3.Size = new System.Drawing.Size(235, 48);
+            this.panelRedondo3.Size = new System.Drawing.Size(352, 74);
             this.panelRedondo3.TabIndex = 52;
             // 
             // label1
@@ -132,9 +135,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(33, 9);
+            this.label1.Location = new System.Drawing.Point(50, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 25);
+            this.label1.Size = new System.Drawing.Size(243, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Crear Miembro";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -161,10 +165,11 @@
             this.panelRedondo1.Controls.Add(this.GeneroLBL);
             this.panelRedondo1.Controls.Add(this.FNacimLBL);
             this.panelRedondo1.Controls.Add(this.FNacimDT);
-            this.panelRedondo1.Location = new System.Drawing.Point(165, 41);
+            this.panelRedondo1.Location = new System.Drawing.Point(248, 63);
+            this.panelRedondo1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelRedondo1.Name = "panelRedondo1";
             this.panelRedondo1.Radio = 25;
-            this.panelRedondo1.Size = new System.Drawing.Size(860, 476);
+            this.panelRedondo1.Size = new System.Drawing.Size(1290, 732);
             this.panelRedondo1.TabIndex = 52;
             this.panelRedondo1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRedondo1_Paint);
             // 
@@ -176,9 +181,10 @@
             this.DNILBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.DNILBL.Image = ((System.Drawing.Image)(resources.GetObject("DNILBL.Image")));
             this.DNILBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DNILBL.Location = new System.Drawing.Point(89, 172);
+            this.DNILBL.Location = new System.Drawing.Point(134, 265);
+            this.DNILBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DNILBL.Name = "DNILBL";
-            this.DNILBL.Size = new System.Drawing.Size(99, 23);
+            this.DNILBL.Size = new System.Drawing.Size(148, 35);
             this.DNILBL.TabIndex = 51;
             this.DNILBL.Text = "DNI";
             this.DNILBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -191,9 +197,10 @@
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(91, 323);
+            this.label7.Location = new System.Drawing.Point(136, 497);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 20);
+            this.label7.Size = new System.Drawing.Size(160, 31);
             this.label7.TabIndex = 18;
             this.label7.Text = "F. Ingreso";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -203,9 +210,10 @@
             // 
             this.DNITB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DNITB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DNITB.Location = new System.Drawing.Point(216, 172);
+            this.DNITB.Location = new System.Drawing.Point(324, 265);
+            this.DNITB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DNITB.Name = "DNITB";
-            this.DNITB.Size = new System.Drawing.Size(187, 20);
+            this.DNITB.Size = new System.Drawing.Size(280, 26);
             this.DNITB.TabIndex = 50;
             // 
             // label10
@@ -216,9 +224,10 @@
             this.label10.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
             this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10.Location = new System.Drawing.Point(91, 376);
+            this.label10.Location = new System.Drawing.Point(136, 578);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(193, 18);
+            this.label10.Size = new System.Drawing.Size(290, 28);
             this.label10.TabIndex = 21;
             this.label10.Text = "Tiempo de Membresia";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -237,10 +246,11 @@
             this.panelRedondo2.Controls.Add(this.TelefonoTB);
             this.panelRedondo2.Controls.Add(this.TelefonoLBL);
             this.panelRedondo2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRedondo2.Location = new System.Drawing.Point(423, 0);
+            this.panelRedondo2.Location = new System.Drawing.Point(634, 0);
+            this.panelRedondo2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelRedondo2.Name = "panelRedondo2";
             this.panelRedondo2.Radio = 1;
-            this.panelRedondo2.Size = new System.Drawing.Size(437, 476);
+            this.panelRedondo2.Size = new System.Drawing.Size(656, 732);
             this.panelRedondo2.TabIndex = 49;
             // 
             // label6
@@ -251,9 +261,10 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
             this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Location = new System.Drawing.Point(61, 74);
+            this.label6.Location = new System.Drawing.Point(92, 114);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 20);
+            this.label6.Size = new System.Drawing.Size(166, 31);
             this.label6.TabIndex = 17;
             this.label6.Text = "E-Mail";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -262,9 +273,10 @@
             // 
             this.EmailTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EmailTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmailTB.Location = new System.Drawing.Point(195, 71);
+            this.EmailTB.Location = new System.Drawing.Point(292, 109);
+            this.EmailTB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.EmailTB.Name = "EmailTB";
-            this.EmailTB.Size = new System.Drawing.Size(171, 20);
+            this.EmailTB.Size = new System.Drawing.Size(256, 26);
             this.EmailTB.TabIndex = 6;
             // 
             // label9
@@ -275,9 +287,10 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Location = new System.Drawing.Point(61, 222);
+            this.label9.Location = new System.Drawing.Point(92, 342);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 26);
+            this.label9.Size = new System.Drawing.Size(158, 40);
             this.label9.TabIndex = 20;
             this.label9.Text = "Direccion";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -287,9 +300,10 @@
             this.DireccionTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DireccionTB.BackColor = System.Drawing.Color.White;
             this.DireccionTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DireccionTB.Location = new System.Drawing.Point(195, 224);
+            this.DireccionTB.Location = new System.Drawing.Point(292, 345);
+            this.DireccionTB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DireccionTB.Name = "DireccionTB";
-            this.DireccionTB.Size = new System.Drawing.Size(171, 96);
+            this.DireccionTB.Size = new System.Drawing.Size(256, 148);
             this.DireccionTB.TabIndex = 9;
             this.DireccionTB.Text = "";
             // 
@@ -314,9 +328,10 @@
             "19 PM - 20 PM",
             "20 PM - 21 PM",
             "21 PM - 22 PM"});
-            this.HorarioGymCB.Location = new System.Drawing.Point(195, 171);
+            this.HorarioGymCB.Location = new System.Drawing.Point(292, 263);
+            this.HorarioGymCB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HorarioGymCB.Name = "HorarioGymCB";
-            this.HorarioGymCB.Size = new System.Drawing.Size(171, 21);
+            this.HorarioGymCB.Size = new System.Drawing.Size(254, 28);
             this.HorarioGymCB.TabIndex = 11;
             // 
             // label8
@@ -327,9 +342,10 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Location = new System.Drawing.Point(61, 172);
+            this.label8.Location = new System.Drawing.Point(92, 265);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 21);
+            this.label8.Size = new System.Drawing.Size(188, 32);
             this.label8.TabIndex = 19;
             this.label8.Text = "Horario Gym";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -338,9 +354,10 @@
             // 
             this.TelefonoTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TelefonoTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TelefonoTB.Location = new System.Drawing.Point(195, 124);
+            this.TelefonoTB.Location = new System.Drawing.Point(292, 191);
+            this.TelefonoTB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TelefonoTB.Name = "TelefonoTB";
-            this.TelefonoTB.Size = new System.Drawing.Size(171, 20);
+            this.TelefonoTB.Size = new System.Drawing.Size(256, 26);
             this.TelefonoTB.TabIndex = 5;
             this.TelefonoTB.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             // 
@@ -352,9 +369,10 @@
             this.TelefonoLBL.ForeColor = System.Drawing.Color.Black;
             this.TelefonoLBL.Image = ((System.Drawing.Image)(resources.GetObject("TelefonoLBL.Image")));
             this.TelefonoLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TelefonoLBL.Location = new System.Drawing.Point(61, 124);
+            this.TelefonoLBL.Location = new System.Drawing.Point(92, 191);
+            this.TelefonoLBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TelefonoLBL.Name = "TelefonoLBL";
-            this.TelefonoLBL.Size = new System.Drawing.Size(111, 20);
+            this.TelefonoLBL.Size = new System.Drawing.Size(166, 31);
             this.TelefonoLBL.TabIndex = 16;
             this.TelefonoLBL.Text = "Telefono";
             this.TelefonoLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -363,9 +381,10 @@
             // 
             this.dateTimePickerFIngreso.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerFIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerFIngreso.Location = new System.Drawing.Point(215, 323);
+            this.dateTimePickerFIngreso.Location = new System.Drawing.Point(322, 497);
+            this.dateTimePickerFIngreso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePickerFIngreso.Name = "dateTimePickerFIngreso";
-            this.dateTimePickerFIngreso.Size = new System.Drawing.Size(96, 20);
+            this.dateTimePickerFIngreso.Size = new System.Drawing.Size(142, 26);
             this.dateTimePickerFIngreso.TabIndex = 7;
             this.dateTimePickerFIngreso.ValueChanged += new System.EventHandler(this.dateTimePickerFIngreso_ValueChanged);
             // 
@@ -380,18 +399,20 @@
             "2 Meses",
             "3 Meses",
             "6 Meses"});
-            this.MembresiaCB.Location = new System.Drawing.Point(290, 373);
+            this.MembresiaCB.Location = new System.Drawing.Point(435, 574);
+            this.MembresiaCB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MembresiaCB.Name = "MembresiaCB";
-            this.MembresiaCB.Size = new System.Drawing.Size(111, 21);
+            this.MembresiaCB.Size = new System.Drawing.Size(164, 28);
             this.MembresiaCB.TabIndex = 10;
             // 
             // txtNombre
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombre.Location = new System.Drawing.Point(216, 75);
+            this.txtNombre.Location = new System.Drawing.Point(324, 115);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(188, 20);
+            this.txtNombre.Size = new System.Drawing.Size(281, 26);
             this.txtNombre.TabIndex = 0;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
@@ -403,9 +424,10 @@
             this.NombreLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.NombreLBL.Image = ((System.Drawing.Image)(resources.GetObject("NombreLBL.Image")));
             this.NombreLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NombreLBL.Location = new System.Drawing.Point(89, 74);
+            this.NombreLBL.Location = new System.Drawing.Point(134, 114);
+            this.NombreLBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NombreLBL.Name = "NombreLBL";
-            this.NombreLBL.Size = new System.Drawing.Size(100, 23);
+            this.NombreLBL.Size = new System.Drawing.Size(150, 35);
             this.NombreLBL.TabIndex = 12;
             this.NombreLBL.Text = "Nombre";
             this.NombreLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -414,9 +436,10 @@
             // 
             this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtApellido.Location = new System.Drawing.Point(216, 125);
+            this.txtApellido.Location = new System.Drawing.Point(324, 192);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(187, 20);
+            this.txtApellido.Size = new System.Drawing.Size(280, 26);
             this.txtApellido.TabIndex = 1;
             // 
             // ApellidoLBL
@@ -427,9 +450,10 @@
             this.ApellidoLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ApellidoLBL.Image = ((System.Drawing.Image)(resources.GetObject("ApellidoLBL.Image")));
             this.ApellidoLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ApellidoLBL.Location = new System.Drawing.Point(88, 124);
+            this.ApellidoLBL.Location = new System.Drawing.Point(132, 191);
+            this.ApellidoLBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ApellidoLBL.Name = "ApellidoLBL";
-            this.ApellidoLBL.Size = new System.Drawing.Size(99, 23);
+            this.ApellidoLBL.Size = new System.Drawing.Size(148, 35);
             this.ApellidoLBL.TabIndex = 13;
             this.ApellidoLBL.Text = "Apellido";
             this.ApellidoLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -440,9 +464,10 @@
             this.FemeninoRB.AutoSize = true;
             this.FemeninoRB.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FemeninoRB.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FemeninoRB.Location = new System.Drawing.Point(215, 221);
+            this.FemeninoRB.Location = new System.Drawing.Point(322, 340);
+            this.FemeninoRB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.FemeninoRB.Name = "FemeninoRB";
-            this.FemeninoRB.Size = new System.Drawing.Size(80, 19);
+            this.FemeninoRB.Size = new System.Drawing.Size(123, 25);
             this.FemeninoRB.TabIndex = 3;
             this.FemeninoRB.TabStop = true;
             this.FemeninoRB.Text = "Femenino";
@@ -454,9 +479,10 @@
             this.MasculinoRB.AutoSize = true;
             this.MasculinoRB.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MasculinoRB.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.MasculinoRB.Location = new System.Drawing.Point(318, 221);
+            this.MasculinoRB.Location = new System.Drawing.Point(477, 340);
+            this.MasculinoRB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MasculinoRB.Name = "MasculinoRB";
-            this.MasculinoRB.Size = new System.Drawing.Size(83, 19);
+            this.MasculinoRB.Size = new System.Drawing.Size(123, 25);
             this.MasculinoRB.TabIndex = 2;
             this.MasculinoRB.TabStop = true;
             this.MasculinoRB.Text = "Masculino";
@@ -470,9 +496,10 @@
             this.GeneroLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.GeneroLBL.Image = ((System.Drawing.Image)(resources.GetObject("GeneroLBL.Image")));
             this.GeneroLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GeneroLBL.Location = new System.Drawing.Point(92, 222);
+            this.GeneroLBL.Location = new System.Drawing.Point(138, 342);
+            this.GeneroLBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.GeneroLBL.Name = "GeneroLBL";
-            this.GeneroLBL.Size = new System.Drawing.Size(96, 22);
+            this.GeneroLBL.Size = new System.Drawing.Size(144, 34);
             this.GeneroLBL.TabIndex = 14;
             this.GeneroLBL.Text = "Genero";
             this.GeneroLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -485,9 +512,10 @@
             this.FNacimLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.FNacimLBL.Image = ((System.Drawing.Image)(resources.GetObject("FNacimLBL.Image")));
             this.FNacimLBL.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.FNacimLBL.Location = new System.Drawing.Point(91, 270);
+            this.FNacimLBL.Location = new System.Drawing.Point(136, 415);
+            this.FNacimLBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.FNacimLBL.Name = "FNacimLBL";
-            this.FNacimLBL.Size = new System.Drawing.Size(107, 20);
+            this.FNacimLBL.Size = new System.Drawing.Size(160, 31);
             this.FNacimLBL.TabIndex = 15;
             this.FNacimLBL.Text = "F. Nacim";
             this.FNacimLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -496,9 +524,10 @@
             // 
             this.FNacimDT.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.FNacimDT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.FNacimDT.Location = new System.Drawing.Point(216, 270);
+            this.FNacimDT.Location = new System.Drawing.Point(324, 415);
+            this.FNacimDT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.FNacimDT.Name = "FNacimDT";
-            this.FNacimDT.Size = new System.Drawing.Size(95, 20);
+            this.FNacimDT.Size = new System.Drawing.Size(140, 26);
             this.FNacimDT.TabIndex = 4;
             // 
             // panelRedondo4
@@ -509,10 +538,11 @@
             this.panelRedondo4.BorderWidth = 2;
             this.panelRedondo4.Controls.Add(this.btnReiniciar);
             this.panelRedondo4.Controls.Add(this.btnGuardar);
-            this.panelRedondo4.Location = new System.Drawing.Point(483, 523);
+            this.panelRedondo4.Location = new System.Drawing.Point(724, 805);
+            this.panelRedondo4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelRedondo4.Name = "panelRedondo4";
             this.panelRedondo4.Radio = 25;
-            this.panelRedondo4.Size = new System.Drawing.Size(213, 59);
+            this.panelRedondo4.Size = new System.Drawing.Size(320, 91);
             this.panelRedondo4.TabIndex = 53;
             // 
             // panel7
@@ -520,8 +550,9 @@
             this.panel7.BackColor = System.Drawing.Color.Black;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(66, 623);
+            this.panel7.Size = new System.Drawing.Size(99, 958);
             this.panel7.TabIndex = 54;
             // 
             // panel1
@@ -531,20 +562,23 @@
             this.panel1.Controls.Add(this.panelRedondo1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1109, 623);
+            this.panel1.Size = new System.Drawing.Size(1664, 958);
             this.panel1.TabIndex = 55;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Nuevo_Miembro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(107)))), ((int)(((byte)(115)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1109, 623);
+            this.ClientSize = new System.Drawing.Size(1664, 958);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Nuevo_Miembro";
