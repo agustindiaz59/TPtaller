@@ -447,7 +447,7 @@ de membresía.</value>
     <value>2</value>
   </data>
   <data name="panelRedondo7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 301</value>
+    <value>614, 326</value>
   </data>
   <data name="panelRedondo7.Size" type="System.Drawing.Size, System.Drawing">
     <value>286, 244</value>
@@ -462,7 +462,7 @@ de membresía.</value>
     <value>Gestion_Gym.ComponentesRJ.PanelRedondo, Gestion Gym, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;panelRedondo7.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;panelRedondo7.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -495,7 +495,7 @@ de membresía.</value>
     <value>0</value>
   </data>
   <data name="panelRedondo9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>723, 301</value>
+    <value>906, 326</value>
   </data>
   <data name="panelRedondo9.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 244</value>
@@ -510,10 +510,10 @@ de membresía.</value>
     <value>Gestion_Gym.ComponentesRJ.PanelRedondo, Gestion Gym, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;panelRedondo9.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;panelRedondo9.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="panelRedondo11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -841,7 +841,7 @@ activos.
     <value>2</value>
   </data>
   <data name="panelRedondo11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 301</value>
+    <value>369, 326</value>
   </data>
   <data name="panelRedondo11.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 244</value>
@@ -856,10 +856,10 @@ activos.
     <value>Gestion_Gym.ComponentesRJ.PanelRedondo, Gestion Gym, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;panelRedondo11.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;panelRedondo11.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="panelRedondo3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1185,7 +1185,7 @@ de membresía.</value>
     <value>2</value>
   </data>
   <data name="panelRedondo3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 40</value>
+    <value>614, 65</value>
   </data>
   <data name="panelRedondo3.Size" type="System.Drawing.Size, System.Drawing">
     <value>286, 244</value>
@@ -1200,10 +1200,10 @@ de membresía.</value>
     <value>Gestion_Gym.ComponentesRJ.PanelRedondo, Gestion Gym, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;panelRedondo3.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;panelRedondo3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="panelRedondo2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1530,7 +1530,7 @@ este mes.
     <value>2</value>
   </data>
   <data name="panelRedondo2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>723, 40</value>
+    <value>906, 65</value>
   </data>
   <data name="panelRedondo2.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 244</value>
@@ -1545,10 +1545,10 @@ este mes.
     <value>Gestion_Gym.ComponentesRJ.PanelRedondo, Gestion Gym, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;panelRedondo2.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;panelRedondo2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="panelRedondo1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1876,7 +1876,7 @@ activos.
     <value>2</value>
   </data>
   <data name="panelRedondo1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 40</value>
+    <value>369, 65</value>
   </data>
   <data name="panelRedondo1.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 244</value>
@@ -1891,10 +1891,58 @@ activos.
     <value>Gestion_Gym.ComponentesRJ.PanelRedondo, Gestion Gym, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;panelRedondo1.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;panelRedondo1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>1</value>
+  </data>
+  <data name="panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1439, 646</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 646</value>
+  </data>
+  <data name="panel7.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1906,7 +1954,7 @@ activos.
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1153, 595</value>
+    <value>1439, 646</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>

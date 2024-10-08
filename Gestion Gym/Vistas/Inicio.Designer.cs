@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panelRedondo1 = new System.Windows.Forms.Panel();
             this.menuvertical = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btmenu = new System.Windows.Forms.PictureBox();
@@ -46,7 +44,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.nuevo1btn = new System.Windows.Forms.Button();
             this.sidebardtimer = new System.Windows.Forms.Timer(this.components);
-            this.panel1.SuspendLayout();
+            this.panelRedondo1 = new System.Windows.Forms.Panel();
             this.menuvertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btmenu)).BeginInit();
             this.panel5.SuspendLayout();
@@ -55,27 +53,6 @@
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.panel1.Controls.Add(this.panelRedondo1);
-            this.panel1.Controls.Add(this.menuvertical);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1308, 761);
-            this.panel1.TabIndex = 2;
-            // 
-            // panelRedondo1
-            // 
-            this.panelRedondo1.BackColor = System.Drawing.Color.Black;
-            this.panelRedondo1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRedondo1.Location = new System.Drawing.Point(66, 0);
-            this.panelRedondo1.Name = "panelRedondo1";
-            this.panelRedondo1.Size = new System.Drawing.Size(1242, 761);
-            this.panelRedondo1.TabIndex = 4;
-            this.panelRedondo1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRedondo1_Paint);
             // 
             // menuvertical
             // 
@@ -248,6 +225,15 @@
             this.sidebardtimer.Interval = 5;
             this.sidebardtimer.Tick += new System.EventHandler(this.sidebard_tick);
             // 
+            // panelRedondo1
+            // 
+            this.panelRedondo1.BackColor = System.Drawing.Color.LightGray;
+            this.panelRedondo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelRedondo1.Location = new System.Drawing.Point(0, 0);
+            this.panelRedondo1.Name = "panelRedondo1";
+            this.panelRedondo1.Size = new System.Drawing.Size(1308, 761);
+            this.panelRedondo1.TabIndex = 4;
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,14 +241,14 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1308, 761);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuvertical);
+            this.Controls.Add(this.panelRedondo1);
             this.DoubleBuffered = true;
             this.Name = "Inicio";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Inicio_Load);
-            this.panel1.ResumeLayout(false);
             this.menuvertical.ResumeLayout(false);
             this.menuvertical.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btmenu)).EndInit();
@@ -276,7 +262,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel menuvertical;
         private System.Windows.Forms.PictureBox btmenu;
         private System.Windows.Forms.Panel panel2;
@@ -289,9 +274,9 @@
         private System.Windows.Forms.Button salirbtn;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button buscarbtn;
-        private System.Windows.Forms.Panel panelRedondo1;
         private System.Windows.Forms.Timer sidebardtimer;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelRedondo1;
     }
 }
 

@@ -389,3 +389,4 @@ D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\GIT\Gestion Gym\obj
 D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\GIT\Gestion Gym\obj\Debug\Gestion .BB559218.Up2Date
 D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\GIT\Gestion Gym\obj\Debug\Gestion Gym.exe
 D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\GIT\Gestion Gym\obj\Debug\Gestion Gym.pdb
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\GIT\Gestion Gym\obj\Debug\Gestion_Gym.Vistas.Editar.resources

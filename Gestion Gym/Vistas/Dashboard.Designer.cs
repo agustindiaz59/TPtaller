@@ -52,12 +52,15 @@
             this.panelRedondo4 = new Gestion_Gym.ComponentesRJ.PanelRedondo();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panelRedondo7.SuspendLayout();
             this.panelRedondo9.SuspendLayout();
             this.panelRedondo11.SuspendLayout();
             this.panelRedondo3.SuspendLayout();
             this.panelRedondo2.SuspendLayout();
             this.panelRedondo1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelRedondo7
@@ -236,17 +239,31 @@
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(107)))), ((int)(((byte)(115)))));
+            this.panel5.Controls.Add(this.panelRedondo7);
+            this.panel5.Controls.Add(this.panelRedondo1);
+            this.panel5.Controls.Add(this.panelRedondo9);
+            this.panel5.Controls.Add(this.panelRedondo2);
+            this.panel5.Controls.Add(this.panelRedondo11);
+            this.panel5.Controls.Add(this.panelRedondo3);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
             // Dashboard
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(107)))), ((int)(((byte)(115)))));
-            this.Controls.Add(this.panelRedondo7);
-            this.Controls.Add(this.panelRedondo9);
-            this.Controls.Add(this.panelRedondo11);
-            this.Controls.Add(this.panelRedondo3);
-            this.Controls.Add(this.panelRedondo2);
-            this.Controls.Add(this.panelRedondo1);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel5);
             this.DoubleBuffered = true;
             this.Name = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
@@ -261,8 +278,9 @@
             this.panelRedondo2.PerformLayout();
             this.panelRedondo1.ResumeLayout(false);
             this.panelRedondo1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -291,5 +309,7 @@
         private ComponentesRJ.PanelRedondo panelRedondo12;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel7;
     }
 }
