@@ -60,10 +60,13 @@
             this.FNacimLBL = new System.Windows.Forms.Label();
             this.FNacimDT = new System.Windows.Forms.DateTimePicker();
             this.panelRedondo4 = new Gestion_Gym.ComponentesRJ.PanelRedondo();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelRedondo3.SuspendLayout();
             this.panelRedondo1.SuspendLayout();
             this.panelRedondo2.SuspendLayout();
             this.panelRedondo4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -78,7 +81,7 @@
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(0, 0);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(105, 59);
+            this.btnGuardar.Size = new System.Drawing.Size(107, 59);
             this.btnGuardar.TabIndex = 22;
             this.btnGuardar.Text = " Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -95,9 +98,9 @@
             this.btnReiniciar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnReiniciar.Image = ((System.Drawing.Image)(resources.GetObject("btnReiniciar.Image")));
             this.btnReiniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReiniciar.Location = new System.Drawing.Point(107, 0);
+            this.btnReiniciar.Location = new System.Drawing.Point(105, 0);
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(107, 59);
+            this.btnReiniciar.Size = new System.Drawing.Size(109, 59);
             this.btnReiniciar.TabIndex = 23;
             this.btnReiniciar.Text = "Reiniciar";
             this.btnReiniciar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -117,7 +120,7 @@
             this.panelRedondo3.BorderColor = System.Drawing.Color.Transparent;
             this.panelRedondo3.BorderWidth = 0;
             this.panelRedondo3.Controls.Add(this.label1);
-            this.panelRedondo3.Location = new System.Drawing.Point(426, 27);
+            this.panelRedondo3.Location = new System.Drawing.Point(471, 21);
             this.panelRedondo3.Name = "panelRedondo3";
             this.panelRedondo3.Radio = 20;
             this.panelRedondo3.Size = new System.Drawing.Size(235, 48);
@@ -158,10 +161,10 @@
             this.panelRedondo1.Controls.Add(this.GeneroLBL);
             this.panelRedondo1.Controls.Add(this.FNacimLBL);
             this.panelRedondo1.Controls.Add(this.FNacimDT);
-            this.panelRedondo1.Location = new System.Drawing.Point(158, 55);
+            this.panelRedondo1.Location = new System.Drawing.Point(165, 41);
             this.panelRedondo1.Name = "panelRedondo1";
             this.panelRedondo1.Radio = 25;
-            this.panelRedondo1.Size = new System.Drawing.Size(760, 415);
+            this.panelRedondo1.Size = new System.Drawing.Size(860, 476);
             this.panelRedondo1.TabIndex = 52;
             this.panelRedondo1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRedondo1_Paint);
             // 
@@ -173,7 +176,7 @@
             this.DNILBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.DNILBL.Image = ((System.Drawing.Image)(resources.GetObject("DNILBL.Image")));
             this.DNILBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DNILBL.Location = new System.Drawing.Point(39, 141);
+            this.DNILBL.Location = new System.Drawing.Point(89, 172);
             this.DNILBL.Name = "DNILBL";
             this.DNILBL.Size = new System.Drawing.Size(99, 23);
             this.DNILBL.TabIndex = 51;
@@ -188,7 +191,7 @@
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(41, 292);
+            this.label7.Location = new System.Drawing.Point(91, 323);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 20);
             this.label7.TabIndex = 18;
@@ -200,7 +203,7 @@
             // 
             this.DNITB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DNITB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DNITB.Location = new System.Drawing.Point(166, 141);
+            this.DNITB.Location = new System.Drawing.Point(216, 172);
             this.DNITB.Name = "DNITB";
             this.DNITB.Size = new System.Drawing.Size(187, 20);
             this.DNITB.TabIndex = 50;
@@ -213,7 +216,7 @@
             this.label10.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
             this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10.Location = new System.Drawing.Point(41, 345);
+            this.label10.Location = new System.Drawing.Point(91, 376);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(193, 18);
             this.label10.TabIndex = 21;
@@ -233,10 +236,11 @@
             this.panelRedondo2.Controls.Add(this.label8);
             this.panelRedondo2.Controls.Add(this.TelefonoTB);
             this.panelRedondo2.Controls.Add(this.TelefonoLBL);
-            this.panelRedondo2.Location = new System.Drawing.Point(377, 0);
+            this.panelRedondo2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelRedondo2.Location = new System.Drawing.Point(423, 0);
             this.panelRedondo2.Name = "panelRedondo2";
             this.panelRedondo2.Radio = 1;
-            this.panelRedondo2.Size = new System.Drawing.Size(383, 415);
+            this.panelRedondo2.Size = new System.Drawing.Size(437, 476);
             this.panelRedondo2.TabIndex = 49;
             // 
             // label6
@@ -247,7 +251,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
             this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Location = new System.Drawing.Point(34, 43);
+            this.label6.Location = new System.Drawing.Point(61, 74);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(111, 20);
             this.label6.TabIndex = 17;
@@ -258,7 +262,7 @@
             // 
             this.EmailTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EmailTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmailTB.Location = new System.Drawing.Point(168, 40);
+            this.EmailTB.Location = new System.Drawing.Point(195, 71);
             this.EmailTB.Name = "EmailTB";
             this.EmailTB.Size = new System.Drawing.Size(171, 20);
             this.EmailTB.TabIndex = 6;
@@ -271,7 +275,7 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Location = new System.Drawing.Point(34, 191);
+            this.label9.Location = new System.Drawing.Point(61, 222);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(105, 26);
             this.label9.TabIndex = 20;
@@ -283,7 +287,7 @@
             this.DireccionTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DireccionTB.BackColor = System.Drawing.Color.White;
             this.DireccionTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DireccionTB.Location = new System.Drawing.Point(168, 193);
+            this.DireccionTB.Location = new System.Drawing.Point(195, 224);
             this.DireccionTB.Name = "DireccionTB";
             this.DireccionTB.Size = new System.Drawing.Size(171, 96);
             this.DireccionTB.TabIndex = 9;
@@ -292,6 +296,7 @@
             // HorarioGymCB
             // 
             this.HorarioGymCB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.HorarioGymCB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HorarioGymCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HorarioGymCB.FormattingEnabled = true;
             this.HorarioGymCB.Items.AddRange(new object[] {
@@ -309,7 +314,7 @@
             "19 PM - 20 PM",
             "20 PM - 21 PM",
             "21 PM - 22 PM"});
-            this.HorarioGymCB.Location = new System.Drawing.Point(168, 140);
+            this.HorarioGymCB.Location = new System.Drawing.Point(195, 171);
             this.HorarioGymCB.Name = "HorarioGymCB";
             this.HorarioGymCB.Size = new System.Drawing.Size(171, 21);
             this.HorarioGymCB.TabIndex = 11;
@@ -322,7 +327,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Location = new System.Drawing.Point(34, 141);
+            this.label8.Location = new System.Drawing.Point(61, 172);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(125, 21);
             this.label8.TabIndex = 19;
@@ -333,7 +338,7 @@
             // 
             this.TelefonoTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TelefonoTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TelefonoTB.Location = new System.Drawing.Point(168, 93);
+            this.TelefonoTB.Location = new System.Drawing.Point(195, 124);
             this.TelefonoTB.Name = "TelefonoTB";
             this.TelefonoTB.Size = new System.Drawing.Size(171, 20);
             this.TelefonoTB.TabIndex = 5;
@@ -347,7 +352,7 @@
             this.TelefonoLBL.ForeColor = System.Drawing.Color.Black;
             this.TelefonoLBL.Image = ((System.Drawing.Image)(resources.GetObject("TelefonoLBL.Image")));
             this.TelefonoLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TelefonoLBL.Location = new System.Drawing.Point(34, 93);
+            this.TelefonoLBL.Location = new System.Drawing.Point(61, 124);
             this.TelefonoLBL.Name = "TelefonoLBL";
             this.TelefonoLBL.Size = new System.Drawing.Size(111, 20);
             this.TelefonoLBL.TabIndex = 16;
@@ -358,7 +363,7 @@
             // 
             this.dateTimePickerFIngreso.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerFIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerFIngreso.Location = new System.Drawing.Point(165, 292);
+            this.dateTimePickerFIngreso.Location = new System.Drawing.Point(215, 323);
             this.dateTimePickerFIngreso.Name = "dateTimePickerFIngreso";
             this.dateTimePickerFIngreso.Size = new System.Drawing.Size(96, 20);
             this.dateTimePickerFIngreso.TabIndex = 7;
@@ -367,6 +372,7 @@
             // MembresiaCB
             // 
             this.MembresiaCB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MembresiaCB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MembresiaCB.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.MembresiaCB.FormattingEnabled = true;
             this.MembresiaCB.Items.AddRange(new object[] {
@@ -374,7 +380,7 @@
             "2 Meses",
             "3 Meses",
             "6 Meses"});
-            this.MembresiaCB.Location = new System.Drawing.Point(240, 342);
+            this.MembresiaCB.Location = new System.Drawing.Point(290, 373);
             this.MembresiaCB.Name = "MembresiaCB";
             this.MembresiaCB.Size = new System.Drawing.Size(111, 21);
             this.MembresiaCB.TabIndex = 10;
@@ -383,7 +389,7 @@
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombre.Location = new System.Drawing.Point(166, 44);
+            this.txtNombre.Location = new System.Drawing.Point(216, 75);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(188, 20);
             this.txtNombre.TabIndex = 0;
@@ -397,7 +403,7 @@
             this.NombreLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.NombreLBL.Image = ((System.Drawing.Image)(resources.GetObject("NombreLBL.Image")));
             this.NombreLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NombreLBL.Location = new System.Drawing.Point(39, 43);
+            this.NombreLBL.Location = new System.Drawing.Point(89, 74);
             this.NombreLBL.Name = "NombreLBL";
             this.NombreLBL.Size = new System.Drawing.Size(100, 23);
             this.NombreLBL.TabIndex = 12;
@@ -408,7 +414,7 @@
             // 
             this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtApellido.Location = new System.Drawing.Point(166, 94);
+            this.txtApellido.Location = new System.Drawing.Point(216, 125);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(187, 20);
             this.txtApellido.TabIndex = 1;
@@ -421,7 +427,7 @@
             this.ApellidoLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ApellidoLBL.Image = ((System.Drawing.Image)(resources.GetObject("ApellidoLBL.Image")));
             this.ApellidoLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ApellidoLBL.Location = new System.Drawing.Point(38, 93);
+            this.ApellidoLBL.Location = new System.Drawing.Point(88, 124);
             this.ApellidoLBL.Name = "ApellidoLBL";
             this.ApellidoLBL.Size = new System.Drawing.Size(99, 23);
             this.ApellidoLBL.TabIndex = 13;
@@ -434,7 +440,7 @@
             this.FemeninoRB.AutoSize = true;
             this.FemeninoRB.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FemeninoRB.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FemeninoRB.Location = new System.Drawing.Point(165, 190);
+            this.FemeninoRB.Location = new System.Drawing.Point(215, 221);
             this.FemeninoRB.Name = "FemeninoRB";
             this.FemeninoRB.Size = new System.Drawing.Size(80, 19);
             this.FemeninoRB.TabIndex = 3;
@@ -448,7 +454,7 @@
             this.MasculinoRB.AutoSize = true;
             this.MasculinoRB.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MasculinoRB.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.MasculinoRB.Location = new System.Drawing.Point(268, 190);
+            this.MasculinoRB.Location = new System.Drawing.Point(318, 221);
             this.MasculinoRB.Name = "MasculinoRB";
             this.MasculinoRB.Size = new System.Drawing.Size(83, 19);
             this.MasculinoRB.TabIndex = 2;
@@ -464,7 +470,7 @@
             this.GeneroLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.GeneroLBL.Image = ((System.Drawing.Image)(resources.GetObject("GeneroLBL.Image")));
             this.GeneroLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GeneroLBL.Location = new System.Drawing.Point(42, 191);
+            this.GeneroLBL.Location = new System.Drawing.Point(92, 222);
             this.GeneroLBL.Name = "GeneroLBL";
             this.GeneroLBL.Size = new System.Drawing.Size(96, 22);
             this.GeneroLBL.TabIndex = 14;
@@ -479,7 +485,7 @@
             this.FNacimLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.FNacimLBL.Image = ((System.Drawing.Image)(resources.GetObject("FNacimLBL.Image")));
             this.FNacimLBL.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.FNacimLBL.Location = new System.Drawing.Point(41, 239);
+            this.FNacimLBL.Location = new System.Drawing.Point(91, 270);
             this.FNacimLBL.Name = "FNacimLBL";
             this.FNacimLBL.Size = new System.Drawing.Size(107, 20);
             this.FNacimLBL.TabIndex = 15;
@@ -490,7 +496,7 @@
             // 
             this.FNacimDT.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.FNacimDT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.FNacimDT.Location = new System.Drawing.Point(166, 239);
+            this.FNacimDT.Location = new System.Drawing.Point(216, 270);
             this.FNacimDT.Name = "FNacimDT";
             this.FNacimDT.Size = new System.Drawing.Size(95, 20);
             this.FNacimDT.TabIndex = 4;
@@ -503,11 +509,31 @@
             this.panelRedondo4.BorderWidth = 2;
             this.panelRedondo4.Controls.Add(this.btnReiniciar);
             this.panelRedondo4.Controls.Add(this.btnGuardar);
-            this.panelRedondo4.Location = new System.Drawing.Point(429, 504);
+            this.panelRedondo4.Location = new System.Drawing.Point(483, 523);
             this.panelRedondo4.Name = "panelRedondo4";
             this.panelRedondo4.Radio = 25;
             this.panelRedondo4.Size = new System.Drawing.Size(213, 59);
             this.panelRedondo4.TabIndex = 53;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(66, 623);
+            this.panel7.TabIndex = 54;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panelRedondo3);
+            this.panel1.Controls.Add(this.panelRedondo4);
+            this.panel1.Controls.Add(this.panelRedondo1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1109, 623);
+            this.panel1.TabIndex = 55;
             // 
             // Nuevo_Miembro
             // 
@@ -515,10 +541,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(107)))), ((int)(((byte)(115)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1064, 576);
-            this.Controls.Add(this.panelRedondo4);
-            this.Controls.Add(this.panelRedondo3);
-            this.Controls.Add(this.panelRedondo1);
+            this.ClientSize = new System.Drawing.Size(1109, 623);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -533,6 +558,7 @@
             this.panelRedondo2.ResumeLayout(false);
             this.panelRedondo2.PerformLayout();
             this.panelRedondo4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -570,5 +596,7 @@
         private ComponentesRJ.PanelRedondo panelRedondo3;
         private System.Windows.Forms.Label label1;
         private ComponentesRJ.PanelRedondo panelRedondo4;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel1;
     }
 }

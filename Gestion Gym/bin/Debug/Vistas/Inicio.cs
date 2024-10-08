@@ -16,6 +16,9 @@ namespace Gestion_Gym
         {
             InitializeComponent();
             this.Load += new EventHandler(iniciobtn_Click);
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
+            this.UpdateStyles();
+
         }
 
         private void MostrarFormularioEnPanel(Form formulario)
@@ -71,22 +74,29 @@ namespace Gestion_Gym
 
         private void sidebard_tick(object sender, EventArgs e)
         {
+            // Definir el paso de la animación
+            const int step = 40; // Puedes ajustar este valor para más o menos velocidad
+
             if (sidebardExpand)
             {
-                menuvertical.Width -= 10;
+                // Reducir el ancho de la barra lateral
+                menuvertical.Width = Math.Max(menuvertical.Width - step, menuvertical.MinimumSize.Width);
+                // Si ha alcanzado el tamaño mínimo
                 if (menuvertical.Width == menuvertical.MinimumSize.Width)
                 {
-                    sidebardExpand = false;
-                    sidebardtimer.Stop();
+                    sidebardExpand = false; // Cambiar el estado
+                    sidebardtimer.Stop(); // Detener el temporizador
                 }
             }
             else
             {
-                menuvertical.Width += 10;
+                // Aumentar el ancho de la barra lateral
+                menuvertical.Width = Math.Min(menuvertical.Width + step, menuvertical.MaximumSize.Width);
+                // Si ha alcanzado el tamaño máximo
                 if (menuvertical.Width == menuvertical.MaximumSize.Width)
                 {
-                    sidebardExpand = true;
-                    sidebardtimer.Stop();
+                    sidebardExpand = true; // Cambiar el estado
+                    sidebardtimer.Stop(); // Detener el temporizador
                 }
             }
         }
@@ -98,6 +108,11 @@ namespace Gestion_Gym
         private void btmenu_Click(object sender, EventArgs e)
         {
             sidebardtimer.Start();
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

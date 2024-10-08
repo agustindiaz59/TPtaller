@@ -18,7 +18,7 @@ namespace Gestion_Gym.Servicios.Persistencia
                 "port=3306;" +
                 "database=gymbd;" +
                 "user=root;" +
-                "password=admin;"
+                "password=lalita2012;"
             );
             Connection.Open();
             Command = Connection.CreateCommand();
