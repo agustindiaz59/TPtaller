@@ -38,6 +38,9 @@ namespace Gestion_Gym
                 miembro1.Genero = 'X';
 
             MiembroRepositorio.Guardar(miembro1);
+
+            MessageBox.Show("Datos Guardados Correctamente.");
+
             /*
 
             string nombre = txtNombre.Text;
@@ -118,37 +121,7 @@ namespace Gestion_Gym
 
         }
 
-        private void Nuevo_Miembro_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void panelRedondo1_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
-
-        private void txtTelefono_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePickerFIngreso_ValueChanged(object sender, EventArgs e)
         {
 
         }
@@ -158,7 +131,22 @@ namespace Gestion_Gym
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerFIngreso_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MembresiaCB_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

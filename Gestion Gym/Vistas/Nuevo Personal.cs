@@ -35,24 +35,31 @@ namespace Gestion_Gym
                 genero = radioButtonFemenino.Text;
             }
             string fnacim = dateTimePickerFNacim.Text;
-            Int64 telefono = Int64.Parse(txtTelefono.Text);
+            string telefono = txtTelefono.Text;
             string email = txtEmail.Text;
             string fingreso = dateTimePickerFIngreso.Text;
             string calle = txtCalle.Text;
             string localidad = txtLocalidad.Text;
             string provincia = txtProvincia.Text;
 
+            string direccion = calle + "," + localidad + "," + provincia;
 
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = GONZALO; database = GymBD; integrated security = True;";
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
+            string cuil = textBox1.Text;
 
-            cmd.CommandText = "insert into Nuevo_Personal (nombre,apellido,genero,fnacim, telefono,email,fingreso,calle, localidad, provincia) VALUES ('" + nombre + "','" + apellido + "','" + genero + "','" + fnacim + "','" + telefono + "','" + email + "','" + fingreso + "','" + calle + "','" + localidad + "','" + provincia + "')";
+            Personal nuevo = new Personal(
+                nombre,
+                apellido,
+                cuil,
+                fnacim,
+                genero.ToCharArray()[0],
+                telefono,
+                email,
+                direccion,
+                fingreso
+                );
 
-            SqlDataAdapter DA = new SqlDataAdapter(cmd);
-            DataSet DS = new DataSet();
-            DA.Fill(DS);
+            PersonalRepositorio.Guardar(nuevo);
+
             MessageBox.Show("Datos Guardados Correctamente.");
         }
 

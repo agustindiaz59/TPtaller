@@ -141,7 +141,6 @@
             this.label1.Size = new System.Drawing.Size(243, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Crear Miembro";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panelRedondo1
             // 
@@ -171,7 +170,6 @@
             this.panelRedondo1.Radio = 25;
             this.panelRedondo1.Size = new System.Drawing.Size(1290, 732);
             this.panelRedondo1.TabIndex = 52;
-            this.panelRedondo1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRedondo1_Paint);
             // 
             // DNILBL
             // 
@@ -204,7 +202,6 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "F. Ingreso";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // DNITB
             // 
@@ -359,7 +356,6 @@
             this.TelefonoTB.Name = "TelefonoTB";
             this.TelefonoTB.Size = new System.Drawing.Size(256, 26);
             this.TelefonoTB.TabIndex = 5;
-            this.TelefonoTB.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             // 
             // TelefonoLBL
             // 
@@ -386,7 +382,6 @@
             this.dateTimePickerFIngreso.Name = "dateTimePickerFIngreso";
             this.dateTimePickerFIngreso.Size = new System.Drawing.Size(142, 26);
             this.dateTimePickerFIngreso.TabIndex = 7;
-            this.dateTimePickerFIngreso.ValueChanged += new System.EventHandler(this.dateTimePickerFIngreso_ValueChanged);
             // 
             // MembresiaCB
             // 
@@ -395,15 +390,15 @@
             this.MembresiaCB.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.MembresiaCB.FormattingEnabled = true;
             this.MembresiaCB.Items.AddRange(new object[] {
-            "1 Mes",
-            "2 Meses",
-            "3 Meses",
-            "6 Meses"});
+            "STANDARD",
+            "PREMIUM ",
+            "PERSONALIZADO "});
             this.MembresiaCB.Location = new System.Drawing.Point(435, 574);
             this.MembresiaCB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MembresiaCB.Name = "MembresiaCB";
             this.MembresiaCB.Size = new System.Drawing.Size(164, 28);
             this.MembresiaCB.TabIndex = 10;
+            this.MembresiaCB.SelectedIndexChanged += new System.EventHandler(this.MembresiaCB_SelectedIndexChanged);
             // 
             // txtNombre
             // 
@@ -414,7 +409,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(281, 26);
             this.txtNombre.TabIndex = 0;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // NombreLBL
             // 
@@ -566,7 +560,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1664, 958);
             this.panel1.TabIndex = 55;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Nuevo_Miembro
             // 
@@ -584,7 +577,6 @@
             this.Name = "Nuevo_Miembro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo_Miembro";
-            this.Load += new System.EventHandler(this.Nuevo_Miembro_Load);
             this.panelRedondo3.ResumeLayout(false);
             this.panelRedondo3.PerformLayout();
             this.panelRedondo1.ResumeLayout(false);

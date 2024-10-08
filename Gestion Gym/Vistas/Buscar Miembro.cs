@@ -125,5 +125,10 @@ namespace Gestion_Gym
             CargarMiembros(miembroDAO.buscarPorApellido(textBox1.Text));
 
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
     }
 }
