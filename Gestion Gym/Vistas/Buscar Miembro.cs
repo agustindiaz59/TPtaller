@@ -1,60 +1,97 @@
-﻿using Gestion_Gym.Modelos;
-using Gestion_Gym.Servicios.Persistencia;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Gestion_Gym
 {
     public partial class Buscar_Miembro : Form
     {
-        private MiembroDAO repositorio = new MiembroDAO();
         public Buscar_Miembro()
         {
             InitializeComponent();
+
+            this.DoubleBuffered = true;
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
+            this.UpdateStyles();
+
+            // Configuración inicial de los controles
+            InicializarControles();
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void InicializarControles()
         {
-            if (txtBuscar.Text != "")
-            {
-                List<Miembro> miembros = new List<Miembro>();
-                miembros.Add(repositorio.Traer(txtBuscar.Text));
+            // Configuración del DataGridView
+            dataGridView1.Dock = DockStyle.Fill; // Hace que el DataGridView ocupe todo el ancho y alto del contenedor
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Ajusta las columnas para ocupar el ancho disponible
 
-                dataGridView1.DataSource = miembros;
+            // Configuración del panel2
+            panel2.Dock = DockStyle.Fill; // Hace que el panel2 ocupe todo el ancho y alto del contenedor
+        }
+
+        private void CargarMiembros(string filtro = "", int pageNumber = 1, int pageSize = 20)
+        {
+            string connectionString = "server=localhost;database=GymBD;uid=root;pwd=lalita2012;";
+
+            // Modificar la consulta para incluir paginación
+            string query = "SELECT * FROM miembros";
+
+            if (!string.IsNullOrEmpty(filtro))
+            {
+                query += " WHERE miembroID = @filtro OR dni = @filtro";
             }
 
-            else
+            // Agregar paginación
+            query += $" LIMIT @pageSize OFFSET @offset";
+
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            using (MySqlCommand cmd = new MySqlCommand(query, con))
             {
-                MessageBox.Show(" Por Favor Ingrese algun ID", "Mensaje",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (!string.IsNullOrEmpty(filtro))
+                {
+                    cmd.Parameters.AddWithValue("@filtro", filtro);
+                }
+
+                cmd.Parameters.AddWithValue("@pageSize", pageSize);
+                cmd.Parameters.AddWithValue("@offset", (pageNumber - 1) * pageSize);
+
+                using (MySqlDataAdapter DA = new MySqlDataAdapter(cmd))
+                {
+                    DataSet DS = new DataSet();
+                    try
+                    {
+                        con.Open();
+                        DA.Fill(DS);
+
+                        if (DS.Tables[0].Rows.Count > 0)
+                        {
+                            dataGridView1.DataSource = DS.Tables[0];
+                            AjustarDataGridView();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontraron resultados", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
+                }
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void AjustarDataGridView()
         {
-
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Ajustar columnas para llenar el ancho
+            dataGridView1.AutoResizeRows(); // Ajustar filas según contenido
         }
 
         private void Buscar_Miembro_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-
+            CargarMiembros();  // Carga todos los miembros al abrir el formulario
         }
     }
 }
