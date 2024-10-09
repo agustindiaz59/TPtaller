@@ -203,10 +203,14 @@
             // 
             this.DNITB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DNITB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DNITB.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.DNITB.Location = new System.Drawing.Point(216, 172);
             this.DNITB.Name = "DNITB";
             this.DNITB.Size = new System.Drawing.Size(187, 20);
             this.DNITB.TabIndex = 50;
+            this.DNITB.Text = "Ingresar el DNI";
+            this.DNITB.Enter += new System.EventHandler(this.Dni_enter);
+            this.DNITB.Leave += new System.EventHandler(this.Dni_leave);
             // 
             // label10
             // 
@@ -262,10 +266,14 @@
             // 
             this.EmailTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EmailTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EmailTB.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.EmailTB.Location = new System.Drawing.Point(195, 71);
             this.EmailTB.Name = "EmailTB";
             this.EmailTB.Size = new System.Drawing.Size(171, 20);
             this.EmailTB.TabIndex = 6;
+            this.EmailTB.Text = "correo@ejemplo.com";
+            this.EmailTB.Enter += new System.EventHandler(this.email_enter);
+            this.EmailTB.Leave += new System.EventHandler(this.email_leave);
             // 
             // label9
             // 
@@ -287,11 +295,14 @@
             this.DireccionTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DireccionTB.BackColor = System.Drawing.Color.White;
             this.DireccionTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DireccionTB.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.DireccionTB.Location = new System.Drawing.Point(195, 224);
             this.DireccionTB.Name = "DireccionTB";
             this.DireccionTB.Size = new System.Drawing.Size(171, 96);
             this.DireccionTB.TabIndex = 9;
-            this.DireccionTB.Text = "";
+            this.DireccionTB.Text = "Ingrese su dirección";
+            this.DireccionTB.Enter += new System.EventHandler(this.Direccion_enter);
+            this.DireccionTB.Leave += new System.EventHandler(this.Direccion_leave);
             // 
             // HorarioGymCB
             // 
@@ -338,11 +349,15 @@
             // 
             this.TelefonoTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TelefonoTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TelefonoTB.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.TelefonoTB.Location = new System.Drawing.Point(195, 124);
             this.TelefonoTB.Name = "TelefonoTB";
             this.TelefonoTB.Size = new System.Drawing.Size(171, 20);
             this.TelefonoTB.TabIndex = 5;
+            this.TelefonoTB.Text = "Ingrese su teléfono";
             this.TelefonoTB.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
+            this.TelefonoTB.Enter += new System.EventHandler(this.Tel_enter);
+            this.TelefonoTB.Leave += new System.EventHandler(this.Tel_leave);
             // 
             // TelefonoLBL
             // 
@@ -389,11 +404,15 @@
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombre.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtNombre.Location = new System.Drawing.Point(216, 75);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(188, 20);
             this.txtNombre.TabIndex = 0;
+            this.txtNombre.Text = "Nombre";
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            this.txtNombre.Enter += new System.EventHandler(this.NombreText_Enter);
+            this.txtNombre.Leave += new System.EventHandler(this.NombreText_Leave);
             // 
             // NombreLBL
             // 
@@ -414,10 +433,14 @@
             // 
             this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtApellido.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtApellido.Location = new System.Drawing.Point(216, 125);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(187, 20);
             this.txtApellido.TabIndex = 1;
+            this.txtApellido.Text = "Apellido";
+            this.txtApellido.Enter += new System.EventHandler(this.Apellido_Enter);
+            this.txtApellido.Leave += new System.EventHandler(this.Apellido_Leave);
             // 
             // ApellidoLBL
             // 
