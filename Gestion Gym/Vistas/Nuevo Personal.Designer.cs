@@ -123,11 +123,15 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox1.Location = new System.Drawing.Point(209, 141);
             this.textBox1.MaxLength = 255;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(187, 20);
             this.textBox1.TabIndex = 52;
+            this.textBox1.Text = "Ingrese su CUIL";
+            this.textBox1.Enter += new System.EventHandler(this.cuil_enter);
+            this.textBox1.Leave += new System.EventHandler(this.cuil_leave);
             // 
             // label13
             // 
@@ -194,10 +198,14 @@
             // 
             this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTelefono.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtTelefono.Location = new System.Drawing.Point(210, 327);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(188, 20);
             this.txtTelefono.TabIndex = 30;
+            this.txtTelefono.Text = "Ingrese su teléfono";
+            this.txtTelefono.Enter += new System.EventHandler(this.telefono_enter);
+            this.txtTelefono.Leave += new System.EventHandler(this.telefono_leave);
             // 
             // dateTimePickerFNacim
             // 
@@ -248,22 +256,30 @@
             // 
             this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtApellido.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtApellido.Location = new System.Drawing.Point(210, 110);
             this.txtApellido.MaxLength = 255;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(187, 20);
             this.txtApellido.TabIndex = 31;
+            this.txtApellido.Text = "Apellido";
+            this.txtApellido.Enter += new System.EventHandler(this.apellido_enter);
+            this.txtApellido.Leave += new System.EventHandler(this.apellido_leave);
             // 
             // txtNombre
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombre.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtNombre.Location = new System.Drawing.Point(210, 77);
             this.txtNombre.MaxLength = 255;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(188, 20);
             this.txtNombre.TabIndex = 26;
+            this.txtNombre.Text = "Nombre";
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            this.txtNombre.Enter += new System.EventHandler(this.nombre_enter);
+            this.txtNombre.Leave += new System.EventHandler(this.nombre_leave);
             // 
             // label3
             // 
@@ -379,10 +395,14 @@
             // 
             this.txtProvincia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtProvincia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProvincia.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtProvincia.Location = new System.Drawing.Point(190, 226);
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(171, 20);
             this.txtProvincia.TabIndex = 47;
+            this.txtProvincia.Text = "Ingrese su provincia";
+            this.txtProvincia.Enter += new System.EventHandler(this.Provincia_enter);
+            this.txtProvincia.Leave += new System.EventHandler(this.Provincia_leave);
             // 
             // label9
             // 
@@ -403,28 +423,40 @@
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtEmail.Location = new System.Drawing.Point(190, 73);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(171, 20);
             this.txtEmail.TabIndex = 28;
+            this.txtEmail.Text = "correo@ejemplo.com";
+            this.txtEmail.Enter += new System.EventHandler(this.email_enter);
+            this.txtEmail.Leave += new System.EventHandler(this.email_leave);
             // 
             // txtCalle
             // 
             this.txtCalle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCalle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCalle.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtCalle.Location = new System.Drawing.Point(190, 126);
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(171, 20);
             this.txtCalle.TabIndex = 27;
+            this.txtCalle.Text = "Ingrese su calle";
+            this.txtCalle.Enter += new System.EventHandler(this.calle_enter);
+            this.txtCalle.Leave += new System.EventHandler(this.calle_leave);
             // 
             // txtLocalidad
             // 
             this.txtLocalidad.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLocalidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLocalidad.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtLocalidad.Location = new System.Drawing.Point(190, 173);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(171, 20);
             this.txtLocalidad.TabIndex = 29;
+            this.txtLocalidad.Text = "Ingrese su localidad";
+            this.txtLocalidad.Enter += new System.EventHandler(this.localidad_enter);
+            this.txtLocalidad.Leave += new System.EventHandler(this.localidad_leave);
             // 
             // panelRedondo4
             // 

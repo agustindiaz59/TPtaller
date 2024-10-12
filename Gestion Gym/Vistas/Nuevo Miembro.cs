@@ -2,6 +2,9 @@
 using System;
 using System.Windows.Forms;
 using Gestion_Gym.Modelos;
+using System.Drawing;
+using System.Net;
+using static Mysqlx.Crud.Order.Types;
 
 namespace Gestion_Gym
 {
@@ -149,6 +152,114 @@ namespace Gestion_Gym
         private void MembresiaCB_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void NombreText_Enter(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "Nombre")
+            {
+                txtNombre.Text = "";
+                txtNombre.ForeColor = Color.Black;
+            }
+        }
+
+        private void NombreText_Leave(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "")
+            {
+                txtNombre.Text = "Nombre";
+                txtNombre.ForeColor = Color.Silver;
+            }
+        }
+
+        private void Apellido_Enter(object sender, EventArgs e)
+        {
+            if (txtApellido.Text == "Apellido")
+            {
+                txtApellido.Text = "";
+                txtApellido.ForeColor = Color.Black;
+            }
+        }
+
+        private void Apellido_Leave(object sender, EventArgs e)
+        {
+            if (txtApellido.Text == "")
+            {
+                txtApellido.Text = "Apellido";
+                txtApellido.ForeColor = Color.Silver;
+            }
+        }
+
+        private void Dni_enter(object sender, EventArgs e)
+        {
+            if (DNITB.Text == "Ingresar el DNI")
+            {
+                DNITB.Text = "";
+                DNITB.ForeColor = Color.Black;
+            }
+        }
+
+        private void Dni_leave(object sender, EventArgs e)
+        {
+            if (DNITB.Text == "")
+            {
+                DNITB.Text = "Ingresar el DNI";
+                DNITB.ForeColor = Color.Silver;
+            }
+        }
+
+        private void email_enter(object sender, EventArgs e)
+        {
+            if (EmailTB.Text == "correo@ejemplo.com")
+            {
+                EmailTB.Text = "";
+                EmailTB.ForeColor = Color.Black;
+            }
+        }
+
+        private void email_leave(object sender, EventArgs e)
+        {
+            if (EmailTB.Text == "")
+            {
+                EmailTB.Text = "correo@ejemplo.com";
+                EmailTB.ForeColor = Color.Silver;
+            }
+        }
+
+        private void Tel_enter(object sender, EventArgs e)
+        {
+            if (TelefonoTB.Text == "Ingrese su teléfono")
+            {
+                TelefonoTB.Text = "";
+                TelefonoTB.ForeColor = Color.Black;
+            }
+        }
+
+        private void Tel_leave(object sender, EventArgs e)
+        {
+            if (TelefonoTB.Text == "")
+            {
+                TelefonoTB.Text = "Ingrese su teléfono";
+                TelefonoTB.ForeColor = Color.Silver;
+            }
+        }
+
+        private void Direccion_enter(object sender, EventArgs e)
+        {
+            if (DireccionTB.Text == "Ingrese su dirección")
+            {
+                DireccionTB.Text = "";
+                DireccionTB.ForeColor = Color.Black;
+            }
+        }
+
+        private void Direccion_leave(object sender, EventArgs e)
+        {
+            if (DireccionTB.Text == "")
+            {
+                DireccionTB.Text = "Ingrese su dirección";
+                DireccionTB.ForeColor = Color.Silver;
+            } 
         }
     }
 }
