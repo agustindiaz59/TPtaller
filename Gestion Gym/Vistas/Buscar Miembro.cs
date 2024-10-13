@@ -6,6 +6,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Gestion_Gym.Modelos;
 using Gestion_Gym.Servicios.Persistencia;
+using Gestion_Gym.Vistas;
 using MySql.Data.MySqlClient;
 
 namespace Gestion_Gym
@@ -106,6 +107,18 @@ namespace Gestion_Gym
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                string dni = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                //Abrir formulario de editar
+                Editar editar = new Editar(dni);
+                editar.Show();
+
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("Error buscando el miembro");
+            }
 
         }
 
@@ -129,6 +142,11 @@ namespace Gestion_Gym
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void Buscar_Miembro_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

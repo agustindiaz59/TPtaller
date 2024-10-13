@@ -261,5 +261,10 @@ namespace Gestion_Gym
                 DireccionTB.ForeColor = Color.Silver;
             } 
         }
+
+        private void Nuevo_Miembro_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

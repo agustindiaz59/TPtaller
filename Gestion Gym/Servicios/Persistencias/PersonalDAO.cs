@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 namespace Gestion_Gym.Servicios.Persistencia
 {
@@ -152,6 +153,31 @@ namespace Gestion_Gym.Servicios.Persistencia
                 return Miembros;
 
             }
+        }
+
+        public bool VerificarCredenciales(string Usuario, string Contrasenia)
+        {
+            string sql = "SELECT count(nombre) as resultado FROM usuario WHERE nombre = @nombre AND contrasenia = @contrasenia";
+            Command.CommandText = sql;
+            Command.Parameters.Clear();
+
+            Command.Parameters.AddWithValue("@nombre", Usuario);
+            Command.Parameters.AddWithValue("@contrasenia", Contrasenia);
+
+
+            using (MySqlDataReader Lector = Command.ExecuteReader())
+            {
+                if (Lector.Read())
+                {
+                    if (Convert.ToInt32(Lector["resultado"]) > 0)
+                    {
+                        return true;
+                    }
+                }
+            }
+            Command.Parameters.Clear();
+
+            return false;
         }
     }
 }

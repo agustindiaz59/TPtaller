@@ -12,6 +12,12 @@ namespace Gestion_Gym
     public partial class Inicio : Form
     {
         bool sidebardExpand;
+        private Dashboard dashboard = new Dashboard();
+        private Nuevo_Miembro nuevo_Miembro = new Nuevo_Miembro();
+        private Nuevo_Personal nuevo_Personal = new Nuevo_Personal();
+        private Buscar_Miembro buscar_Miembro = new Buscar_Miembro();
+
+
         public Inicio()
         {
             InitializeComponent();
@@ -40,26 +46,22 @@ namespace Gestion_Gym
 
         private void iniciobtn_Click(object sender, EventArgs e)
         {
-            Dashboard mn = new Dashboard();
-            MostrarFormularioEnPanel(mn);
+            MostrarFormularioEnPanel(dashboard);
         }
 
         private void nuevo1btn_Click(object sender, EventArgs e)
         {
-            Nuevo_Miembro mn = new Nuevo_Miembro();
-            MostrarFormularioEnPanel(mn);
+            MostrarFormularioEnPanel(nuevo_Miembro);
         }
 
         private void nuevo2btn_Click(object sender, EventArgs e)
         {
-            Nuevo_Personal mn = new Nuevo_Personal();
-            MostrarFormularioEnPanel(mn);
+            MostrarFormularioEnPanel(nuevo_Personal);
         }
 
         private void buscarbtn_Click(object sender, EventArgs e)
         {
-            Buscar_Miembro mn = new Buscar_Miembro();
-            MostrarFormularioEnPanel(mn);
+            MostrarFormularioEnPanel(buscar_Miembro);
         }
 
         private void salirbtn_Click(object sender, EventArgs e)
@@ -111,6 +113,16 @@ namespace Gestion_Gym
         }
 
         private void Inicio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Inicio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panelRedondo1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

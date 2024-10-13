@@ -130,10 +130,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panelRedondo8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 110</value>
+    <value>42, 169</value>
+  </data>
+  <data name="panelRedondo8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 100</value>
+    <value>345, 154</value>
   </data>
   <data name="panelRedondo8.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -391,10 +394,13 @@
     <value>Zoom</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 19</value>
+    <value>42, 29</value>
+  </data>
+  <data name="panel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 65</value>
+    <value>105, 100</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -421,10 +427,13 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 19</value>
+    <value>168, 29</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 66</value>
+    <value>215, 99</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -447,10 +456,13 @@ de membresía.</value>
     <value>2</value>
   </data>
   <data name="panelRedondo7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>614, 326</value>
+    <value>804, 502</value>
+  </data>
+  <data name="panelRedondo7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>286, 244</value>
+    <value>495, 375</value>
   </data>
   <data name="panelRedondo7.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -474,10 +486,13 @@ de membresía.</value>
     <value>True</value>
   </data>
   <data name="panelRedondo10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 110</value>
+    <value>42, 169</value>
+  </data>
+  <data name="panelRedondo10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 100</value>
+    <value>280, 154</value>
   </data>
   <data name="panelRedondo10.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -495,10 +510,13 @@ de membresía.</value>
     <value>0</value>
   </data>
   <data name="panelRedondo9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>906, 326</value>
+    <value>1242, 502</value>
+  </data>
+  <data name="panelRedondo9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 244</value>
+    <value>360, 375</value>
   </data>
   <data name="panelRedondo9.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -522,10 +540,13 @@ de membresía.</value>
     <value>True</value>
   </data>
   <data name="panelRedondo12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 110</value>
+    <value>42, 169</value>
+  </data>
+  <data name="panelRedondo12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 100</value>
+    <value>280, 154</value>
   </data>
   <data name="panelRedondo12.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -552,10 +573,13 @@ de membresía.</value>
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 19</value>
+    <value>168, 29</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 88</value>
+    <value>151, 132</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -820,10 +844,13 @@ activos.
     <value>Zoom</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 19</value>
+    <value>42, 29</value>
+  </data>
+  <data name="panel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 65</value>
+    <value>105, 100</value>
   </data>
   <data name="panel6.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -841,10 +868,13 @@ activos.
     <value>2</value>
   </data>
   <data name="panelRedondo11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 326</value>
+    <value>437, 502</value>
+  </data>
+  <data name="panelRedondo11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 244</value>
+    <value>399, 375</value>
   </data>
   <data name="panelRedondo11.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -868,10 +898,13 @@ activos.
     <value>True</value>
   </data>
   <data name="panelRedondo6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 110</value>
+    <value>42, 169</value>
+  </data>
+  <data name="panelRedondo6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 100</value>
+    <value>345, 154</value>
   </data>
   <data name="panelRedondo6.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1129,10 +1162,13 @@ activos.
     <value>Zoom</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 19</value>
+    <value>42, 29</value>
+  </data>
+  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 65</value>
+    <value>105, 100</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1159,10 +1195,13 @@ activos.
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 19</value>
+    <value>168, 29</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 66</value>
+    <value>215, 99</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1185,10 +1224,13 @@ de membresía.</value>
     <value>2</value>
   </data>
   <data name="panelRedondo3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>614, 65</value>
+    <value>804, 100</value>
+  </data>
+  <data name="panelRedondo3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>286, 244</value>
+    <value>495, 375</value>
   </data>
   <data name="panelRedondo3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1212,10 +1254,13 @@ de membresía.</value>
     <value>True</value>
   </data>
   <data name="panelRedondo5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 110</value>
+    <value>42, 169</value>
+  </data>
+  <data name="panelRedondo5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 100</value>
+    <value>280, 154</value>
   </data>
   <data name="panelRedondo5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1473,10 +1518,13 @@ de membresía.</value>
     <value>Zoom</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 19</value>
+    <value>42, 29</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 65</value>
+    <value>105, 100</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1503,10 +1551,13 @@ de membresía.</value>
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 19</value>
+    <value>168, 29</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 66</value>
+    <value>159, 99</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1530,10 +1581,13 @@ este mes.
     <value>2</value>
   </data>
   <data name="panelRedondo2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>906, 65</value>
+    <value>1242, 100</value>
+  </data>
+  <data name="panelRedondo2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 244</value>
+    <value>411, 375</value>
   </data>
   <data name="panelRedondo2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1557,10 +1611,13 @@ este mes.
     <value>True</value>
   </data>
   <data name="panelRedondo4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 110</value>
+    <value>42, 169</value>
+  </data>
+  <data name="panelRedondo4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 100</value>
+    <value>280, 154</value>
   </data>
   <data name="panelRedondo4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1587,10 +1644,13 @@ este mes.
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 19</value>
+    <value>168, 29</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 88</value>
+    <value>151, 132</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1855,10 +1915,13 @@ activos.
     <value>Zoom</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 19</value>
+    <value>42, 29</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 65</value>
+    <value>105, 100</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1876,10 +1939,13 @@ activos.
     <value>2</value>
   </data>
   <data name="panelRedondo1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 65</value>
+    <value>437, 100</value>
+  </data>
+  <data name="panelRedondo1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panelRedondo1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 244</value>
+    <value>399, 375</value>
   </data>
   <data name="panelRedondo1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1902,8 +1968,11 @@ activos.
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="panel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1439, 646</value>
+    <value>1924, 994</value>
   </data>
   <data name="panel5.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1926,8 +1995,11 @@ activos.
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="panel7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 646</value>
+    <value>99, 994</value>
   </data>
   <data name="panel7.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1948,13 +2020,16 @@ activos.
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>9, 20</value>
   </data>
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1439, 646</value>
+    <value>1924, 994</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>

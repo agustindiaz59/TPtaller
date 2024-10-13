@@ -13,17 +13,24 @@ namespace Gestion_Gym.Servicios.Persistencia
 
         public DAO()
         {
-            Connection = new MySqlConnection(
+            try
+            {
+                Connection = new MySqlConnection(
                 "server=localhost;" +
                 "port=3306;" +
                 "database=gymbd;" +
                 "user=root;" +
                 "password=admin;"
             );
-            Connection.Open();
-            Command = Connection.CreateCommand();
+                Connection.Open();
+                Command = Connection.CreateCommand();
 
-            Console.WriteLine("Conexion a base de datos establecida");
+                Console.WriteLine("Conexion a base de datos establecida");
+            }catch (Exception ex)
+            {
+                Console.WriteLine("Error en la conexion a la base de datos");
+                throw ex;
+            }
         }
 
         public abstract int Guardar(T Entidad);

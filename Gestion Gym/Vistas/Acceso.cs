@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Gestion_Gym.Servicios.Persistencia;
+using System;
 using System.Windows.Forms;
 
 namespace Gestion_Gym.Vistas
 {
     public partial class Acceso : Form
     {
+        PersonalDAO PersonalDAO = new PersonalDAO();
         public Acceso()
         {
             InitializeComponent();
@@ -12,7 +14,7 @@ namespace Gestion_Gym.Vistas
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            if (txtBoxUsuario.Text == "admin" && txtBoxContraseña.Text == "1234")
+            if (PersonalDAO.VerificarCredenciales(txtBoxUsuario.Text, txtBoxContraseña.Text))
             {
                 Inicio inicio = new Inicio();
                 inicio.Show();
@@ -24,5 +26,9 @@ namespace Gestion_Gym.Vistas
             }
         }
 
+        private void Acceso_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

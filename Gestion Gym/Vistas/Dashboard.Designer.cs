@@ -266,6 +266,7 @@
             this.Controls.Add(this.panel5);
             this.DoubleBuffered = true;
             this.Name = "Dashboard";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dashboard_FormClosing);
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panelRedondo7.ResumeLayout(false);
             this.panelRedondo7.PerformLayout();

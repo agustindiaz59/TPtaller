@@ -255,5 +255,10 @@ namespace Gestion_Gym
                 txtProvincia.ForeColor = Color.Silver;
             }
         }
+
+        private void Nuevo_Personal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

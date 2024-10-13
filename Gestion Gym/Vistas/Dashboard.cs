@@ -31,5 +31,10 @@ namespace Gestion_Gym.Vistas
         {
 
         }
+
+        private void Dashboard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
