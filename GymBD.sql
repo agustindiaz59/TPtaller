@@ -1,11 +1,8 @@
 -- Crear base de datos
- CREATE DATABASE gymbd;
+CREATE DATABASE gymbd;
 USE gymbd;
-DELETE FROM Persona WHERE id_persona = @id_persona; DELETE FROM Personal WHERE cuil = @cuil;
 
-truncate table Persona;
-select * from Membresia;
-
+-- Creacion de tablas
 create table Persona(
 	id_persona int not null auto_increment primary key,
 	nombre varchar(50) not null,
@@ -40,58 +37,57 @@ create table Personal(
 	foreign key (id_persona) references Persona(id_persona)
 );
 
-drop database gymbd;
-truncate Persona;
-use gymbd;
-select * from Persona p
-inner join Miembro m on p.id_persona = m.id_persona 
+create table usuario(
+	id int auto_increment primary key,
+	nombre varchar(50) not null,
+	contrasenia varchar(50) not null
+);
+
+
+-- Insert de membresias disponibles
+
+insert into membresia(id_membresia, nombre) values
+(1,"STANDARD"),
+(2,"PREMIUM"),
+(3,"PERSONALIZADO")
 ;
 
-SELECT * FROM Miembro WHERE dni = "44617444";
-DELETE FROM Persona WHERE id_persona = 16; DELETE FROM Miembro WHERE dni = "44617444";
+insert into usuario(nombre, contrasenia) values
+("admin", "1234"),
+("matias","contrasenia"),
+("leo","ejemplo")
+;
+
+
+-- -- -- -- -- -- -- -- -- -- -- otras consultas de prueba
+
+drop schema gymbd;
+
+select count(id)
+from usuario
+where nombre = "admin"
+;
 
 ALTER TABLE miembro
 ADD CONSTRAINT miembro_ibfk_2 FOREIGN KEY (id_persona) REFERENCES persona(id_persona);
-
-update Miembro, Persona
-set 
-nombre = @nombre,
-apellido = @apellido,
-f_nacim = @f_nacim,
-f_inicio = @f_inicio,
-email = email,
-direccion = @direccion,
-genero = @genero;
-
-
-insert into Membresia(nombre) values ("PERSONALIZADO");
-
-DELETE p, pers 
-FROM Persona pers 
-JOIN miembro p 
-ON p.id_persona = pers.id_persona 
-WHERE p.dni = "";
 
 ALTER TABLE miembro
 DROP FOREIGN KEY id_persona,
 ADD CONSTRAINT (id_persona) FOREIGN KEY (id_persona)
 REFERENCES persona(id_persona) ON DELETE CASCADE;
 
+use gymbd;
+show tables;
+select * from persona p;
+SELECT * FROM Personal WHERE cuil = "20-54617444-5";
+DELETE FROM Persona WHERE id_persona = 3; DELETE FROM Personal WHERE cuil = "20-44617444-5";
 
-insert into Persona(nombre, apellido, f_nacim, f_inicio, email, direccion, genero, telefono) values(
-	@nombre,
-	@apellido,
-	@f_nacim,
-	@f_inicio,
-	@email, 
-	@direccion,
-	@genero,
-	@telefono
-);
+select *
+from personal; 
+cross join miembro m ;
 
-insert into Miembro(dni, horariogym, id_membresia, id_persona) values(
-	@dni,
-	@horariogym,
-	@id_membresia,
-	(select maxvalue(id_persona) from Persona)
-);
+
+select * from miembro m 
+inner join persona p
+on p.id_persona = m.id_persona 
+where p.f_inicio like '%10%';
