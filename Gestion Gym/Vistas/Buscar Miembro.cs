@@ -93,5 +93,10 @@ namespace Gestion_Gym
         {
             CargarMiembros();  // Carga todos los miembros al abrir el formulario
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MessageBox.Show(e.RowIndex.ToString());
+        }
     }
 }
