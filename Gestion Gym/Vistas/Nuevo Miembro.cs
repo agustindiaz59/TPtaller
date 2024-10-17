@@ -5,98 +5,42 @@ using Gestion_Gym.Modelos;
 using System.Drawing;
 using System.Net;
 using static Mysqlx.Crud.Order.Types;
+using Gestion_Gym.Servicios;
 
 namespace Gestion_Gym
 {
     internal partial class Nuevo_Miembro : Form
     {
         //Accesos a la base de datos
-        DAO<Miembro> MiembroRepositorio = new MiembroDAO();
+        private DAO<Miembro> MiembroRepositorio = new MiembroDAO();
 
         public Nuevo_Miembro()
         {
             InitializeComponent();
+            txtNombre.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Ejemplo de uso, por campos
-            Miembro miembro1 = new Miembro();
-            miembro1.Nombre = txtNombre.Text;
-            miembro1.Apellido = txtApellido.Text;
-            miembro1.DNI = DNITB.Text;
-            miembro1.FNacimiento = FNacimDT.Text;
-            miembro1.Telefono = TelefonoTB.Text;
-            miembro1.Email = EmailTB.Text;
-            miembro1.FIngreso = dateTimePickerFIngreso.Text;
-            miembro1.HorarioGYM = HorarioGymCB.Text;
-            miembro1.Direccion = DireccionTB.Text;
-            miembro1.TipoMembrecia = (Membresia) MembresiaCB.SelectedIndex;
-            
-            if (MasculinoRB.Checked)
-                miembro1.Genero = 'M';
-            else if (FemeninoRB.Checked)
-                miembro1.Genero = 'F';
-            else
-                miembro1.Genero = 'X';
+            bool validarDatos =
+                Validacion.ValidarCadenaEstandar(txtNombre.Text) &&
+                Validacion.ValidarCadenaEstandar(txtApellido.Text) &&
+                Validacion.ValidarDocumento(DNITB.Text) &&
+                Validacion.ValidarFecha(FNacimDT.Text) &&
+                Validacion.ValidarCelular(TelefonoTB.Text) &&
+                Validacion.ValidarEmail(EmailTB.Text) &&
+                Validacion.ValidarFecha(dateTimePickerFIngreso.Text.ToString()) &&
+                Validacion.ValidarCadenaEstandar(DireccionTB.Text)
+                ;
 
-            MiembroRepositorio.Guardar(miembro1);
-            /*
-
-            string nombre = txtNombre.Text;
-            string apellido = txtApellido.Text;
-
-            string genero = "";
-            bool ischecked = MasculinoRB.Checked;
-
-            if (ischecked)
+            if (validarDatos) 
             {
-                genero = MasculinoRB.Text;
+                GuardarMiembro();
             }
-            else
+            else 
             {
-                genero = FemeninoRB.Text;
+                MessageBox.Show("Verifique que los datos sean correctos");
             }
-            string fnacim = FNacimDT.Text;
-            string email = EmailTB.Text;
-            string fingreso = dateTimePickerFIngreso.Text;
-            string horariogym = HorarioGymCB.Text;
-            string direccion = DireccionTB.Text;
-            string tiempomembresia = MembresiaCB.Text;
-
-
-            //Ejemplo de uso, por constructor
-            Miembro miembro = new Miembro
-                (
-                    nombre,
-                    apellido,
-                    DNITB.Text,
-                    fnacim,
-                    genero.ToCharArray()[0],
-                    TelefonoTB.Text,
-                    email,
-                    direccion,
-                    fingreso,
-                    Membresia.STANDAR,
-                    horariogym
-                    
-                );
-            
-            MiembroRepositorio.Guardar(miembro);
-
-            /*
-             * 
-            SqlConnection con = new SqlConnection("data source = GONZALO; database = GymBD; integrated security = True;");
-            SqlCommand cmd = con.CreateCommand();
-
-            cmd.CommandText = "insert into Nuevo_Miembro (nombre,apellido,genero,fnacim, telefono,email,fingreso,horariogym, direccion, tiempomembresia) VALUES ('"+ nombre + "','" + apellido + "','"+ genero + "','" + fnacim  + "','"+ telefono + "','" + email + "','"+ fingreso + "','"+ horariogym+ "','" + direccion + "','"+ tiempomembresia + "')";
-
-            SqlDataAdapter DA = new SqlDataAdapter(cmd);
-            DataSet DS = new DataSet();
-            DA.Fill(DS);
-
-            MessageBox.Show("Datos Guardados Correctamente.");
-            */
 
         }
 
@@ -118,46 +62,6 @@ namespace Gestion_Gym
 
             FNacimDT.Value = DateTime.Now;
             dateTimePickerFIngreso.Value = DateTime.Now;
-
-        }
-
-        private void Nuevo_Miembro_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void panelRedondo1_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
-
-        private void txtTelefono_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePickerFIngreso_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -267,6 +171,47 @@ namespace Gestion_Gym
                 DireccionTB.Text = "Ingrese su dirección";
                 DireccionTB.ForeColor = Color.Silver;
             } 
+        }
+
+        private void Nuevo_Miembro_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void GuardarMiembro()
+        {
+            //Ejemplo de uso, por campos
+            Miembro miembro1 = new Miembro();
+            miembro1.Nombre = txtNombre.Text;
+            miembro1.Apellido = txtApellido.Text;
+            miembro1.DNI = DNITB.Text;
+            miembro1.FNacimiento = FNacimDT.Text;
+            miembro1.Telefono = TelefonoTB.Text;
+            miembro1.Email = EmailTB.Text;
+            miembro1.FIngreso = dateTimePickerFIngreso.Text;
+            miembro1.HorarioGYM = HorarioGymCB.Text;
+            miembro1.Direccion = DireccionTB.Text;
+            miembro1.TipoMembrecia = (Membresia)(MembresiaCB.SelectedIndex + 1);
+
+            if (MasculinoRB.Checked)
+                miembro1.Genero = 'M';
+            else if (FemeninoRB.Checked)
+                miembro1.Genero = 'F';
+            else
+                miembro1.Genero = 'X';
+
+            MiembroRepositorio.Guardar(miembro1);
+            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Nuevo_Miembro_Load(object sender, EventArgs e)
+        {
+            txtNombre.Focus();
         }
     }
 }

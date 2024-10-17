@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Gestion_Gym.Servicios.Persistencia
 {
@@ -96,7 +97,7 @@ namespace Gestion_Gym.Servicios.Persistencia
             //Agrego el miembro
             Command.CommandText = sql3;
             Command.Parameters.AddWithValue("@id_persona", idPersona);
-
+            
             return CommitNonQuery();
         }
 
@@ -163,6 +164,83 @@ namespace Gestion_Gym.Servicios.Persistencia
                 return Miembros;
             }
 
+
+        }
+        public List<Miembro> buscarPorNombre(string Campo) 
+        { 
+            List<Miembro> todos = TraerTodos();
+            List<Miembro> coincidencias = new List<Miembro>();
+
+            foreach (Miembro m in todos) 
+            {
+                if (m.Nombre.Contains(Campo)) 
+                {
+                    coincidencias.Add(m);
+                }
+            }
+
+            return coincidencias;
+        }
+
+        public List<Miembro> buscarPorApellido(string Apellido)
+        {
+            List<Miembro> todos = TraerTodos();
+            List<Miembro> coincidencias = new List<Miembro>();
+
+            foreach (Miembro m in todos)
+            {
+                if (m.Apellido.Contains(Apellido))
+                {
+                    coincidencias.Add(m);
+                }
+            }
+
+            return coincidencias;
+        }
+
+        public List<Miembro> buscarPorDNI(string DNI)
+        {
+            List<Miembro> todos = TraerTodos();
+            List<Miembro> coincidencias = new List<Miembro>();
+
+            foreach (Miembro m in todos)
+            {
+                if (m.DNI.Contains(DNI))
+                {
+                    coincidencias.Add(m);
+                }
+            }
+
+            return coincidencias;
+        }
+
+        public List<Miembro> Select(string sql)
+        {
+            List<Miembro> Miembros = new List<Miembro>();
+            Command.CommandText = sql;
+
+            using (MySqlDataReader Lector = Command.ExecuteReader())
+            {
+                while (Lector.Read())
+                {
+                    Miembros.Add(new Miembro(
+                         Lector["nombre"].ToString(),
+                         Lector["apellido"].ToString(),
+                         Lector["dni"].ToString(),
+                         Lector["f_nacim"].ToString(),
+                         Convert.ToChar(Lector["genero"]),
+                         Lector["telefono"].ToString(),
+                         Lector["email"].ToString(),
+                         Lector["direccion"].ToString(),
+                         Lector["f_inicio"].ToString(),
+                         (Membresia)Lector["id_membresia"],
+                         Lector["horariogym"].ToString()
+                    ));
+                }
+                Command.Parameters.Clear();
+
+                return Miembros;
+            }
         }
     }
 }

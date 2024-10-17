@@ -1,4 +1,5 @@
 ﻿using Gestion_Gym.Modelos;
+using Gestion_Gym.Servicios;
 using Gestion_Gym.Servicios.Persistencia;
 using System;
 using System.Data;
@@ -11,18 +12,19 @@ namespace Gestion_Gym
     public partial class Nuevo_Personal : Form
     {
         //Acceso a la base de datos
-        DAO<Personal> PersonalRepositorio = new PersonalDAO();
+        private DAO<Personal> PersonalRepositorio = new PersonalDAO();
 
         public Nuevo_Personal()
         {
             InitializeComponent();
+            txtNombre.Focus();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text;
             string apellido = txtApellido.Text;
-            
+
 
             string genero = "";
             bool ischecked = radioButtonMasculino.Checked;
@@ -36,25 +38,37 @@ namespace Gestion_Gym
                 genero = radioButtonFemenino.Text;
             }
             string fnacim = dateTimePickerFNacim.Text;
-            Int64 telefono = Int64.Parse(txtTelefono.Text);
+            string telefono = txtTelefono.Text;
             string email = txtEmail.Text;
             string fingreso = dateTimePickerFIngreso.Text;
             string calle = txtCalle.Text;
             string localidad = txtLocalidad.Text;
             string provincia = txtProvincia.Text;
 
+            string direccion = calle + "," + localidad + "," + provincia;
 
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = GONZALO; database = GymBD; integrated security = True;";
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
+            string cuil = textBox1.Text;
 
-            cmd.CommandText = "insert into Nuevo_Personal (nombre,apellido,genero,fnacim, telefono,email,fingreso,calle, localidad, provincia) VALUES ('" + nombre + "','" + apellido + "','" + genero + "','" + fnacim + "','" + telefono + "','" + email + "','" + fingreso + "','" + calle + "','" + localidad + "','" + provincia + "')";
+            bool validarDatos =
+                Validacion.ValidarCadenaEstandar(nombre) &&
+                Validacion.ValidarCadenaEstandar(apellido) &&
+                Validacion.ValidarCuil(cuil) &&
+                Validacion.ValidarCadenaEstandar(fnacim) &&
+                Validacion.ValidarCelular(telefono) &&
+                Validacion.ValidarEmail(email) &&
+                Validacion.ValidarCadenaEstandar(fingreso) &&
+                Validacion.ValidarCadenaEstandar(direccion)
+                ;
 
-            SqlDataAdapter DA = new SqlDataAdapter(cmd);
-            DataSet DS = new DataSet();
-            DA.Fill(DS);
-            MessageBox.Show("Datos Guardados Correctamente.");
+            if (validarDatos)
+            {
+                GuardarPersonal();
+            }
+            else
+            {
+                MessageBox.Show("Verifique que los datos sean correctos");
+            }
+
         }
 
         private void btnReiniciar_Click(object sender, EventArgs e)
@@ -247,6 +261,62 @@ namespace Gestion_Gym
                 txtProvincia.Text = "Ingrese su provincia";
                 txtProvincia.ForeColor = Color.Silver;
             }
+        }
+
+        private void Nuevo_Personal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void GuardarPersonal()
+        {
+            string nombre = txtNombre.Text;
+            string apellido = txtApellido.Text;
+
+
+            string genero = "";
+            bool ischecked = radioButtonMasculino.Checked;
+
+            if (ischecked)
+            {
+                genero = radioButtonMasculino.Text;
+            }
+            else
+            {
+                genero = radioButtonFemenino.Text;
+            }
+            string fnacim = dateTimePickerFNacim.Text;
+            string telefono = txtTelefono.Text;
+            string email = txtEmail.Text;
+            string fingreso = dateTimePickerFIngreso.Text;
+            string calle = txtCalle.Text;
+            string localidad = txtLocalidad.Text;
+            string provincia = txtProvincia.Text;
+
+            string direccion = calle + "," + localidad + "," + provincia;
+
+            string cuil = textBox1.Text;
+
+            Personal nuevo = new Personal(
+                nombre,
+                apellido,
+                cuil,
+                fnacim,
+                genero.ToCharArray()[0],
+                telefono,
+                email,
+                direccion,
+                fingreso
+                );
+
+            PersonalRepositorio.Guardar(nuevo);
+
+            MessageBox.Show("Datos Guardados Correctamente.");
+        }
+
+        private void Nuevo_Personal_Load(object sender, EventArgs e)
+        {
+            txtNombre.Focus();
         }
     }
 }

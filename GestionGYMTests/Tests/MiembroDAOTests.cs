@@ -2,6 +2,8 @@
 using Gestion_Gym.Servicios.Persistencia;
 using Gestion_Gym.Modelos;
 using System;
+using FluentAssertions;
+using System.Collections.Generic;
 
 namespace GestionGYMTests
 {
@@ -17,20 +19,21 @@ namespace GestionGYMTests
         [TestMethod]
         public void Guardar()
         {
-            int estado = miembroDAO.Guardar(m1);
-            int aux = 0;
+            miembroDAO.Guardar(m1);
 
-            Assert.AreEqual(estado.GetType(), aux.GetType());
+            Miembro aux = miembroDAO.Traer(m1.DNI);
+
+            aux.Should().BeEquivalentTo(m1);
         }
 
         [TestMethod]
         public void Editar()
         {
-            int estado = miembroDAO.Editar(m2);
-            int aux = 0;
+            miembroDAO.Editar(m2);
+            
+            Miembro aux = miembroDAO.Traer(m2.DNI);
 
-            Assert.AreEqual(estado.GetType(), aux.GetType());
-
+            aux.Should().BeEquivalentTo(m2);
         }
 
         [TestMethod]
@@ -38,17 +41,26 @@ namespace GestionGYMTests
         {
             Miembro buscado = miembroDAO.Traer("44617444");
 
-            
             Assert.IsNotNull(buscado);
         }
         [TestMethod]
         public void Eliminar()
         {
             int estado = miembroDAO.Eliminar("44617444");
-            int aux = 0;
 
-            Assert.AreEqual(estado.GetType(), aux.GetType());
+            estado.Should().BeGreaterThan(0);
+        }
 
+        [TestMethod]
+        public void TraerTodos()
+        {
+            List<Miembro> lista = miembroDAO.TraerTodos();
+
+            foreach (Miembro m in lista) 
+            {
+                Console.WriteLine(m.ToString());
+            }
+            lista.Should().NotBeNullOrEmpty();
         }
 
     }

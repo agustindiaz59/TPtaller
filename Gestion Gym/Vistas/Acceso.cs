@@ -1,32 +1,24 @@
-﻿using System;
+﻿using Gestion_Gym.Servicios.Persistencia;
+using System;
 using System.Windows.Forms;
 
 namespace Gestion_Gym.Vistas
 {
     public partial class Acceso : Form
     {
+        PersonalDAO PersonalDAO = new PersonalDAO();
         public Acceso()
         {
             InitializeComponent();
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelRedondo1_Paint(object sender, PaintEventArgs e)
-        {
-
+            txtBoxUsuario.Focus();
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            if (txtBoxUsuario.Text == "admin" && txtBoxContraseña.Text == "1234")
+            if (PersonalDAO.VerificarCredenciales(txtBoxUsuario.Text, txtBoxContraseña.Text))
             {
-                Inicio fi = new Inicio();
-                fi.Show();
-                
+                Inicio inicio = new Inicio();
+                inicio.Show();
                 this.Hide();
             }
             else
@@ -35,5 +27,24 @@ namespace Gestion_Gym.Vistas
             }
         }
 
+        private void Acceso_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+        private void txtBoxUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) 
+            {
+                txtBoxContraseña.Focus();
+            }
+        }
+
+        private void txtBoxContraseña_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnIniciarSesion_Click(sender, e);
+            }
+        }
     }
 }

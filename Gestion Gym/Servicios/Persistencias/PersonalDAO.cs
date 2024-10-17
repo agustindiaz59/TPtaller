@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 namespace Gestion_Gym.Servicios.Persistencia
 {
@@ -11,16 +12,17 @@ namespace Gestion_Gym.Servicios.Persistencia
 
         public override int Editar(Personal Entidad)
         {
-            throw new NotImplementedException();
+            Eliminar(Entidad.Cuil);
+
+            return Guardar(Entidad);
         }
 
         public override int Eliminar(string cuil)
         {
-            if (Traer(cuil) != null)
-            {
                 int idPersona = 0;
-                string sql1 = "SELECT * FROM Personal WHERE cuil = cuil;";
-                string sql2 = "DELETE FROM Persona WHERE id_persona = @id_persona; DELETE FROM Personal WHERE cuil = @cuil;";
+                string sql1 = "SELECT * FROM personal WHERE cuil = @cuil;";
+                string sql2 = "DELETE FROM Personal WHERE cuil = @cuil;";
+                string sql3 = "DELETE FROM Persona WHERE id_persona = @id_persona;";
 
                 Command.Parameters.AddWithValue("@cuil", cuil); 
 
@@ -36,13 +38,12 @@ namespace Gestion_Gym.Servicios.Persistencia
 
                 //Elimino el registro de la tabla persona y de la tabla personal 
                 Command.CommandText = sql2;
-                Command.Parameters.AddWithValue("@id_persona", idPersona);
+                CommitNonQuery();
 
+            Command.CommandText = sql3;
+            Command.Parameters.AddWithValue("@id_persona", idPersona);
 
-                return CommitNonQuery();
-            }
-            else
-                return -1;
+            return CommitNonQuery();
         }
 
         public override int Guardar(Personal Entidad)
@@ -152,6 +153,31 @@ namespace Gestion_Gym.Servicios.Persistencia
                 return Miembros;
 
             }
+        }
+
+        public bool VerificarCredenciales(string Usuario, string Contrasenia)
+        {
+            string sql = "SELECT count(nombre) as resultado FROM usuario WHERE nombre = @nombre AND contrasenia = @contrasenia";
+            Command.CommandText = sql;
+            Command.Parameters.Clear();
+
+            Command.Parameters.AddWithValue("@nombre", Usuario);
+            Command.Parameters.AddWithValue("@contrasenia", Contrasenia);
+
+
+            using (MySqlDataReader Lector = Command.ExecuteReader())
+            {
+                if (Lector.Read())
+                {
+                    if (Convert.ToInt32(Lector["resultado"]) > 0)
+                    {
+                        return true;
+                    }
+                }
+            }
+            Command.Parameters.Clear();
+
+            return false;
         }
     }
 }
