@@ -566,6 +566,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo_Personal";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Nuevo_Personal_FormClosing);
+            this.Load += new System.EventHandler(this.Nuevo_Personal_Load);
             this.panelRedondo3.ResumeLayout(false);
             this.panelRedondo3.PerformLayout();
             this.panelRedondo1.ResumeLayout(false);

@@ -1,4 +1,5 @@
 ﻿using Gestion_Gym.Modelos;
+using Gestion_Gym.Servicios;
 using Gestion_Gym.Servicios.Persistencia;
 using System;
 using System.Data;
@@ -11,18 +12,19 @@ namespace Gestion_Gym
     public partial class Nuevo_Personal : Form
     {
         //Acceso a la base de datos
-        DAO<Personal> PersonalRepositorio = new PersonalDAO();
+        private DAO<Personal> PersonalRepositorio = new PersonalDAO();
 
         public Nuevo_Personal()
         {
             InitializeComponent();
+            txtNombre.Focus();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text;
             string apellido = txtApellido.Text;
-            
+
 
             string genero = "";
             bool ischecked = radioButtonMasculino.Checked;
@@ -47,21 +49,26 @@ namespace Gestion_Gym
 
             string cuil = textBox1.Text;
 
-            Personal nuevo = new Personal(
-                nombre,
-                apellido,
-                cuil,
-                fnacim,
-                genero.ToCharArray()[0],
-                telefono,
-                email,
-                direccion,
-                fingreso
-                );
+            bool validarDatos =
+                Validacion.ValidarCadenaEstandar(nombre) &&
+                Validacion.ValidarCadenaEstandar(apellido) &&
+                Validacion.ValidarCuil(cuil) &&
+                Validacion.ValidarCadenaEstandar(fnacim) &&
+                Validacion.ValidarCelular(telefono) &&
+                Validacion.ValidarEmail(email) &&
+                Validacion.ValidarCadenaEstandar(fingreso) &&
+                Validacion.ValidarCadenaEstandar(direccion)
+                ;
 
-            PersonalRepositorio.Guardar(nuevo);
+            if (validarDatos)
+            {
+                GuardarPersonal();
+            }
+            else
+            {
+                MessageBox.Show("Verifique que los datos sean correctos");
+            }
 
-            MessageBox.Show("Datos Guardados Correctamente.");
         }
 
         private void btnReiniciar_Click(object sender, EventArgs e)
@@ -259,6 +266,57 @@ namespace Gestion_Gym
         private void Nuevo_Personal_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void GuardarPersonal()
+        {
+            string nombre = txtNombre.Text;
+            string apellido = txtApellido.Text;
+
+
+            string genero = "";
+            bool ischecked = radioButtonMasculino.Checked;
+
+            if (ischecked)
+            {
+                genero = radioButtonMasculino.Text;
+            }
+            else
+            {
+                genero = radioButtonFemenino.Text;
+            }
+            string fnacim = dateTimePickerFNacim.Text;
+            string telefono = txtTelefono.Text;
+            string email = txtEmail.Text;
+            string fingreso = dateTimePickerFIngreso.Text;
+            string calle = txtCalle.Text;
+            string localidad = txtLocalidad.Text;
+            string provincia = txtProvincia.Text;
+
+            string direccion = calle + "," + localidad + "," + provincia;
+
+            string cuil = textBox1.Text;
+
+            Personal nuevo = new Personal(
+                nombre,
+                apellido,
+                cuil,
+                fnacim,
+                genero.ToCharArray()[0],
+                telefono,
+                email,
+                direccion,
+                fingreso
+                );
+
+            PersonalRepositorio.Guardar(nuevo);
+
+            MessageBox.Show("Datos Guardados Correctamente.");
+        }
+
+        private void Nuevo_Personal_Load(object sender, EventArgs e)
+        {
+            txtNombre.Focus();
         }
     }
 }

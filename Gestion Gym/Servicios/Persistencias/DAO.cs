@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Gestion_Gym.Servicios.Persistencia
 {
@@ -40,9 +41,18 @@ namespace Gestion_Gym.Servicios.Persistencia
         public abstract List<T> TraerTodos();
         public int CommitNonQuery()
         {
-            int estado = Command.ExecuteNonQuery();
-            Command.Parameters.Clear();
+            int estado = -1;
+            try
+            {
+                estado = Command.ExecuteNonQuery();
+                MessageBox.Show("Datos Guardados Correctamente.");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Error realizando la accion \n\r{ex.Message}");
+            }
 
+            Command.Parameters.Clear();
             return estado;
         }
 

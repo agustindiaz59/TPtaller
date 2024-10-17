@@ -10,6 +10,7 @@ namespace Gestion_Gym.Vistas
         public Acceso()
         {
             InitializeComponent();
+            txtBoxUsuario.Focus();
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
@@ -29,6 +30,21 @@ namespace Gestion_Gym.Vistas
         private void Acceso_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+        private void txtBoxUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) 
+            {
+                txtBoxContraseña.Focus();
+            }
+        }
+
+        private void txtBoxContraseña_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnIniciarSesion_Click(sender, e);
+            }
         }
     }
 }

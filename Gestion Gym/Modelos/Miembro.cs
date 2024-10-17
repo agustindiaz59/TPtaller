@@ -28,5 +28,20 @@ namespace Gestion_Gym.Modelos
             TipoMembrecia = tipoMembrecia;
 
         }
+        public override string ToString()
+        {
+            return 
+                Nombre + " " +
+                Apellido + " " +
+                DNI + " " +
+                FNacimiento + " " +
+                Genero + " " +
+                Telefono + " " +
+                Email + " " +
+                Direccion + " " +
+                FIngreso + " " +
+                TipoMembrecia + " " +
+                HorarioGYM;
+        }
     }
 }

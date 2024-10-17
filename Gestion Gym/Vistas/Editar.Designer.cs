@@ -181,7 +181,6 @@
             this.MembresiaCB.Name = "MembresiaCB";
             this.MembresiaCB.Size = new System.Drawing.Size(164, 28);
             this.MembresiaCB.TabIndex = 68;
-            this.MembresiaCB.SelectedIndexChanged += new System.EventHandler(this.MembresiaCB_SelectedIndexChanged);
             // 
             // txtNombre
             // 
@@ -347,6 +346,7 @@
             this.btnReiniciar2.Text = "Cancelar";
             this.btnReiniciar2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReiniciar2.UseVisualStyleBackColor = false;
+            this.btnReiniciar2.Click += new System.EventHandler(this.btnReiniciar2_Click);
             // 
             // btnGuardar
             // 
@@ -412,7 +412,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(621, 774);
             this.panel2.TabIndex = 60;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button1
             // 
@@ -567,6 +566,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Editar";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Editar_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelRedondo4.ResumeLayout(false);

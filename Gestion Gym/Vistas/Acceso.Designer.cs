@@ -84,6 +84,7 @@
             this.txtBoxContraseña.PasswordChar = '*';
             this.txtBoxContraseña.Size = new System.Drawing.Size(336, 30);
             this.txtBoxContraseña.TabIndex = 52;
+            this.txtBoxContraseña.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxContraseña_KeyDown);
             // 
             // txtBoxUsuario
             // 
@@ -95,6 +96,7 @@
             this.txtBoxUsuario.Name = "txtBoxUsuario";
             this.txtBoxUsuario.Size = new System.Drawing.Size(336, 30);
             this.txtBoxUsuario.TabIndex = 26;
+            this.txtBoxUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxUsuario_KeyDown);
             // 
             // label2
             // 

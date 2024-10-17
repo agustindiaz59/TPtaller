@@ -24,6 +24,7 @@ namespace Gestion_Gym
 
             // Configuración inicial de los controles
             InicializarControles();
+            textBox2.Focus();
         }
 
         private void InicializarControles()
@@ -103,6 +104,7 @@ namespace Gestion_Gym
         private void Buscar_Miembro_Load(object sender, EventArgs e)
         {
             CargarMiembros(miembroDAO.TraerTodos());  // Carga todos los miembros al abrir el formulario
+            bsnombre.Focus();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

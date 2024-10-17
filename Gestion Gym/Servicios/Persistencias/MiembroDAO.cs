@@ -97,7 +97,7 @@ namespace Gestion_Gym.Servicios.Persistencia
             //Agrego el miembro
             Command.CommandText = sql3;
             Command.Parameters.AddWithValue("@id_persona", idPersona);
-
+            
             return CommitNonQuery();
         }
 
@@ -212,6 +212,35 @@ namespace Gestion_Gym.Servicios.Persistencia
             }
 
             return coincidencias;
+        }
+
+        public List<Miembro> Select(string sql)
+        {
+            List<Miembro> Miembros = new List<Miembro>();
+            Command.CommandText = sql;
+
+            using (MySqlDataReader Lector = Command.ExecuteReader())
+            {
+                while (Lector.Read())
+                {
+                    Miembros.Add(new Miembro(
+                         Lector["nombre"].ToString(),
+                         Lector["apellido"].ToString(),
+                         Lector["dni"].ToString(),
+                         Lector["f_nacim"].ToString(),
+                         Convert.ToChar(Lector["genero"]),
+                         Lector["telefono"].ToString(),
+                         Lector["email"].ToString(),
+                         Lector["direccion"].ToString(),
+                         Lector["f_inicio"].ToString(),
+                         (Membresia)Lector["id_membresia"],
+                         Lector["horariogym"].ToString()
+                    ));
+                }
+                Command.Parameters.Clear();
+
+                return Miembros;
+            }
         }
     }
 }

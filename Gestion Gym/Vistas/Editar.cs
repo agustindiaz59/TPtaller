@@ -33,6 +33,8 @@ namespace Gestion_Gym.Vistas
                 FemeninoRB.Checked = true;
             else
                 MasculinoRB.Checked = true;
+
+            txtNombre.Focus();
         }
 
         private void nombre_enter(object sender, System.EventArgs e)
@@ -168,11 +170,7 @@ namespace Gestion_Gym.Vistas
             miembroDAO.Editar(miembro1);
 
             MessageBox.Show("Datos Guardados Correctamente.");
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -187,10 +185,14 @@ namespace Gestion_Gym.Vistas
                 Close();
             }
         }
-
-        private void MembresiaCB_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnReiniciar2_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void Editar_Load(object sender, EventArgs e)
+        {
+            txtNombre.Focus();
         }
     }
 }
