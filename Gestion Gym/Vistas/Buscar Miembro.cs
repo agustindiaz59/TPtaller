@@ -49,6 +49,10 @@ namespace Gestion_Gym
         {
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Ajustar columnas para llenar el ancho
             dataGridView1.AutoResizeRows(); // Ajustar filas según contenido
+
+            this.DoubleBuffered = true;
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
+            this.UpdateStyles();
         }
 
         private void Buscar_Miembro_Load(object sender, EventArgs e)
@@ -101,5 +105,9 @@ namespace Gestion_Gym
             Application.Exit();
         }
 
+        private void actMiembro_Click(object sender, EventArgs e)
+        {
+            CargarMiembros(miembroDAO.TraerTodos());
+        }
     }
 }

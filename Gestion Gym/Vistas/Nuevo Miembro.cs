@@ -32,7 +32,7 @@ namespace Gestion_Gym
                 Validacion.ValidarFecha(dateTimePickerFIngreso.Text.ToString()) &&
                 Validacion.ValidarCadenaEstandar(DireccionTB.Text.ToString())
                 ;
-            MessageBox.Show(DireccionTB.Text);
+
             if (validarDatos) 
             {
                 GuardarMiembro();
