@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|d:\\estudios\\iset\\tsds 2 - a\u00F1o\\1 - taller de programaci\u00F3n 2\\nuevo git\\gestion gym\\vistas\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -11,8 +15,12 @@
       "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\nuevo personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\gestion gym\\vistas\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\gestion gym\\vistas\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\gestion gym\\servicios\\persistencias\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\servicios\\persistencias\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\gestion gym\\vistas\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -23,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|d:\\estudios\\iset\\tsds 2 - a\u00F1o\\1 - taller de programaci\u00F3n 2\\nuevo git\\gestion gym\\vistas\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\gestion gym\\vistas\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\gestion gym\\servicios\\persistencias\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\servicios\\persistencias\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\gestion gym\\vistas\\buscar miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 364,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -97,33 +97,24 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Editar.cs",
-              "DocumentMoniker": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Editar.cs",
-              "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Editar.cs",
-              "ToolTip": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Editar.cs",
-              "RelativeToolTip": "Gestion Gym\\Vistas\\Editar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:00:51.403Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "DAO.cs",
               "DocumentMoniker": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Servicios\\Persistencias\\DAO.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Servicios\\Persistencias\\DAO.cs",
               "ToolTip": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Servicios\\Persistencias\\DAO.cs",
               "RelativeToolTip": "Gestion Gym\\Servicios\\Persistencias\\DAO.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAwCAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T23:14:30.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Nuevo Miembro.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Nuevo Miembro.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Nuevo Miembro.cs",
@@ -135,13 +126,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Nuevo Miembro.cs",
               "DocumentMoniker": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Nuevo Miembro.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Nuevo Miembro.cs",
               "ToolTip": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Nuevo Miembro.cs",
               "RelativeToolTip": "Gestion Gym\\Vistas\\Nuevo Miembro.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAMwNoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANAAAAAAAAAAAAAMwNwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T00:55:54.49Z",
               "EditorCaption": ""
@@ -159,19 +150,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Dashboard.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Dashboard.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Dashboard.cs",
               "ToolTip": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Dashboard.cs [Dise\u00F1o]",
               "RelativeToolTip": "Gestion Gym\\Vistas\\Dashboard.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:11:52.472Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-17T01:11:52.472Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Inicio.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Inicio.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Inicio.cs",
@@ -183,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Nuevo Personal.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Nuevo Personal.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Nuevo Personal.cs",
@@ -195,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Editar.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Editar.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Editar.cs",
@@ -207,15 +197,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
+              "Title": "Editar.cs",
+              "DocumentMoniker": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Editar.cs",
+              "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Editar.cs",
+              "ToolTip": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Editar.cs",
+              "RelativeToolTip": "Gestion Gym\\Vistas\\Editar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T01:00:51.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Acceso.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Acceso.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Acceso.cs",
               "ToolTip": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Acceso.cs [Dise\u00F1o]",
               "RelativeToolTip": "Gestion Gym\\Vistas\\Acceso.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:01:42.025Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-17T01:01:42.025Z"
             },
             {
               "$type": "Document",
@@ -239,8 +241,7 @@
               "RelativeToolTip": "Gestion Gym\\Vistas\\Acceso.Designer.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAApwGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:11:10.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T01:11:10.512Z"
             },
             {
               "$type": "Document",
@@ -265,8 +266,7 @@
               "RelativeToolTip": "Gestion Gym\\Vistas\\Acceso.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:01:56.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T01:01:56.536Z"
             },
             {
               "$type": "Document",
@@ -278,8 +278,7 @@
               "RelativeToolTip": "Gestion Gym\\Vistas\\Editar.Designer.cs",
               "ViewState": "AgIAAJgBAAAAAAAAAAAWwJ4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:11:37.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T01:11:37.563Z"
             },
             {
               "$type": "Document",
@@ -291,8 +290,7 @@
               "RelativeToolTip": "Gestion Gym\\Vistas\\Dashboard.cs",
               "ViewState": "AgIAABYAAAAAAAAAAIA/wBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:11:53.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T01:11:53.931Z"
             },
             {
               "$type": "Document",

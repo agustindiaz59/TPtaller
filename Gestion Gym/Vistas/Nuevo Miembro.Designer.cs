@@ -81,7 +81,6 @@
             this.btnGuardar.Size = new System.Drawing.Size(423, 59);
             this.btnGuardar.TabIndex = 22;
             this.btnGuardar.Text = " Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -100,7 +99,6 @@
             this.btnReiniciar.Size = new System.Drawing.Size(437, 59);
             this.btnReiniciar.TabIndex = 23;
             this.btnReiniciar.Text = "Reiniciar";
-            this.btnReiniciar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReiniciar.UseVisualStyleBackColor = false;
             this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 
