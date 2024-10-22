@@ -100,5 +100,6 @@ namespace Gestion_Gym
         {
             Application.Exit();
         }
+
     }
 }
