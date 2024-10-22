@@ -24,7 +24,6 @@ namespace Gestion_Gym
 
             // Configuración inicial de los controles
             InicializarControles();
-            textBox2.Focus();
         }
 
         private void InicializarControles()
@@ -44,55 +43,6 @@ namespace Gestion_Gym
             dataGridView1.DataSource = datos;
             AjustarDataGridView();
             
-
-          //  string connectionString = "server=localhost;database=GymBD;uid=root;pwd=lalita2012;";
-          //
-          //  // Modificar la consulta para incluir paginación
-          //  string query = "SELECT * FROM miembros";
-          //
-          //  if (!string.IsNullOrEmpty(filtro))
-          //  {
-          //      query += " WHERE miembroID = @filtro OR dni = @filtro";
-          //  }
-          //
-          //  // Agregar paginación
-          //  query += $" LIMIT @pageSize OFFSET @offset";
-          //
-          //  using (MySqlConnection con = new MySqlConnection(connectionString))
-          //  using (MySqlCommand cmd = new MySqlCommand(query, con))
-          //  {
-          //      if (!string.IsNullOrEmpty(filtro))
-          //      {
-          //          cmd.Parameters.AddWithValue("@filtro", filtro);
-          //      }
-          //
-          //      cmd.Parameters.AddWithValue("@pageSize", pageSize);
-          //      cmd.Parameters.AddWithValue("@offset", (pageNumber - 1) * pageSize);
-          //
-          //      using (MySqlDataAdapter DA = new MySqlDataAdapter(cmd))
-          //      {
-          //          DataSet DS = new DataSet();
-          //          try
-          //          {
-          //              con.Open();
-          //              DA.Fill(DS);
-          //
-          //              if (DS.Tables[0].Rows.Count > 0)
-          //              {
-          //                  dataGridView1.DataSource = DS.Tables[0];
-          //                  AjustarDataGridView();
-          //              }
-          //              else
-          //              {
-          //                  MessageBox.Show("No se encontraron resultados", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-          //              }
-          //          }
-          //          catch (Exception ex)
-          //          {
-          //              MessageBox.Show("Error: " + ex.Message);
-          //          }
-          //      }
-          //  }
         }
 
         private void AjustarDataGridView()
