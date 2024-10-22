@@ -69,7 +69,7 @@
             this.menuvertical.MaximumSize = new System.Drawing.Size(252, 0);
             this.menuvertical.MinimumSize = new System.Drawing.Size(66, 0);
             this.menuvertical.Name = "menuvertical";
-            this.menuvertical.Size = new System.Drawing.Size(252, 682);
+            this.menuvertical.Size = new System.Drawing.Size(66, 682);
             this.menuvertical.TabIndex = 3;
             this.menuvertical.Paint += new System.Windows.Forms.PaintEventHandler(this.menuvertical_Paint);
             // 
