@@ -390,6 +390,68 @@ D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\GIT\Gestion Gym\obj
 D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\GIT\Gestion Gym\obj\Debug\Gestion Gym.exe
 D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\GIT\Gestion Gym\obj\Debug\Gestion Gym.pdb
 D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\GIT\Gestion Gym\obj\Debug\Gestion_Gym.Vistas.Editar.resources
+<<<<<<< Updated upstream
+=======
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Vistas\Inicio.resx
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Vistas\Inicio.cs
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Vistas\Inicio.Designer.cs
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Gestion Gym.exe.config
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Gestion Gym.exe
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Gestion Gym.pdb
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\aa\Gestion Gym.resources.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\BouncyCastle.Cryptography.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Google.Protobuf.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\K4os.Compression.LZ4.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\K4os.Hash.xxHash.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\MySql.Data.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\MySqlConnector.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Buffers.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.IO.Pipelines.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Memory.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Numerics.Vectors.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\ZstdSharp.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\BouncyCastle.Cryptography.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Google.Protobuf.pdb
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Google.Protobuf.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\K4os.Compression.LZ4.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\K4os.Hash.xxHash.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\MySql.Data.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\MySqlConnector.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Buffers.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.IO.Pipelines.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Memory.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Numerics.Vectors.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion Gym.csproj.AssemblyReference.cache
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion_Gym.Vistas.Acceso.resources
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion_Gym.Buscar_Miembro.resources
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion_Gym.Vistas.Dashboard.resources
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion_Gym.Vistas.Editar.resources
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion_Gym.Inicio.resources
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion_Gym.Nuevo_Miembro.resources
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion_Gym.Nuevo_Personal.resources
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion_Gym.Properties.Resources.resources
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion_Gym.Vistas.Dashboard.aa.resources
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion Gym.csproj.GenerateResource.cache
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion Gym.csproj.CoreCompileInputs.cache
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\aa\Gestion Gym.resources.dll
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion .BB559218.Up2Date
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion Gym.exe
+D:\ESTUDIOS\ISET\TSDS 2 - AÑO\1 - TALLER DE PROGRAMACIÓN 2\NUEVO GIT\Gestion Gym\obj\Debug\Gestion Gym.pdb
+>>>>>>> Stashed changes
 C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\Debug\Vistas\Inicio.resx
 C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\Debug\Vistas\Inicio.cs
 C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\Debug\Vistas\Inicio.Designer.cs

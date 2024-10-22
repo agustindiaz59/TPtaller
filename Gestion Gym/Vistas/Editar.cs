@@ -24,7 +24,7 @@ namespace Gestion_Gym.Vistas
             dateTimePickerFIngreso.Text = editar.FIngreso;
             EmailTB.Text = editar.Email;
             DireccionTB.Text = editar.Direccion.ToString();
-            MembresiaCB.SelectedIndex = Convert.ToInt32(editar.TipoMembrecia);
+            MembresiaCB.SelectedIndex = Convert.ToInt32(editar.TipoMembrecia) - 1;
             HorarioGymCB.Text = editar.HorarioGYM.ToString();
             TelefonoTB.Text = editar.Telefono.ToString();
             
@@ -158,7 +158,7 @@ namespace Gestion_Gym.Vistas
             miembro1.FIngreso = dateTimePickerFIngreso.Text;
             miembro1.HorarioGYM = HorarioGymCB.Text;
             miembro1.Direccion = DireccionTB.Text;
-            miembro1.TipoMembrecia = (Membresia)MembresiaCB.SelectedIndex;
+            miembro1.TipoMembrecia = (Membresia)(MembresiaCB.SelectedIndex + 1);
 
             if (MasculinoRB.Checked)
                 miembro1.Genero = 'M';
