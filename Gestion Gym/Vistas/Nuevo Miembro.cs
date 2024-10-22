@@ -30,9 +30,9 @@ namespace Gestion_Gym
                 Validacion.ValidarCelular(TelefonoTB.Text) &&
                 Validacion.ValidarEmail(EmailTB.Text) &&
                 Validacion.ValidarFecha(dateTimePickerFIngreso.Text.ToString()) &&
-                Validacion.ValidarCadenaEstandar(DireccionTB.Text)
+                Validacion.ValidarCadenaEstandar(DireccionTB.Text.ToString())
                 ;
-
+            MessageBox.Show(DireccionTB.Text);
             if (validarDatos) 
             {
                 GuardarMiembro();

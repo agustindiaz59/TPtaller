@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\servicios\\persistencias\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\servicios\\persistencias\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\servicios\\validacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\servicios\\validacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}|GestionGYMTests\\GestionGYMTests.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestiongymtests\\tests\\validaciontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}|GestionGYMTests\\GestionGYMTests.csproj|solutionrelative:gestiongymtests\\tests\\validaciontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|c:\\users\\matia\\onedrive\\documentos\\github\\tptaller\\gestion gym\\vistas\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\servicios\\persistencias\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\servicios\\persistencias\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\vistas\\nuevo personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -29,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\vistas\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\vistas\\nuevo miembro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\vistas\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -73,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestion gym\\servicios\\persistencias\\miembrodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{966866E1-387D-4157-81CC-96D01C4413FC}|Gestion Gym\\Gestion Gym.csproj|solutionrelative:gestion gym\\servicios\\persistencias\\miembrodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}|GestionGYMTests\\GestionGYMTests.csproj|C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\gestiongymtests\\tests\\validaciontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85F78D9E-A965-4A4E-BEAA-4B31D8797CF7}|GestionGYMTests\\GestionGYMTests.csproj|solutionrelative:gestiongymtests\\tests\\validaciontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -89,20 +89,8 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Editar.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Editar.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Editar.cs",
@@ -114,7 +102,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Nuevo Miembro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Nuevo Miembro.cs",
+              "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Nuevo Miembro.cs",
+              "ToolTip": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Nuevo Miembro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion Gym\\Vistas\\Nuevo Miembro.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T00:33:00.9Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ValidacionTests.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\GestionGYMTests\\Tests\\ValidacionTests.cs",
+              "RelativeDocumentMoniker": "GestionGYMTests\\Tests\\ValidacionTests.cs",
+              "ToolTip": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\GestionGYMTests\\Tests\\ValidacionTests.cs",
+              "RelativeToolTip": "GestionGYMTests\\Tests\\ValidacionTests.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAmwFUAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T00:24:37.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DAO.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Servicios\\Persistencias\\DAO.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Servicios\\Persistencias\\DAO.cs",
@@ -122,47 +135,49 @@
               "RelativeToolTip": "Gestion Gym\\Servicios\\Persistencias\\DAO.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAQwBcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T23:14:30.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T23:14:30.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Nuevo Miembro.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Nuevo Miembro.cs",
-              "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Nuevo Miembro.cs",
-              "ToolTip": "D:\\ESTUDIOS\\ISET\\TSDS 2 - A\u00D1O\\1 - TALLER DE PROGRAMACI\u00D3N 2\\NUEVO GIT\\Gestion Gym\\Vistas\\Nuevo Miembro.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T00:33:00.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Validacion.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Servicios\\Validacion.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Servicios\\Validacion.cs",
               "ToolTip": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Servicios\\Validacion.cs",
               "RelativeToolTip": "Gestion Gym\\Servicios\\Validacion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T00:25:11.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Nuevo Miembro.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Nuevo Miembro.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Nuevo Miembro.cs",
               "ToolTip": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Nuevo Miembro.cs",
               "RelativeToolTip": "Gestion Gym\\Vistas\\Nuevo Miembro.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAMwNwAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAABYAAAAAAAAAAAAtwCAAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T00:55:54.49Z"
+              "WhenOpened": "2024-10-17T00:55:54.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Buscar Miembro.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Buscar Miembro.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Buscar Miembro.cs",
@@ -172,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Dashboard.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Dashboard.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Dashboard.cs",
@@ -182,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Inicio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Inicio.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Inicio.cs",
@@ -192,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Nuevo Personal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Nuevo Personal.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Nuevo Personal.cs",
@@ -202,19 +217,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Editar.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Editar.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Editar.cs",
               "ToolTip": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Editar.cs",
               "RelativeToolTip": "Gestion Gym\\Vistas\\Editar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T01:00:51.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Acceso.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Acceso.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Acceso.cs",
@@ -224,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Buscar Miembro.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Buscar Miembro.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Buscar Miembro.cs",
@@ -236,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Acceso.Designer.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Acceso.Designer.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Acceso.Designer.cs",
@@ -248,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Nuevo Personal.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Nuevo Personal.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Nuevo Personal.cs",
@@ -260,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Acceso.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Acceso.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Acceso.cs",
@@ -272,19 +286,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Editar.Designer.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Editar.Designer.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Editar.Designer.cs",
               "ToolTip": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Editar.Designer.cs",
               "RelativeToolTip": "Gestion Gym\\Vistas\\Editar.Designer.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:11:37.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T01:11:37.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Dashboard.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Vistas\\Dashboard.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Vistas\\Dashboard.cs",
@@ -297,18 +310,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "ValidacionTests.cs",
-              "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\GestionGYMTests\\Tests\\ValidacionTests.cs",
-              "RelativeDocumentMoniker": "GestionGYMTests\\Tests\\ValidacionTests.cs",
-              "ToolTip": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\GestionGYMTests\\Tests\\ValidacionTests.cs",
-              "RelativeToolTip": "GestionGYMTests\\Tests\\ValidacionTests.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAmwFUAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T00:24:37.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "MiembroDAO.cs",
               "DocumentMoniker": "C:\\Users\\matia\\OneDrive\\Documentos\\GitHub\\TPtaller\\Gestion Gym\\Servicios\\Persistencias\\MiembroDAO.cs",
               "RelativeDocumentMoniker": "Gestion Gym\\Servicios\\Persistencias\\MiembroDAO.cs",
