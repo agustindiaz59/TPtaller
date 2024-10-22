@@ -31,34 +31,45 @@ namespace Gestion_Gym
 
             if (ischecked)
             {
-                genero = radioButtonMasculino.Text;
+                genero = "M";
             }
             else
             {
-                genero = radioButtonFemenino.Text;
+                genero = "F";
             }
-            string fnacim = dateTimePickerFNacim.Text;
-            string telefono = txtTelefono.Text;
-            string email = txtEmail.Text;
-            string fingreso = dateTimePickerFIngreso.Text;
-            string calle = txtCalle.Text;
-            string localidad = txtLocalidad.Text;
-            string provincia = txtProvincia.Text;
+            string fnacim = dateTimePickerFNacim.Text.ToString();
+            string telefono = txtTelefono.Text.ToString();
+            string email = txtEmail.Text.ToString();
+            string fingreso = dateTimePickerFIngreso.Text.ToString();
+            string calle = txtCalle.Text.ToString();
+            string localidad = txtLocalidad.Text.ToString();
+            string provincia = txtProvincia.Text.ToString();
 
-            string direccion = calle + "," + localidad + "," + provincia;
+            string direccion = calle + " " + localidad + " " + provincia;
 
-            string cuil = textBox1.Text;
+            string cuil = textBox1.Text.ToString();
 
             bool validarDatos =
                 Validacion.ValidarCadenaEstandar(nombre) &&
                 Validacion.ValidarCadenaEstandar(apellido) &&
                 Validacion.ValidarCuil(cuil) &&
-                Validacion.ValidarCadenaEstandar(fnacim) &&
+                Validacion.ValidarFecha(fnacim) &&
                 Validacion.ValidarCelular(telefono) &&
                 Validacion.ValidarEmail(email) &&
-                Validacion.ValidarCadenaEstandar(fingreso) &&
+                Validacion.ValidarFecha(fingreso) &&
                 Validacion.ValidarCadenaEstandar(direccion)
                 ;
+
+            //MessageBox.Show(
+            //    nombre + Validacion.ValidarCadenaEstandar(nombre) +
+            //    apellido + Validacion.ValidarCadenaEstandar(apellido) +
+            //    cuil + Validacion.ValidarCuil(cuil) +
+            //    fnacim + Validacion.ValidarFecha(fnacim) +
+            //    telefono + Validacion.ValidarCelular(telefono) +
+            //    email + Validacion.ValidarEmail(email) +
+            //    fingreso + Validacion.ValidarFecha(fingreso) +
+            //    direccion + Validacion.ValidarCadenaEstandar(direccion) 
+            //    );
 
             if (validarDatos)
             {
