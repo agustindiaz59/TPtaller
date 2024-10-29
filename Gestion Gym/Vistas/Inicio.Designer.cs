@@ -227,7 +227,7 @@
             this.nuevo1btn.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
             this.nuevo1btn.Size = new System.Drawing.Size(375, 91);
             this.nuevo1btn.TabIndex = 1;
-            this.nuevo1btn.Text = "             Nuevo MIembro";
+            this.nuevo1btn.Text = "             Nuevo Miembro";
             this.nuevo1btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.nuevo1btn.UseVisualStyleBackColor = true;
             this.nuevo1btn.Click += new System.EventHandler(this.nuevo1btn_Click);

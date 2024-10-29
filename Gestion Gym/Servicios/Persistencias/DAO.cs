@@ -45,7 +45,6 @@ namespace Gestion_Gym.Servicios.Persistencia
             try
             {
                 estado = Command.ExecuteNonQuery();
-                MessageBox.Show("Datos Guardados Correctamente.");
             }
             catch(Exception ex)
             {

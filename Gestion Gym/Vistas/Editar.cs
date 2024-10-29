@@ -172,7 +172,7 @@ namespace Gestion_Gym.Vistas
 
             miembroDAO.Editar(miembro1);
 
-            MessageBox.Show("Datos Guardados Correctamente.");
+            buscar_Miembro.CargarMiembros(miembroDAO.TraerTodos());
             this.Close();
         }
 
@@ -185,6 +185,7 @@ namespace Gestion_Gym.Vistas
             {
                 // Realizar la acción importante
                 miembroDAO.Eliminar(editar.DNI);
+                MessageBox.Show("Datos Eliminados Correctamente.");
                 Close();
                 buscar_Miembro.CargarMiembros(miembroDAO.TraerTodos());
             }
