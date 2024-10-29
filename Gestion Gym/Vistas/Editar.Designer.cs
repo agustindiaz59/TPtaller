@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editar));
             this.panel1 = new System.Windows.Forms.Panel();
             this.DNILBL = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.DNITB = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -45,12 +46,8 @@
             this.GeneroLBL = new System.Windows.Forms.Label();
             this.FNacimLBL = new System.Windows.Forms.Label();
             this.FNacimDT = new System.Windows.Forms.DateTimePicker();
-            this.btnReiniciar2 = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.panelredondoedit = new Gestion_Gym.ComponentesRJ.PanelRedondo();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnReiniciar2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.EmailTB = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -59,9 +56,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.TelefonoTB = new System.Windows.Forms.TextBox();
             this.TelefonoLBL = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panelredondoedit = new Gestion_Gym.ComponentesRJ.PanelRedondo();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panelredondoedit.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelredondoedit.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,6 +106,23 @@
             this.DNILBL.Text = "DNI";
             this.DNILBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(91)))), ((int)(((byte)(89)))));
+            this.btnGuardar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnGuardar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(0, 444);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(383, 59);
+            this.btnGuardar.TabIndex = 22;
+            this.btnGuardar.Text = " Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -125,7 +142,7 @@
             // 
             this.DNITB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DNITB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DNITB.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.DNITB.ForeColor = System.Drawing.Color.Black;
             this.DNITB.Location = new System.Drawing.Point(157, 181);
             this.DNITB.Name = "DNITB";
             this.DNITB.Size = new System.Drawing.Size(187, 20);
@@ -177,12 +194,13 @@
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombre.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtNombre.ForeColor = System.Drawing.Color.Black;
             this.txtNombre.Location = new System.Drawing.Point(157, 84);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(188, 20);
             this.txtNombre.TabIndex = 62;
             this.txtNombre.Text = "Nombre";
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             this.txtNombre.Enter += new System.EventHandler(this.nombre_enter);
             this.txtNombre.Leave += new System.EventHandler(this.nombre_leave);
             // 
@@ -205,7 +223,7 @@
             // 
             this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtApellido.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtApellido.ForeColor = System.Drawing.Color.Black;
             this.txtApellido.Location = new System.Drawing.Point(157, 134);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(187, 20);
@@ -296,65 +314,6 @@
             this.FNacimDT.Size = new System.Drawing.Size(95, 20);
             this.FNacimDT.TabIndex = 66;
             // 
-            // btnReiniciar2
-            // 
-            this.btnReiniciar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(22)))), ((int)(((byte)(31)))));
-            this.btnReiniciar2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnReiniciar2.FlatAppearance.BorderSize = 0;
-            this.btnReiniciar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReiniciar2.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReiniciar2.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReiniciar2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReiniciar2.Location = new System.Drawing.Point(0, 396);
-            this.btnReiniciar2.Name = "btnReiniciar2";
-            this.btnReiniciar2.Size = new System.Drawing.Size(414, 59);
-            this.btnReiniciar2.TabIndex = 23;
-            this.btnReiniciar2.Text = "Cancelar";
-            this.btnReiniciar2.UseVisualStyleBackColor = false;
-            this.btnReiniciar2.Click += new System.EventHandler(this.btnReiniciar2_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(91)))), ((int)(((byte)(89)))));
-            this.btnGuardar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnGuardar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(0, 444);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(383, 59);
-            this.btnGuardar.TabIndex = 22;
-            this.btnGuardar.Text = " Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // panelredondoedit
-            // 
-            this.panelredondoedit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(148)))));
-            this.panelredondoedit.BorderColor = System.Drawing.Color.Transparent;
-            this.panelredondoedit.BorderWidth = 0;
-            this.panelredondoedit.Controls.Add(this.label1);
-            this.panelredondoedit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelredondoedit.Location = new System.Drawing.Point(0, 0);
-            this.panelredondoedit.Name = "panelredondoedit";
-            this.panelredondoedit.Radio = 1;
-            this.panelredondoedit.Size = new System.Drawing.Size(797, 48);
-            this.panelredondoedit.TabIndex = 61;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(314, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Editar Miembros";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(223)))), ((int)(((byte)(227)))));
@@ -374,16 +333,22 @@
             this.panel2.Size = new System.Drawing.Size(414, 455);
             this.panel2.TabIndex = 60;
             // 
-            // button1
+            // btnReiniciar2
             // 
-            this.button1.Location = new System.Drawing.Point(0, 364);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(414, 32);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnReiniciar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(22)))), ((int)(((byte)(31)))));
+            this.btnReiniciar2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnReiniciar2.FlatAppearance.BorderSize = 0;
+            this.btnReiniciar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReiniciar2.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReiniciar2.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnReiniciar2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReiniciar2.Location = new System.Drawing.Point(0, 396);
+            this.btnReiniciar2.Name = "btnReiniciar2";
+            this.btnReiniciar2.Size = new System.Drawing.Size(414, 59);
+            this.btnReiniciar2.TabIndex = 23;
+            this.btnReiniciar2.Text = "Cancelar";
+            this.btnReiniciar2.UseVisualStyleBackColor = false;
+            this.btnReiniciar2.Click += new System.EventHandler(this.btnReiniciar2_Click);
             // 
             // label6
             // 
@@ -404,7 +369,7 @@
             // 
             this.EmailTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EmailTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmailTB.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.EmailTB.ForeColor = System.Drawing.Color.Black;
             this.EmailTB.Location = new System.Drawing.Point(188, 56);
             this.EmailTB.Name = "EmailTB";
             this.EmailTB.Size = new System.Drawing.Size(171, 20);
@@ -433,7 +398,7 @@
             this.DireccionTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DireccionTB.BackColor = System.Drawing.Color.White;
             this.DireccionTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DireccionTB.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.DireccionTB.ForeColor = System.Drawing.Color.Black;
             this.DireccionTB.Location = new System.Drawing.Point(188, 209);
             this.DireccionTB.Name = "DireccionTB";
             this.DireccionTB.Size = new System.Drawing.Size(171, 96);
@@ -487,7 +452,7 @@
             // 
             this.TelefonoTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TelefonoTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TelefonoTB.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.TelefonoTB.ForeColor = System.Drawing.Color.Black;
             this.TelefonoTB.Location = new System.Drawing.Point(188, 109);
             this.TelefonoTB.Name = "TelefonoTB";
             this.TelefonoTB.Size = new System.Drawing.Size(171, 20);
@@ -511,6 +476,42 @@
             this.TelefonoLBL.Text = "Telefono";
             this.TelefonoLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 364);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(414, 32);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Eliminar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panelredondoedit
+            // 
+            this.panelredondoedit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(160)))), ((int)(((byte)(148)))));
+            this.panelredondoedit.BorderColor = System.Drawing.Color.Transparent;
+            this.panelredondoedit.BorderWidth = 0;
+            this.panelredondoedit.Controls.Add(this.label1);
+            this.panelredondoedit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelredondoedit.Location = new System.Drawing.Point(0, 0);
+            this.panelredondoedit.Name = "panelredondoedit";
+            this.panelredondoedit.Radio = 1;
+            this.panelredondoedit.Size = new System.Drawing.Size(797, 48);
+            this.panelredondoedit.TabIndex = 61;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(314, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(183, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Editar Miembros";
+            // 
             // Editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -523,10 +524,10 @@
             this.Load += new System.EventHandler(this.Editar_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panelredondoedit.ResumeLayout(false);
-            this.panelredondoedit.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelredondoedit.ResumeLayout(false);
+            this.panelredondoedit.PerformLayout();
             this.ResumeLayout(false);
 
         }

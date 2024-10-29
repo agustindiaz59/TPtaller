@@ -198,5 +198,10 @@ namespace Gestion_Gym.Vistas
         {
             txtNombre.Focus();
         }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
