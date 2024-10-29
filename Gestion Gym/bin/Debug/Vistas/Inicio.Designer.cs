@@ -66,10 +66,11 @@
             this.menuvertical.Controls.Add(this.panel4);
             this.menuvertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuvertical.Location = new System.Drawing.Point(0, 0);
-            this.menuvertical.MaximumSize = new System.Drawing.Size(252, 0);
-            this.menuvertical.MinimumSize = new System.Drawing.Size(66, 0);
+            this.menuvertical.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.menuvertical.MaximumSize = new System.Drawing.Size(378, 0);
+            this.menuvertical.MinimumSize = new System.Drawing.Size(99, 0);
             this.menuvertical.Name = "menuvertical";
-            this.menuvertical.Size = new System.Drawing.Size(66, 682);
+            this.menuvertical.Size = new System.Drawing.Size(99, 1049);
             this.menuvertical.TabIndex = 3;
             this.menuvertical.Paint += new System.Windows.Forms.PaintEventHandler(this.menuvertical_Paint);
             // 
@@ -77,18 +78,20 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(75, 12);
+            this.panel1.Location = new System.Drawing.Point(112, 18);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(146, 73);
+            this.panel1.Size = new System.Drawing.Size(219, 112);
             this.panel1.TabIndex = 6;
             // 
             // btmenu
             // 
             this.btmenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btmenu.Image = ((System.Drawing.Image)(resources.GetObject("btmenu.Image")));
-            this.btmenu.Location = new System.Drawing.Point(12, 23);
+            this.btmenu.Location = new System.Drawing.Point(18, 35);
+            this.btmenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btmenu.Name = "btmenu";
-            this.btmenu.Size = new System.Drawing.Size(44, 52);
+            this.btmenu.Size = new System.Drawing.Size(66, 80);
             this.btmenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btmenu.TabIndex = 0;
             this.btmenu.TabStop = false;
@@ -97,9 +100,10 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.salirbtn);
-            this.panel5.Location = new System.Drawing.Point(0, 336);
+            this.panel5.Location = new System.Drawing.Point(0, 517);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(250, 59);
+            this.panel5.Size = new System.Drawing.Size(375, 91);
             this.panel5.TabIndex = 5;
             // 
             // salirbtn
@@ -110,9 +114,10 @@
             this.salirbtn.Image = ((System.Drawing.Image)(resources.GetObject("salirbtn.Image")));
             this.salirbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.salirbtn.Location = new System.Drawing.Point(0, 0);
+            this.salirbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salirbtn.Name = "salirbtn";
-            this.salirbtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.salirbtn.Size = new System.Drawing.Size(250, 59);
+            this.salirbtn.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.salirbtn.Size = new System.Drawing.Size(375, 91);
             this.salirbtn.TabIndex = 1;
             this.salirbtn.Text = "             Salir";
             this.salirbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,9 +127,10 @@
             // panel7
             // 
             this.panel7.Controls.Add(this.buscarbtn);
-            this.panel7.Location = new System.Drawing.Point(0, 278);
+            this.panel7.Location = new System.Drawing.Point(0, 428);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(250, 59);
+            this.panel7.Size = new System.Drawing.Size(375, 91);
             this.panel7.TabIndex = 4;
             // 
             // buscarbtn
@@ -135,9 +141,10 @@
             this.buscarbtn.Image = ((System.Drawing.Image)(resources.GetObject("buscarbtn.Image")));
             this.buscarbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buscarbtn.Location = new System.Drawing.Point(0, 0);
+            this.buscarbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buscarbtn.Name = "buscarbtn";
-            this.buscarbtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buscarbtn.Size = new System.Drawing.Size(250, 59);
+            this.buscarbtn.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.buscarbtn.Size = new System.Drawing.Size(375, 91);
             this.buscarbtn.TabIndex = 1;
             this.buscarbtn.Text = "             Buscar Miembros";
             this.buscarbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,9 +154,10 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.nuevo2btn);
-            this.panel6.Location = new System.Drawing.Point(0, 220);
+            this.panel6.Location = new System.Drawing.Point(0, 338);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 59);
+            this.panel6.Size = new System.Drawing.Size(375, 91);
             this.panel6.TabIndex = 3;
             // 
             // nuevo2btn
@@ -160,9 +168,10 @@
             this.nuevo2btn.Image = ((System.Drawing.Image)(resources.GetObject("nuevo2btn.Image")));
             this.nuevo2btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.nuevo2btn.Location = new System.Drawing.Point(0, 0);
+            this.nuevo2btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nuevo2btn.Name = "nuevo2btn";
-            this.nuevo2btn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.nuevo2btn.Size = new System.Drawing.Size(250, 59);
+            this.nuevo2btn.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.nuevo2btn.Size = new System.Drawing.Size(375, 91);
             this.nuevo2btn.TabIndex = 1;
             this.nuevo2btn.Text = "             Nuevo Personal";
             this.nuevo2btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,9 +181,10 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.iniciobtn);
-            this.panel2.Location = new System.Drawing.Point(0, 104);
+            this.panel2.Location = new System.Drawing.Point(0, 160);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 59);
+            this.panel2.Size = new System.Drawing.Size(375, 91);
             this.panel2.TabIndex = 0;
             // 
             // iniciobtn
@@ -185,9 +195,10 @@
             this.iniciobtn.Image = ((System.Drawing.Image)(resources.GetObject("iniciobtn.Image")));
             this.iniciobtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iniciobtn.Location = new System.Drawing.Point(0, 0);
+            this.iniciobtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.iniciobtn.Name = "iniciobtn";
-            this.iniciobtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.iniciobtn.Size = new System.Drawing.Size(250, 59);
+            this.iniciobtn.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.iniciobtn.Size = new System.Drawing.Size(375, 91);
             this.iniciobtn.TabIndex = 1;
             this.iniciobtn.Text = "             Inicio";
             this.iniciobtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,9 +208,10 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.nuevo1btn);
-            this.panel4.Location = new System.Drawing.Point(0, 162);
+            this.panel4.Location = new System.Drawing.Point(0, 249);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(250, 59);
+            this.panel4.Size = new System.Drawing.Size(375, 91);
             this.panel4.TabIndex = 1;
             // 
             // nuevo1btn
@@ -210,9 +222,10 @@
             this.nuevo1btn.Image = ((System.Drawing.Image)(resources.GetObject("nuevo1btn.Image")));
             this.nuevo1btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.nuevo1btn.Location = new System.Drawing.Point(0, 0);
+            this.nuevo1btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nuevo1btn.Name = "nuevo1btn";
-            this.nuevo1btn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.nuevo1btn.Size = new System.Drawing.Size(250, 59);
+            this.nuevo1btn.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.nuevo1btn.Size = new System.Drawing.Size(375, 91);
             this.nuevo1btn.TabIndex = 1;
             this.nuevo1btn.Text = "             Nuevo MIembro";
             this.nuevo1btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,25 +242,27 @@
             this.panelRedondo1.BackColor = System.Drawing.Color.LightGray;
             this.panelRedondo1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRedondo1.Location = new System.Drawing.Point(0, 0);
+            this.panelRedondo1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelRedondo1.Name = "panelRedondo1";
-            this.panelRedondo1.Size = new System.Drawing.Size(1283, 682);
+            this.panelRedondo1.Size = new System.Drawing.Size(1924, 1049);
             this.panelRedondo1.TabIndex = 4;
             this.panelRedondo1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRedondo1_Paint_1);
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1283, 682);
+            this.ClientSize = new System.Drawing.Size(1924, 1049);
             this.Controls.Add(this.menuvertical);
             this.Controls.Add(this.panelRedondo1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Inicio";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.Text = "Form1";
+            this.Text = "Developer GYM";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_FormClosing);
             this.Load += new System.EventHandler(this.Inicio_Load);

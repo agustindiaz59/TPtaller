@@ -1,0 +1,59 @@
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Vistas\Inicio.resx
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Vistas\Inicio.cs
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Vistas\Inicio.Designer.cs
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Gestion Gym.exe.config
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Gestion Gym.exe
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Gestion Gym.pdb
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\aa\Gestion Gym.resources.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\BouncyCastle.Cryptography.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Google.Protobuf.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\K4os.Compression.LZ4.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\K4os.Hash.xxHash.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\MySql.Data.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\MySqlConnector.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Buffers.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.IO.Pipelines.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Memory.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\ZstdSharp.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\BouncyCastle.Cryptography.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Google.Protobuf.pdb
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Google.Protobuf.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\K4os.Compression.LZ4.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\K4os.Hash.xxHash.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\MySql.Data.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\MySqlConnector.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Buffers.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.IO.Pipelines.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Memory.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Numerics.Vectors.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\bin\x64\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion Gym.csproj.AssemblyReference.cache
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion_Gym.Vistas.Acceso.resources
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion_Gym.Buscar_Miembro.resources
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion_Gym.Vistas.Dashboard.resources
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion_Gym.Vistas.Editar.resources
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion_Gym.Inicio.resources
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion_Gym.Nuevo_Miembro.resources
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion_Gym.Nuevo_Personal.resources
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion_Gym.Properties.Resources.resources
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion_Gym.Vistas.Dashboard.aa.resources
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion Gym.csproj.GenerateResource.cache
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion Gym.csproj.CoreCompileInputs.cache
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\aa\Gestion Gym.resources.dll
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion .BB559218.Up2Date
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion Gym.exe
+C:\Users\matia\OneDrive\Documentos\GitHub\TPtaller\Gestion Gym\obj\x64\Debug\Gestion Gym.pdb

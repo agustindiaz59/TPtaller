@@ -36,7 +36,7 @@ namespace Gestion_Gym
             panel2.Dock = DockStyle.Fill; // Hace que el panel2 ocupe todo el ancho y alto del contenedor
         }
 
-        private void CargarMiembros(List<Miembro> datos)//string filtro = "", int pageNumber = 1, int pageSize = 20)
+        public void CargarMiembros(List<Miembro> datos)//string filtro = "", int pageNumber = 1, int pageSize = 20)
         {
 
             dataGridView1.Columns.Clear();
@@ -55,7 +55,7 @@ namespace Gestion_Gym
             this.UpdateStyles();
         }
 
-        private void Buscar_Miembro_Load(object sender, EventArgs e)
+        public void Buscar_Miembro_Load(object sender, EventArgs e)
         {
             CargarMiembros(miembroDAO.TraerTodos());  // Carga todos los miembros al abrir el formulario
             bsnombre.Focus();
@@ -67,9 +67,9 @@ namespace Gestion_Gym
             {
                 string dni = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
                 //Abrir formulario de editar
-                Editar editar = new Editar(dni);
+                Editar editar = new Editar(dni,this);
                 editar.Show();
-
+                
             }
             catch (Exception ex) 
             {

@@ -62,6 +62,8 @@ namespace GestionGYMTests
             Validacion.ValidarCadenaEstandar("abcdefghijk").Should().BeTrue();
             Validacion.ValidarCadenaEstandar("-3434232").Should().BeFalse();
             Validacion.ValidarCadenaEstandar("34sad334dsf232").Should().BeFalse();
+            Validacion.ValidarCadenaEstandar("diaz43").Should().BeFalse();
+            Validacion.ValidarCadenaEstandar("matias muro").Should().BeTrue();
         }
 
         [TestMethod]

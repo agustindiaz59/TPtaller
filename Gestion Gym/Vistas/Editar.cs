@@ -11,9 +11,12 @@ namespace Gestion_Gym.Vistas
     {
         private MiembroDAO miembroDAO = new MiembroDAO();
         private Miembro editar;
-        public Editar(string DNI)
+        Buscar_Miembro buscar_Miembro;
+        public Editar(string DNI, Buscar_Miembro buscar_Miembro)
         {
             InitializeComponent();
+
+            this.buscar_Miembro = buscar_Miembro;
 
             editar = miembroDAO.Traer(DNI);
 
@@ -183,6 +186,7 @@ namespace Gestion_Gym.Vistas
                 // Realizar la acción importante
                 miembroDAO.Eliminar(editar.DNI);
                 Close();
+                buscar_Miembro.CargarMiembros(miembroDAO.TraerTodos());
             }
         }
         private void btnReiniciar2_Click(object sender, EventArgs e)

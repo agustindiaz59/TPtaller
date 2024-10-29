@@ -23,14 +23,13 @@ namespace Gestion_Gym
         private void button1_Click(object sender, EventArgs e)
         {
             bool validarDatos =
-                Validacion.ValidarCadenaEstandar(txtNombre.Text) &&
-                Validacion.ValidarCadenaEstandar(txtApellido.Text) &&
-                Validacion.ValidarDocumento(DNITB.Text) &&
-                Validacion.ValidarFecha(FNacimDT.Text) &&
-                Validacion.ValidarCelular(TelefonoTB.Text) &&
-                Validacion.ValidarEmail(EmailTB.Text) &&
-                Validacion.ValidarFecha(dateTimePickerFIngreso.Text.ToString()) &&
-                Validacion.ValidarCadenaEstandar(DireccionTB.Text.ToString())
+                Validacion.ValidarCadenaEstandar(txtNombre.Text.ToString()) &&
+                Validacion.ValidarCadenaEstandar(txtApellido.Text.ToString()) &&
+                Validacion.ValidarDocumento(DNITB.Text.ToString()) &&
+                Validacion.ValidarFecha(FNacimDT.Text.ToString()) &&
+                Validacion.ValidarCelular(TelefonoTB.Text.ToString()) &&
+                Validacion.ValidarEmail(EmailTB.Text.ToString()) &&
+                Validacion.ValidarFecha(dateTimePickerFIngreso.Text.ToString())
                 ;
 
             if (validarDatos) 
@@ -49,6 +48,7 @@ namespace Gestion_Gym
             // limpiamos los campos llenados
             txtNombre.Clear();
             txtApellido.Clear();
+            DNITB.Clear();
 
             MasculinoRB.Checked = false;
             FemeninoRB.Checked = false;
@@ -212,11 +212,16 @@ namespace Gestion_Gym
         private void Nuevo_Miembro_Load(object sender, EventArgs e)
         {
             txtNombre.Focus();
+            HorarioGymCB.SelectedIndex = 0;
+            MembresiaCB.SelectedIndex = 0;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
+        }
 
+        private void HorarioGymCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }

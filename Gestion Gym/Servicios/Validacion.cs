@@ -4,7 +4,7 @@ namespace Gestion_Gym.Servicios
 {
     public static class Validacion
     {
-        private static readonly Regex CadenaEstandar = new Regex(@"^[a-zA-Z\s \t\w]+$");
+        private static readonly Regex CadenaEstandar = new Regex(@"^[a-zA-Z ]+$");
         private static readonly Regex Email = new Regex(@"^[\d\w]+\@[\d\w]+\.[\d\w]+$");
         private static readonly Regex Celular = new Regex(@"^[0-9]{10}");
         private static readonly Regex Documento = new Regex(@"^[0-9]{8}");

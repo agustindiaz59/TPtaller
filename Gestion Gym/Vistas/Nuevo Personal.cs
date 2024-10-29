@@ -87,6 +87,7 @@ namespace Gestion_Gym
             // limpiamos los campos llenados
             txtNombre.Clear();
             txtApellido.Clear();
+            textBox1.Clear();
            
 
             radioButtonMasculino.Checked = false;
