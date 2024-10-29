@@ -3,6 +3,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
+using System.Windows.Forms;
 
 namespace Gestion_Gym.Servicios.Persistencia
 {
@@ -97,8 +98,13 @@ namespace Gestion_Gym.Servicios.Persistencia
             //Agrego el miembro
             Command.CommandText = sql3;
             Command.Parameters.AddWithValue("@id_persona", idPersona);
-            
-            return CommitNonQuery();
+
+            int estado = CommitNonQuery();
+            if (estado > -1)
+            {
+                MessageBox.Show("Datos Guardados Correctamente.");
+            }
+            return estado;
         }
 
         public override Miembro Traer(string dni)
