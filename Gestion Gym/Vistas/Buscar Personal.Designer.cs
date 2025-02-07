@@ -1,6 +1,6 @@
 ﻿namespace Gestion_Gym
 {
-    partial class Buscar_Miembro
+    partial class Buscar_Personal
     {
         /// <summary>
         /// Required designer variable.
@@ -164,7 +164,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(393, 117);
             this.panel5.TabIndex = 5;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // textBox2
             // 
@@ -172,7 +171,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Location = new System.Drawing.Point(64, 58);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(266, 29);
+            this.textBox2.Size = new System.Drawing.Size(266, 39);
             this.textBox2.TabIndex = 2;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -184,7 +183,7 @@
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(137, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 25);
+            this.label3.Size = new System.Drawing.Size(170, 40);
             this.label3.TabIndex = 1;
             this.label3.Text = "Buscar DNI";
             // 
@@ -205,7 +204,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(34, 58);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 29);
+            this.textBox1.Size = new System.Drawing.Size(266, 39);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -217,7 +216,7 @@
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(87, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 25);
+            this.label2.Size = new System.Drawing.Size(231, 40);
             this.label2.TabIndex = 1;
             this.label2.Text = "Buscar Apellido";
             // 
@@ -238,7 +237,7 @@
             this.bsnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bsnombre.Location = new System.Drawing.Point(42, 58);
             this.bsnombre.Name = "bsnombre";
-            this.bsnombre.Size = new System.Drawing.Size(266, 29);
+            this.bsnombre.Size = new System.Drawing.Size(266, 39);
             this.bsnombre.TabIndex = 2;
             this.bsnombre.TextChanged += new System.EventHandler(this.bsnombre_TextChanged);
             // 
@@ -250,7 +249,7 @@
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(100, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 25);
+            this.label1.Size = new System.Drawing.Size(231, 40);
             this.label1.TabIndex = 1;
             this.label1.Text = "Buscar Nombre";
             // 
@@ -299,7 +298,7 @@
             // 
             // Buscar_Miembro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(107)))), ((int)(((byte)(115)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

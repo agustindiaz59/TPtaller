@@ -11,10 +11,10 @@ using MySql.Data.MySqlClient;
 
 namespace Gestion_Gym
 {
-    public partial class Buscar_Miembro : Form
+    public partial class Buscar_Personal : Form
     {
         private MiembroDAO miembroDAO = new MiembroDAO();
-        public Buscar_Miembro()
+        public Buscar_Personal()
         {
             InitializeComponent();
 
@@ -63,18 +63,18 @@ namespace Gestion_Gym
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                string dni = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                //Abrir formulario de editar
-                Editar editar = new Editar(dni,this);
-                editar.Show();
+            //try
+            //{
+            //    string dni = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            //    //Abrir formulario de editar
+            //    Editar editar = new Editar(dni,this);
+            //    editar.Show();
                 
-            }
-            catch (Exception ex) 
-            {
-                MessageBox.Show("Error buscando el miembro");
-            }
+            //}
+            //catch (Exception ex) 
+            //{
+            //    MessageBox.Show("Error buscando el miembro");
+            //}
 
         }
 
@@ -108,11 +108,6 @@ namespace Gestion_Gym
         private void actMiembro_Click(object sender, EventArgs e)
         {
             CargarMiembros(miembroDAO.TraerTodos());
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
