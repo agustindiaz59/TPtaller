@@ -50,7 +50,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.actMiembro = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -117,7 +116,7 @@
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 40;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1118, 453);
+            this.dataGridView1.Size = new System.Drawing.Size(1184, 453);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.VirtualMode = true;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -148,10 +147,10 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(66, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1118, 117);
+            this.panel1.Size = new System.Drawing.Size(1184, 117);
             this.panel1.TabIndex = 4;
             // 
             // panel5
@@ -160,7 +159,7 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
             this.panel5.Controls.Add(this.textBox2);
             this.panel5.Controls.Add(this.label3);
-            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Location = new System.Drawing.Point(62, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(393, 117);
             this.panel5.TabIndex = 5;
@@ -194,7 +193,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
             this.panel4.Controls.Add(this.textBox1);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(737, 0);
+            this.panel4.Location = new System.Drawing.Point(799, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(332, 117);
             this.panel4.TabIndex = 4;
@@ -227,7 +226,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
             this.panel3.Controls.Add(this.bsnombre);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(392, 0);
+            this.panel3.Location = new System.Drawing.Point(454, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(349, 117);
             this.panel3.TabIndex = 3;
@@ -259,7 +258,6 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.panel7);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -272,9 +270,9 @@
             this.panel6.Controls.Add(this.actMiembro);
             this.panel6.Controls.Add(this.dataGridView1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(66, 117);
+            this.panel6.Location = new System.Drawing.Point(0, 117);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1118, 453);
+            this.panel6.Size = new System.Drawing.Size(1184, 453);
             this.panel6.TabIndex = 9;
             // 
             // actMiembro
@@ -282,20 +280,11 @@
             this.actMiembro.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.actMiembro.Location = new System.Drawing.Point(0, 414);
             this.actMiembro.Name = "actMiembro";
-            this.actMiembro.Size = new System.Drawing.Size(1118, 39);
+            this.actMiembro.Size = new System.Drawing.Size(1184, 39);
             this.actMiembro.TabIndex = 4;
             this.actMiembro.Text = "Actualizar";
             this.actMiembro.UseVisualStyleBackColor = true;
             this.actMiembro.Click += new System.EventHandler(this.actMiembro_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Black;
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(66, 570);
-            this.panel7.TabIndex = 8;
             // 
             // Buscar_Miembro
             // 
@@ -344,7 +333,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button actMiembro;
     }
 }

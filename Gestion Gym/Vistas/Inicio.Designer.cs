@@ -120,9 +120,9 @@
             // 
             this.btmenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btmenu.Image = ((System.Drawing.Image)(resources.GetObject("btmenu.Image")));
-            this.btmenu.Location = new System.Drawing.Point(12, 23);
+            this.btmenu.Location = new System.Drawing.Point(15, 35);
             this.btmenu.Name = "btmenu";
-            this.btmenu.Size = new System.Drawing.Size(44, 52);
+            this.btmenu.Size = new System.Drawing.Size(35, 35);
             this.btmenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btmenu.TabIndex = 0;
             this.btmenu.TabStop = false;
@@ -238,16 +238,16 @@
             // 
             // sidebardtimer
             // 
-            this.sidebardtimer.Interval = 5;
+            this.sidebardtimer.Interval = 15;
             this.sidebardtimer.Tick += new System.EventHandler(this.sidebard_tick);
             // 
             // panelRedondo1
             // 
             this.panelRedondo1.BackColor = System.Drawing.Color.LightGray;
             this.panelRedondo1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRedondo1.Location = new System.Drawing.Point(0, 0);
+            this.panelRedondo1.Location = new System.Drawing.Point(66, 0);
             this.panelRedondo1.Name = "panelRedondo1";
-            this.panelRedondo1.Size = new System.Drawing.Size(1283, 682);
+            this.panelRedondo1.Size = new System.Drawing.Size(1217, 682);
             this.panelRedondo1.TabIndex = 4;
             // 
             // Inicio
@@ -257,8 +257,8 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1283, 682);
-            this.Controls.Add(this.menuvertical);
             this.Controls.Add(this.panelRedondo1);
+            this.Controls.Add(this.menuvertical);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Inicio";

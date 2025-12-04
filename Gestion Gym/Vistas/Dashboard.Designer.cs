@@ -144,6 +144,7 @@
             this.panelRedondo1.Controls.Add(this.panel1);
             this.panelRedondo1.Name = "panelRedondo1";
             this.panelRedondo1.Radio = 20;
+            this.panelRedondo1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRedondo1_Paint);
             // 
             // panelRedondo4
             // 

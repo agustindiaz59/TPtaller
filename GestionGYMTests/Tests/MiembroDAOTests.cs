@@ -12,8 +12,8 @@ namespace GestionGYMTests
     {
 
         private MiembroDAO miembroDAO = new MiembroDAO();
-        private Miembro m1 = new Miembro("Matias", "Muro", "44617444", "17/01/2003", 'M', "3813960697", "matutias@gmail.com", "direccion de ejemplo", "22/05/2024", (Membresia)2, "19:00 -- 21:00");
-        private Miembro m2 = new Miembro("Leo", "juarez", "44617444", "21/03/2002", 'M', "43123542", "ejemploemail@hotmail.com", "Direccion de leo", "26/06/2022", (Membresia)1, "18:00 -- 20:00");
+        private Miembro m1 = new Miembro("Matias", "Muro", "44617444", "17/01/2003", 'M', "3813960697", "matutias@gmail.com", "direccion de ejemplo", "22/05/2024", (Membresia)2, "19:00 -- 21:00" , "22/06/2024");
+        private Miembro m2 = new Miembro("Leo", "juarez", "44617444", "21/03/2002", 'M', "43123542", "ejemploemail@hotmail.com", "Direccion de leo", "26/06/2022", (Membresia)1, "18:00 -- 20:00", "22/07/2024");
         
 
         [TestMethod]

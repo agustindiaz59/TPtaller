@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 
 namespace Gestion_Gym.Modelos
 {
@@ -7,9 +7,13 @@ namespace Gestion_Gym.Modelos
         public Membresia TipoMembrecia { get; set; }
         public string DNI { get; set; }
         public string HorarioGYM { get; set; }
-        public Miembro() : base()
-        {
-        }
+
+        // Nueva propiedad
+        public string FVencimiento { get; set; }
+
+        public Miembro() : base() { }
+
+        // ÚNICO constructor con todos los campos
         public Miembro(
             string nombre,
             string apellido,
@@ -21,16 +25,18 @@ namespace Gestion_Gym.Modelos
             string direccion,
             string fIngreso,
             Membresia tipoMembrecia,
-            string horarioGYM) : base(nombre, apellido, fNacimiento, genero, telefono, email, direccion, fIngreso)
+            string horarioGYM,
+            string fVencimiento) : base(nombre, apellido, fNacimiento, genero, telefono, email, direccion, fIngreso)
         {
             DNI = dNI;
             HorarioGYM = horarioGYM;
             TipoMembrecia = tipoMembrecia;
-
+            FVencimiento = fVencimiento;
         }
+
         public override string ToString()
         {
-            return 
+            return
                 Nombre + " " +
                 Apellido + " " +
                 DNI + " " +
@@ -41,7 +47,8 @@ namespace Gestion_Gym.Modelos
                 Direccion + " " +
                 FIngreso + " " +
                 TipoMembrecia + " " +
-                HorarioGYM;
+                HorarioGYM + " " +
+                FVencimiento;
         }
     }
 }

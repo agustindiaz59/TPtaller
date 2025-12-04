@@ -58,7 +58,6 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtCalle = new System.Windows.Forms.TextBox();
             this.txtLocalidad = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panelRedondo3.SuspendLayout();
             this.panelRedondo1.SuspendLayout();
             this.panelRedondo2.SuspendLayout();
@@ -85,9 +84,9 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label11.Location = new System.Drawing.Point(448, 10);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(221, 25);
+            this.label11.Size = new System.Drawing.Size(179, 25);
             this.label11.TabIndex = 0;
-            this.label11.Text = "      Nuevo Personal";
+            this.label11.Text = "Nuevo Personal";
             // 
             // panelRedondo1
             // 
@@ -112,7 +111,7 @@
             this.panelRedondo1.Controls.Add(this.label4);
             this.panelRedondo1.Controls.Add(this.label5);
             this.panelRedondo1.Controls.Add(this.panelRedondo2);
-            this.panelRedondo1.Location = new System.Drawing.Point(148, 104);
+            this.panelRedondo1.Location = new System.Drawing.Point(117, 110);
             this.panelRedondo1.Name = "panelRedondo1";
             this.panelRedondo1.Radio = 25;
             this.panelRedondo1.Size = new System.Drawing.Size(848, 480);
@@ -494,15 +493,6 @@
             this.txtLocalidad.Enter += new System.EventHandler(this.localidad_enter);
             this.txtLocalidad.Leave += new System.EventHandler(this.localidad_leave);
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Black;
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(0, 48);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(66, 603);
-            this.panel7.TabIndex = 55;
-            // 
             // Nuevo_Personal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -510,7 +500,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(107)))), ((int)(((byte)(115)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1068, 651);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panelRedondo3);
             this.Controls.Add(this.panelRedondo1);
             this.DoubleBuffered = true;
@@ -559,6 +548,5 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel7;
     }
 }

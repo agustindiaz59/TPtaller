@@ -80,6 +80,7 @@ namespace Gestion_Gym.Servicios.Persistencia
             Command.Parameters.AddWithValue("@direccion", Entidad.Direccion);
             Command.Parameters.AddWithValue("@horariogym", Entidad.HorarioGYM);
             Command.Parameters.AddWithValue("@id_membresia", Entidad.TipoMembrecia);
+            Command.Parameters.AddWithValue("@f_vencimiento", Entidad.FVencimiento);
 
             //Agrego una persona
             Command.CommandText = sql1;
@@ -130,7 +131,8 @@ namespace Gestion_Gym.Servicios.Persistencia
                          Lector["direccion"].ToString(),
                          Lector["f_inicio"].ToString(),
                          (Membresia)Lector["id_membresia"],
-                         Lector["horariogym"].ToString()
+                         Lector["horariogym"].ToString(),
+                         Lector["f_vencimiento"].ToString()
                     );
                 }
                 Command.Parameters.Clear();
@@ -162,7 +164,8 @@ namespace Gestion_Gym.Servicios.Persistencia
                          Lector["direccion"].ToString(),
                          Lector["f_inicio"].ToString(),
                          (Membresia)Lector["id_membresia"],
-                         Lector["horariogym"].ToString()
+                         Lector["horariogym"].ToString(),
+                         Lector["f_vencimiento"].ToString()
                     ));
                 }
                 Command.Parameters.Clear();
@@ -240,7 +243,9 @@ namespace Gestion_Gym.Servicios.Persistencia
                          Lector["direccion"].ToString(),
                          Lector["f_inicio"].ToString(),
                          (Membresia)Lector["id_membresia"],
-                         Lector["horariogym"].ToString()
+                         Lector["horariogym"].ToString(),
+                         Lector["f_vencimiento"].ToString()
+
                     ));
                 }
                 Command.Parameters.Clear();
