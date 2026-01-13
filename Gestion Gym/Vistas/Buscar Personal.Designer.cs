@@ -1,6 +1,6 @@
 ﻿namespace Gestion_Gym
 {
-    partial class Buscar_Miembro
+    partial class Buscar_Personal
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Buscar_Miembro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Buscar_Personal));
             this.mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
@@ -159,11 +159,10 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
             this.panel5.Controls.Add(this.textBox2);
             this.panel5.Controls.Add(this.label3);
-            this.panel5.Location = new System.Drawing.Point(62, 0);
+            this.panel5.Location = new System.Drawing.Point(59, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(393, 117);
             this.panel5.TabIndex = 5;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // textBox2
             // 
@@ -193,7 +192,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
             this.panel4.Controls.Add(this.textBox1);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(799, 0);
+            this.panel4.Location = new System.Drawing.Point(796, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(332, 117);
             this.panel4.TabIndex = 4;
@@ -226,7 +225,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
             this.panel3.Controls.Add(this.bsnombre);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(454, 0);
+            this.panel3.Location = new System.Drawing.Point(451, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(349, 117);
             this.panel3.TabIndex = 3;
@@ -286,7 +285,7 @@
             this.actMiembro.UseVisualStyleBackColor = true;
             this.actMiembro.Click += new System.EventHandler(this.actMiembro_Click);
             // 
-            // Buscar_Miembro
+            // Buscar_Personal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -297,7 +296,7 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Buscar_Miembro";
+            this.Name = "Buscar_Personal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buscar_Miembro";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Buscar_Miembro_FormClosing);

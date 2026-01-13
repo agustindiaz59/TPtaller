@@ -31,12 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.menuvertical = new System.Windows.Forms.Panel();
+            this.PersonalBuscar = new System.Windows.Forms.Button();
+            this.salirbtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btmenu = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.salirbtn = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.buscarbtn = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.nuevo2btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,7 +48,6 @@
             this.panelRedondo1 = new System.Windows.Forms.Panel();
             this.menuvertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btmenu)).BeginInit();
-            this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -57,9 +57,10 @@
             // menuvertical
             // 
             this.menuvertical.BackColor = System.Drawing.Color.White;
+            this.menuvertical.Controls.Add(this.PersonalBuscar);
+            this.menuvertical.Controls.Add(this.salirbtn);
             this.menuvertical.Controls.Add(this.panel1);
             this.menuvertical.Controls.Add(this.btmenu);
-            this.menuvertical.Controls.Add(this.panel5);
             this.menuvertical.Controls.Add(this.panel7);
             this.menuvertical.Controls.Add(this.panel6);
             this.menuvertical.Controls.Add(this.panel2);
@@ -71,7 +72,40 @@
             this.menuvertical.Name = "menuvertical";
             this.menuvertical.Size = new System.Drawing.Size(66, 682);
             this.menuvertical.TabIndex = 3;
-            this.menuvertical.Paint += new System.Windows.Forms.PaintEventHandler(this.menuvertical_Paint);
+            // 
+            // PersonalBuscar
+            // 
+            this.PersonalBuscar.FlatAppearance.BorderSize = 0;
+            this.PersonalBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PersonalBuscar.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.PersonalBuscar.Image = ((System.Drawing.Image)(resources.GetObject("PersonalBuscar.Image")));
+            this.PersonalBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PersonalBuscar.Location = new System.Drawing.Point(0, 333);
+            this.PersonalBuscar.Name = "PersonalBuscar";
+            this.PersonalBuscar.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.PersonalBuscar.Size = new System.Drawing.Size(250, 59);
+            this.PersonalBuscar.TabIndex = 7;
+            this.PersonalBuscar.Text = "             Buscar Miembros";
+            this.PersonalBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PersonalBuscar.UseVisualStyleBackColor = true;
+            this.PersonalBuscar.Click += new System.EventHandler(this.PersonalBuscar_Click);
+            // 
+            // salirbtn
+            // 
+            this.salirbtn.FlatAppearance.BorderSize = 0;
+            this.salirbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.salirbtn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.salirbtn.Image = ((System.Drawing.Image)(resources.GetObject("salirbtn.Image")));
+            this.salirbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.salirbtn.Location = new System.Drawing.Point(0, 388);
+            this.salirbtn.Name = "salirbtn";
+            this.salirbtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.salirbtn.Size = new System.Drawing.Size(250, 59);
+            this.salirbtn.TabIndex = 1;
+            this.salirbtn.Text = "             Salir";
+            this.salirbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.salirbtn.UseVisualStyleBackColor = true;
+            this.salirbtn.Click += new System.EventHandler(this.salirbtn_Click);
             // 
             // panel1
             // 
@@ -86,42 +120,18 @@
             // 
             this.btmenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btmenu.Image = ((System.Drawing.Image)(resources.GetObject("btmenu.Image")));
-            this.btmenu.Location = new System.Drawing.Point(12, 23);
+            this.btmenu.Location = new System.Drawing.Point(15, 35);
             this.btmenu.Name = "btmenu";
-            this.btmenu.Size = new System.Drawing.Size(44, 52);
+            this.btmenu.Size = new System.Drawing.Size(35, 35);
             this.btmenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btmenu.TabIndex = 0;
             this.btmenu.TabStop = false;
             this.btmenu.Click += new System.EventHandler(this.btmenu_Click);
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.salirbtn);
-            this.panel5.Location = new System.Drawing.Point(0, 336);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(250, 59);
-            this.panel5.TabIndex = 5;
-            // 
-            // salirbtn
-            // 
-            this.salirbtn.FlatAppearance.BorderSize = 0;
-            this.salirbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.salirbtn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.salirbtn.Image = ((System.Drawing.Image)(resources.GetObject("salirbtn.Image")));
-            this.salirbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.salirbtn.Location = new System.Drawing.Point(0, 0);
-            this.salirbtn.Name = "salirbtn";
-            this.salirbtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.salirbtn.Size = new System.Drawing.Size(250, 59);
-            this.salirbtn.TabIndex = 1;
-            this.salirbtn.Text = "             Salir";
-            this.salirbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.salirbtn.UseVisualStyleBackColor = true;
-            this.salirbtn.Click += new System.EventHandler(this.salirbtn_Click);
-            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.buscarbtn);
+            this.panel7.Controls.Add(this.panel5);
             this.panel7.Location = new System.Drawing.Point(0, 278);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(250, 59);
@@ -143,6 +153,13 @@
             this.buscarbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buscarbtn.UseVisualStyleBackColor = true;
             this.buscarbtn.Click += new System.EventHandler(this.buscarbtn_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(0, 58);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(250, 59);
+            this.panel5.TabIndex = 5;
             // 
             // panel6
             // 
@@ -221,18 +238,17 @@
             // 
             // sidebardtimer
             // 
-            this.sidebardtimer.Interval = 5;
+            this.sidebardtimer.Interval = 15;
             this.sidebardtimer.Tick += new System.EventHandler(this.sidebard_tick);
             // 
             // panelRedondo1
             // 
             this.panelRedondo1.BackColor = System.Drawing.Color.LightGray;
             this.panelRedondo1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRedondo1.Location = new System.Drawing.Point(0, 0);
+            this.panelRedondo1.Location = new System.Drawing.Point(66, 0);
             this.panelRedondo1.Name = "panelRedondo1";
-            this.panelRedondo1.Size = new System.Drawing.Size(1283, 682);
+            this.panelRedondo1.Size = new System.Drawing.Size(1217, 682);
             this.panelRedondo1.TabIndex = 4;
-            this.panelRedondo1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRedondo1_Paint_1);
             // 
             // Inicio
             // 
@@ -241,8 +257,8 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1283, 682);
-            this.Controls.Add(this.menuvertical);
             this.Controls.Add(this.panelRedondo1);
+            this.Controls.Add(this.menuvertical);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Inicio";
@@ -250,10 +266,8 @@
             this.Text = "Developer GYM";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_FormClosing);
-            this.Load += new System.EventHandler(this.Inicio_Load);
             this.menuvertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btmenu)).EndInit();
-            this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -278,6 +292,7 @@
         private System.Windows.Forms.Timer sidebardtimer;
         private System.Windows.Forms.Panel panelRedondo1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button PersonalBuscar;
     }
 }
 

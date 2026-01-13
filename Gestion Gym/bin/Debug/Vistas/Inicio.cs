@@ -13,10 +13,11 @@ namespace Gestion_Gym
     {
         bool sidebardExpand;
         private Dashboard dashboard = new Dashboard();
+        private DashboardModerno dashboardModerno = new DashboardModerno();
         private Nuevo_Miembro nuevo_Miembro = new Nuevo_Miembro();
         private Nuevo_Personal nuevo_Personal = new Nuevo_Personal();
         private Buscar_Miembro buscar_Miembro = new Buscar_Miembro();
-
+        private Buscar_Personal buscar_personal = new Buscar_Personal();
 
         public Inicio()
         {
@@ -24,7 +25,11 @@ namespace Gestion_Gym
             this.Load += new EventHandler(iniciobtn_Click);
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             this.UpdateStyles();
-
+                this.DoubleBuffered = true;
+                SetStyle(ControlStyles.AllPaintingInWmPaint |
+                         ControlStyles.UserPaint |
+                         ControlStyles.OptimizedDoubleBuffer, true);
+            
         }
 
         private void MostrarFormularioEnPanel(Form formulario)
@@ -46,7 +51,7 @@ namespace Gestion_Gym
 
         private void iniciobtn_Click(object sender, EventArgs e)
         {
-            MostrarFormularioEnPanel(dashboard);
+            MostrarFormularioEnPanel(dashboardModerno);
         }
 
         private void nuevo1btn_Click(object sender, EventArgs e)
@@ -63,7 +68,10 @@ namespace Gestion_Gym
         {
             MostrarFormularioEnPanel(buscar_Miembro);
         }
-
+        private void PersonalBuscar_Click(object sender, EventArgs e)
+        {
+            MostrarFormularioEnPanel(buscar_personal);
+        }
         private void salirbtn_Click(object sender, EventArgs e)
         {
 
@@ -78,7 +86,7 @@ namespace Gestion_Gym
         private void sidebard_tick(object sender, EventArgs e)
         {
             // Definir el paso de la animación
-            const int step = 40; // Puedes ajustar este valor para más o menos velocidad
+            const int step = 20; // Puedes ajustar este valor para más o menos velocidad
 
             if (sidebardExpand)
             {
@@ -103,29 +111,18 @@ namespace Gestion_Gym
                 }
             }
         }
-        private void menuvertical_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btmenu_Click(object sender, EventArgs e)
         {
             sidebardtimer.Start();
         }
 
-        private void Inicio_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void Inicio_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
-        private void panelRedondo1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
+    
     }
 }

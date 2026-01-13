@@ -192,6 +192,7 @@ namespace Gestion_Gym
             miembro1.HorarioGYM = HorarioGymCB.Text;
             miembro1.Direccion = DireccionTB.Text;
             miembro1.TipoMembrecia = (Membresia)(MembresiaCB.SelectedIndex + 1);
+            miembro1.FVencimiento = dateTimeFechaVencimiento.Value.ToString("yyyy-MM-dd");
 
             if (MasculinoRB.Checked)
                 miembro1.Genero = 'M';
@@ -214,6 +215,8 @@ namespace Gestion_Gym
             txtNombre.Focus();
             HorarioGymCB.SelectedIndex = 0;
             MembresiaCB.SelectedIndex = 0;
+            // primera vez
+            dateTimeFechaVencimiento.Value = dateTimePickerFIngreso.Value.AddDays(30);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -222,6 +225,16 @@ namespace Gestion_Gym
 
         private void HorarioGymCB_SelectedIndexChanged(object sender, EventArgs e)
         {
+        }
+
+        private void fVencimiento_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerFIngreso_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimeFechaVencimiento.Value = dateTimePickerFIngreso.Value.AddDays(30);
         }
     }
 }

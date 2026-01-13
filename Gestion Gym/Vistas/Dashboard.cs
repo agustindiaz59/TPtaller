@@ -37,5 +37,10 @@ namespace Gestion_Gym.Vistas
         {
             Application.Exit();
         }
+
+        private void panelRedondo1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
