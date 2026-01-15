@@ -614,6 +614,5 @@ namespace Gestion_Gym
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label fVencimiento;
         private System.Windows.Forms.DateTimePicker dateTimeFechaVencimiento;
-        private EventHandler dateTimeFechaVencimiento_ValueChanged;
     }
 }

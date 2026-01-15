@@ -2,8 +2,6 @@
 using Gestion_Gym.Servicios;
 using Gestion_Gym.Servicios.Persistencia;
 using System;
-using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -11,8 +9,8 @@ namespace Gestion_Gym
 {
     public partial class Nuevo_Personal : Form
     {
-        //Acceso a la base de datos
-        private DAO<Personal> PersonalRepositorio = new PersonalDAO();
+        // Acceso a la base de datos
+        private PersonalDAO personalDAO = new PersonalDAO();
 
         public Nuevo_Personal()
         {
@@ -22,33 +20,24 @@ namespace Gestion_Gym
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            string nombre = txtNombre.Text;
-            string apellido = txtApellido.Text;
+            // 1) Tomar valores
+            string nombre = txtNombre.Text.Trim();
+            string apellido = txtApellido.Text.Trim();
+            string cuil = textBox1.Text.Trim();
 
+            char genero = radioButtonMasculino.Checked ? 'M' : 'F';
 
-            string genero = "";
-            bool ischecked = radioButtonMasculino.Checked;
+            string fnacim = dateTimePickerFNacim.Text.Trim();
+            string telefono = txtTelefono.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string fingreso = dateTimePickerFIngreso.Text.Trim();
 
-            if (ischecked)
-            {
-                genero = "M";
-            }
-            else
-            {
-                genero = "F";
-            }
-            string fnacim = dateTimePickerFNacim.Text.ToString();
-            string telefono = txtTelefono.Text.ToString();
-            string email = txtEmail.Text.ToString();
-            string fingreso = dateTimePickerFIngreso.Text.ToString();
-            string calle = txtCalle.Text.ToString();
-            string localidad = txtLocalidad.Text.ToString();
-            string provincia = txtProvincia.Text.ToString();
+            string calle = txtCalle.Text.Trim();
+            string localidad = txtLocalidad.Text.Trim();
+            string provincia = txtProvincia.Text.Trim();
+            string direccion = $"{calle}, {localidad}, {provincia}";
 
-            string direccion = calle + " " + localidad + " " + provincia;
-
-            string cuil = textBox1.Text.ToString();
-
+            // 2) Validaciones
             bool validarDatos =
                 Validacion.ValidarCadenaEstandar(nombre) &&
                 Validacion.ValidarCadenaEstandar(apellido) &&
@@ -57,38 +46,60 @@ namespace Gestion_Gym
                 Validacion.ValidarCelular(telefono) &&
                 Validacion.ValidarEmail(email) &&
                 Validacion.ValidarFecha(fingreso) &&
-                Validacion.ValidarCadenaEstandar(direccion)
-                ;
+                Validacion.ValidarCadenaEstandar(calle) &&
+                Validacion.ValidarCadenaEstandar(localidad) &&
+                Validacion.ValidarCadenaEstandar(provincia);
 
-            //MessageBox.Show(
-            //    nombre + Validacion.ValidarCadenaEstandar(nombre) +
-            //    apellido + Validacion.ValidarCadenaEstandar(apellido) +
-            //    cuil + Validacion.ValidarCuil(cuil) +
-            //    fnacim + Validacion.ValidarFecha(fnacim) +
-            //    telefono + Validacion.ValidarCelular(telefono) +
-            //    email + Validacion.ValidarEmail(email) +
-            //    fingreso + Validacion.ValidarFecha(fingreso) +
-            //    direccion + Validacion.ValidarCadenaEstandar(direccion) 
-            //    );
-
-            if (validarDatos)
+            if (!validarDatos)
             {
-                GuardarPersonal();
-            }
-            else
-            {
-                MessageBox.Show("Verifique que los datos sean correctos");
+                MessageBox.Show("Verificá que los datos sean correctos.");
+                return;
             }
 
+            // 3) Construir entidad
+            var nuevo = new Personal(
+                nombre,
+                apellido,
+                cuil,
+                fnacim,
+                genero,
+                telefono,
+                email,
+                direccion,
+                fingreso
+            );
+
+            // 4) Guardar con control de duplicado (PersonalDAO.Guardar devuelve 0 si CUIL existe)
+            try
+            {
+                int resultado = personalDAO.Guardar(nuevo);
+
+                if (resultado > 0)
+                {
+                    MessageBox.Show("Datos guardados correctamente.");
+                    LimpiarCampos();
+                }
+                else
+                {
+                    MessageBox.Show("CUIL duplicado. No se guardaron los datos.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar: " + ex.Message);
+            }
         }
 
         private void btnReiniciar_Click(object sender, EventArgs e)
         {
-            // limpiamos los campos llenados
+            LimpiarCampos();
+        }
+
+        private void LimpiarCampos()
+        {
             txtNombre.Clear();
             txtApellido.Clear();
             textBox1.Clear();
-           
 
             radioButtonMasculino.Checked = false;
             radioButtonFemenino.Checked = false;
@@ -102,34 +113,23 @@ namespace Gestion_Gym
 
             dateTimePickerFNacim.Value = DateTime.Now;
             dateTimePickerFIngreso.Value = DateTime.Now;
+
+            txtNombre.Focus();
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
-            // Desactivar la actualización visual temporalmente
             txtTelefono.SuspendLayout();
-
-            // Operaciones que afectan la UI
-
-            // Reactivar la actualización visual
             txtTelefono.ResumeLayout();
         }
 
         private void dateTimePickerFNacim_ValueChanged(object sender, EventArgs e)
         {
-            // Desactivar la actualización visual temporalmente
             txtTelefono.SuspendLayout();
-
-            // Operaciones que afectan la UI
-
-            // Reactivar la actualización visual
             txtTelefono.ResumeLayout();
         }
 
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void label13_Click(object sender, EventArgs e) { }
 
         private void nombre_enter(object sender, EventArgs e)
         {
@@ -142,7 +142,7 @@ namespace Gestion_Gym
 
         private void nombre_leave(object sender, EventArgs e)
         {
-            if (txtNombre.Text == "")
+            if (string.IsNullOrWhiteSpace(txtNombre.Text))
             {
                 txtNombre.Text = "Nombre";
                 txtNombre.ForeColor = Color.Silver;
@@ -160,7 +160,7 @@ namespace Gestion_Gym
 
         private void apellido_leave(object sender, EventArgs e)
         {
-            if (txtApellido.Text == "")
+            if (string.IsNullOrWhiteSpace(txtApellido.Text))
             {
                 txtApellido.Text = "Apellido";
                 txtApellido.ForeColor = Color.Silver;
@@ -178,7 +178,7 @@ namespace Gestion_Gym
 
         private void cuil_leave(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 textBox1.Text = "Ingrese su CUIL";
                 textBox1.ForeColor = Color.Silver;
@@ -196,7 +196,7 @@ namespace Gestion_Gym
 
         private void telefono_leave(object sender, EventArgs e)
         {
-            if (txtTelefono.Text == "")
+            if (string.IsNullOrWhiteSpace(txtTelefono.Text))
             {
                 txtTelefono.Text = "Ingrese su teléfono";
                 txtTelefono.ForeColor = Color.Silver;
@@ -214,7 +214,7 @@ namespace Gestion_Gym
 
         private void email_leave(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "")
+            if (string.IsNullOrWhiteSpace(txtEmail.Text))
             {
                 txtEmail.Text = "correo@ejemplo.com";
                 txtEmail.ForeColor = Color.Silver;
@@ -232,7 +232,7 @@ namespace Gestion_Gym
 
         private void calle_leave(object sender, EventArgs e)
         {
-            if (txtCalle.Text == "")
+            if (string.IsNullOrWhiteSpace(txtCalle.Text))
             {
                 txtCalle.Text = "Ingrese su calle";
                 txtCalle.ForeColor = Color.Silver;
@@ -250,7 +250,7 @@ namespace Gestion_Gym
 
         private void localidad_leave(object sender, EventArgs e)
         {
-            if (txtLocalidad.Text == "")
+            if (string.IsNullOrWhiteSpace(txtLocalidad.Text))
             {
                 txtLocalidad.Text = "Ingrese su localidad";
                 txtLocalidad.ForeColor = Color.Silver;
@@ -268,67 +268,24 @@ namespace Gestion_Gym
 
         private void Provincia_leave(object sender, EventArgs e)
         {
-            if (txtProvincia.Text == "")
+            if (string.IsNullOrWhiteSpace(txtProvincia.Text))
             {
                 txtProvincia.Text = "Ingrese su provincia";
                 txtProvincia.ForeColor = Color.Silver;
             }
         }
 
-        private void Nuevo_Personal_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void GuardarPersonal()
-        {
-            string nombre = txtNombre.Text;
-            string apellido = txtApellido.Text;
-
-
-            string genero = "";
-            bool ischecked = radioButtonMasculino.Checked;
-
-            if (ischecked)
-            {
-                genero = radioButtonMasculino.Text;
-            }
-            else
-            {
-                genero = radioButtonFemenino.Text;
-            }
-            string fnacim = dateTimePickerFNacim.Text;
-            string telefono = txtTelefono.Text;
-            string email = txtEmail.Text;
-            string fingreso = dateTimePickerFIngreso.Text;
-            string calle = txtCalle.Text;
-            string localidad = txtLocalidad.Text;
-            string provincia = txtProvincia.Text;
-
-            string direccion = calle + "," + localidad + "," + provincia;
-
-            string cuil = textBox1.Text;
-
-            Personal nuevo = new Personal(
-                nombre,
-                apellido,
-                cuil,
-                fnacim,
-                genero.ToCharArray()[0],
-                telefono,
-                email,
-                direccion,
-                fingreso
-                );
-
-            PersonalRepositorio.Guardar(nuevo);
-
-            MessageBox.Show("Datos Guardados Correctamente.");
-        }
-
         private void Nuevo_Personal_Load(object sender, EventArgs e)
         {
             txtNombre.Focus();
+        }
+
+        // Importante: no cierres toda la app al cerrar este formulario
+        private void Nuevo_Personal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Si este formulario es modal, simplemente cerralo.
+            // Si es el principal, podés dejar Application.Exit();
+            // Application.Exit(); // Evitar cerrar toda la app si no corresponde
         }
     }
 }

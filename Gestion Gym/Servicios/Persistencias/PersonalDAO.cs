@@ -2,7 +2,6 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 
 namespace Gestion_Gym.Servicios.Persistencia
 {
@@ -10,174 +9,237 @@ namespace Gestion_Gym.Servicios.Persistencia
     {
         public PersonalDAO() : base() { }
 
-        public override int Editar(Personal Entidad)
+        // Editar: actualiza datos de Persona manteniendo el CUIL como clave
+        public override int Editar(Personal entidad)
         {
-            Eliminar(Entidad.Cuil);
+            using (var tx = Connection.BeginTransaction())
+            {
+                try
+                {
+                    int idPersona = ObtenerIdPersonaPorCuil(entidad.Cuil, tx);
+                    if (idPersona == 0)
+                        throw new Exception("No se encontró el personal a editar.");
 
-            return Guardar(Entidad);
+                    string sqlUpdatePersona =
+                        "UPDATE Persona SET nombre=@nombre, apellido=@apellido, f_nacim=@f_nacim, f_inicio=@f_inicio, " +
+                        "email=@email, direccion=@direccion, genero=@genero, telefono=@telefono " +
+                        "WHERE id_persona=@id_persona;";
+
+                    Command.Parameters.Clear();
+                    Command.Transaction = tx;
+                    Command.CommandText = sqlUpdatePersona;
+
+                    Command.Parameters.AddWithValue("@nombre", entidad.Nombre);
+                    Command.Parameters.AddWithValue("@apellido", entidad.Apellido);
+                    Command.Parameters.AddWithValue("@genero", entidad.Genero);
+                    Command.Parameters.AddWithValue("@f_nacim", entidad.FNacimiento);
+                    Command.Parameters.AddWithValue("@telefono", entidad.Telefono);
+                    Command.Parameters.AddWithValue("@email", entidad.Email);
+                    Command.Parameters.AddWithValue("@f_inicio", entidad.FIngreso);
+                    Command.Parameters.AddWithValue("@direccion", entidad.Direccion);
+                    Command.Parameters.AddWithValue("@id_persona", idPersona);
+
+                    int filas = Command.ExecuteNonQuery();
+                    tx.Commit();
+                    return filas;
+                }
+                catch
+                {
+                    tx.Rollback();
+                    throw;
+                }
+            }
         }
 
         public override int Eliminar(string cuil)
         {
-                int idPersona = 0;
-                string sql1 = "SELECT * FROM personal WHERE cuil = @cuil;";
-                string sql2 = "DELETE FROM Personal WHERE cuil = @cuil;";
-                string sql3 = "DELETE FROM Persona WHERE id_persona = @id_persona;";
-
-                Command.Parameters.AddWithValue("@cuil", cuil); 
-
-                //Obtengo el ID de la persona que coincida con el cuil
-                Command.CommandText = sql1;
-                using (MySqlDataReader Lector = Command.ExecuteReader())
-                {
-                    if (Lector.Read())
-                    {
-                        idPersona = (int)Lector["id_persona"];
-                    }
-                }
-
-                //Elimino el registro de la tabla persona y de la tabla personal 
-                Command.CommandText = sql2;
-                CommitNonQuery();
-
-            Command.CommandText = sql3;
-            Command.Parameters.AddWithValue("@id_persona", idPersona);
-
-            return CommitNonQuery();
-        }
-
-        public override int Guardar(Personal Entidad)
-        {
-            int id_persona, estado;
-            string sql1 = 
-                "INSERT INTO Persona(nombre, apellido, f_nacim,f_inicio,email,direccion,genero,telefono)" +
-                "VALUES(@nombre, @apellido, @f_nacim,@f_inicio,@email,@direccion,@genero,@telefono);";
-            string sql2 =
-                "SELECT max(id_persona) as 'id_persona' FROM Persona;";
-            string sql3 =
-                "INSERT INTO Personal(cuil, id_persona)" +
-                "VALUES(@cuil,@id_persona);";
-
-            Command.Parameters.AddWithValue("@nombre", Entidad.Nombre);
-            Command.Parameters.AddWithValue("@apellido", Entidad.Apellido);
-            Command.Parameters.AddWithValue("@genero", Entidad.Genero);
-            Command.Parameters.AddWithValue("@f_nacim", Entidad.FNacimiento);
-            Command.Parameters.AddWithValue("@telefono", Entidad.Telefono);
-            Command.Parameters.AddWithValue("@email", Entidad.Email);
-            Command.Parameters.AddWithValue("@f_inicio", Entidad.FIngreso);
-            Command.Parameters.AddWithValue("@direccion", Entidad.Direccion);
-            Command.Parameters.AddWithValue("@cuil", Entidad.Cuil);
-
-
-            Command.CommandText = sql1;
-            estado = Command.ExecuteNonQuery();
-            Command.CommandText = sql2;
-
-            using (MySqlDataReader lector = Command.ExecuteReader()) 
+            using (var tx = Connection.BeginTransaction())
             {
-                if (lector.Read()) 
+                try
                 {
-                    id_persona = Convert.ToInt32(lector["id_persona"]);
-                    Command.Parameters.AddWithValue("@id_persona", id_persona);
+                    Command.Transaction = tx;
+                    int idPersona = ObtenerIdPersonaPorCuil(cuil, tx);
+                    if (idPersona == 0)
+                        return 0;
+
+                    Command.Parameters.Clear();
+                    Command.CommandText = "DELETE FROM Personal WHERE cuil = @cuil;";
+                    Command.Parameters.AddWithValue("@cuil", cuil);
+                    Command.ExecuteNonQuery();
+
+                    Command.Parameters.Clear();
+                    Command.CommandText = "DELETE FROM Persona WHERE id_persona = @id_persona;";
+                    Command.Parameters.AddWithValue("@id_persona", idPersona);
+                    int filas = Command.ExecuteNonQuery();
+
+                    tx.Commit();
+                    return filas;
+                }
+                catch
+                {
+                    tx.Rollback();
+                    throw;
                 }
             }
+        }
 
-            Command.CommandText = sql3;
-            estado = CommitNonQuery();
+        public override int Guardar(Personal entidad)
+        {
+            using (var tx = Connection.BeginTransaction())
+            {
+                try
+                {
+                    Command.Transaction = tx;
 
-            return estado;
+                    // Verificar duplicado CUIL
+                    if (ExisteCuil(entidad.Cuil, tx))
+                        return 0; // señal de duplicado
 
+                    // Insert Persona
+                    Command.Parameters.Clear();
+                    Command.CommandText =
+                        "INSERT INTO Persona(nombre, apellido, f_nacim, f_inicio, email, direccion, genero, telefono) " +
+                        "VALUES(@nombre, @apellido, @f_nacim, @f_inicio, @email, @direccion, @genero, @telefono);";
+
+                    Command.Parameters.AddWithValue("@nombre", entidad.Nombre);
+                    Command.Parameters.AddWithValue("@apellido", entidad.Apellido);
+                    Command.Parameters.AddWithValue("@genero", entidad.Genero);
+                    Command.Parameters.AddWithValue("@f_nacim", entidad.FNacimiento);
+                    Command.Parameters.AddWithValue("@telefono", entidad.Telefono);
+                    Command.Parameters.AddWithValue("@email", entidad.Email);
+                    Command.Parameters.AddWithValue("@f_inicio", entidad.FIngreso);
+                    Command.Parameters.AddWithValue("@direccion", entidad.Direccion);
+
+                    Command.ExecuteNonQuery();
+
+                    // Obtener id_persona recién insertado
+                    Command.Parameters.Clear();
+                    Command.CommandText = "SELECT LAST_INSERT_ID();";
+                    int idPersona = Convert.ToInt32(Command.ExecuteScalar());
+
+                    // Insert Personal
+                    Command.Parameters.Clear();
+                    Command.CommandText = "INSERT INTO Personal(cuil, id_persona) VALUES(@cuil, @id_persona);";
+                    Command.Parameters.AddWithValue("@cuil", entidad.Cuil);
+                    Command.Parameters.AddWithValue("@id_persona", idPersona);
+
+                    int filas = Command.ExecuteNonQuery();
+
+                    tx.Commit();
+                    return filas;
+                }
+                catch (MySqlException ex)
+                {
+                    tx.Rollback();
+                    if (ex.Number == 1062) return 0; // error de duplicado
+                    throw;
+                }
+                catch
+                {
+                    tx.Rollback();
+                    throw;
+                }
+            }
         }
 
         public override Personal Traer(string cuil)
         {
+            Personal buscado = null;
 
-            Personal Buscado = null;
-
-            string sql = 
-                "select * from Persona p " +
-                "inner join Personal ps " +
-                "on p.id_persona = ps.id_persona " +
+            Command.Parameters.Clear();
+            Command.CommandText =
+                "SELECT * FROM Persona p " +
+                "INNER JOIN Personal ps ON p.id_persona = ps.id_persona " +
                 "WHERE ps.cuil = @cuil;";
-
-            Command.CommandText = sql;
             Command.Parameters.AddWithValue("@cuil", cuil);
 
-            using (MySqlDataReader Lector = Command.ExecuteReader())
+            using (MySqlDataReader lector = Command.ExecuteReader())
             {
-                if (Lector.Read())
+                if (lector.Read())
                 {
-                    Buscado = new Personal(
-                         Lector["nombre"].ToString(),
-                         Lector["apellido"].ToString(),
-                         Lector["cuil"].ToString(),
-                         Lector["f_nacim"].ToString(),
-                         Convert.ToChar(Lector["genero"]),
-                         Lector["telefono"].ToString(),
-                         Lector["email"].ToString(),
-                         Lector["direccion"].ToString(),
-                         Lector["f_inicio"].ToString()
+                    buscado = new Personal(
+                        lector["nombre"].ToString(),
+                        lector["apellido"].ToString(),
+                        lector["cuil"].ToString(),
+                        lector["f_nacim"].ToString(),
+                        Convert.ToChar(lector["genero"]),
+                        lector["telefono"].ToString(),
+                        lector["email"].ToString(),
+                        lector["direccion"].ToString(),
+                        lector["f_inicio"].ToString()
                     );
                 }
-                Command.Parameters.Clear();
-
-                return Buscado;
             }
+            Command.Parameters.Clear();
+            return buscado;
         }
 
         public override List<Personal> TraerTodos()
         {
-            List<Personal> Miembros = new List<Personal>();
+            var lista = new List<Personal>();
 
-            string sql = "select * from Persona p inner join Personal ps on p.id_persona = ps.id_persona ;";
-            Command.CommandText = sql;
+            Command.Parameters.Clear();
+            Command.CommandText =
+                "SELECT * FROM Persona p INNER JOIN Personal ps ON p.id_persona = ps.id_persona;";
 
-            using (MySqlDataReader Lector = Command.ExecuteReader())
+            using (MySqlDataReader lector = Command.ExecuteReader())
             {
-                while (Lector.Read())
+                while (lector.Read())
                 {
-                    Miembros.Add(new Personal(
-                         Lector["nombre"].ToString(),
-                         Lector["apellido"].ToString(),
-                         Lector["cuil"].ToString(),
-                         Lector["f_nacim"].ToString(),
-                         Convert.ToChar(Lector["genero"]),
-                         Lector["telefono"].ToString(),
-                         Lector["email"].ToString(),
-                         Lector["direccion"].ToString(),
-                         Lector["f_inicio"].ToString()
+                    lista.Add(new Personal(
+                        lector["nombre"].ToString(),
+                        lector["apellido"].ToString(),
+                        lector["cuil"].ToString(),
+                        lector["f_nacim"].ToString(),
+                        Convert.ToChar(lector["genero"]),
+                        lector["telefono"].ToString(),
+                        lector["email"].ToString(),
+                        lector["direccion"].ToString(),
+                        lector["f_inicio"].ToString()
                     ));
                 }
-                Command.Parameters.Clear();
-
-                return Miembros;
-
             }
+            Command.Parameters.Clear();
+            return lista;
         }
 
-        public bool VerificarCredenciales(string Usuario, string Contrasenia)
+        // ---------- Helpers privados ----------
+
+        private bool ExisteCuil(string cuil, MySqlTransaction tx)
         {
-            string sql = "SELECT count(nombre) as resultado FROM usuario WHERE nombre = @nombre AND contrasenia = @contrasenia";
-            Command.CommandText = sql;
             Command.Parameters.Clear();
+            Command.Transaction = tx;
+            Command.CommandText = "SELECT COUNT(*) FROM Personal WHERE cuil = @cuil;";
+            Command.Parameters.AddWithValue("@cuil", cuil);
 
-            Command.Parameters.AddWithValue("@nombre", Usuario);
-            Command.Parameters.AddWithValue("@contrasenia", Contrasenia);
+            var result = Command.ExecuteScalar();
+            int count = Convert.ToInt32(result);
+            return count > 0;
+        }
 
-
-            using (MySqlDataReader Lector = Command.ExecuteReader())
-            {
-                if (Lector.Read())
-                {
-                    if (Convert.ToInt32(Lector["resultado"]) > 0)
-                    {
-                        return true;
-                    }
-                }
-            }
+        private int ObtenerIdPersonaPorCuil(string cuil, MySqlTransaction tx)
+        {
             Command.Parameters.Clear();
+            Command.Transaction = tx;
+            Command.CommandText = "SELECT id_persona FROM Personal WHERE cuil = @cuil;";
+            Command.Parameters.AddWithValue("@cuil", cuil);
 
-            return false;
+            var result = Command.ExecuteScalar();
+            if (result == null || result == DBNull.Value) return 0;
+            return Convert.ToInt32(result);
+        }
+
+        public bool VerificarCredenciales(string usuario, string contrasenia)
+        {
+            Command.Parameters.Clear();
+            Command.CommandText = "SELECT COUNT(nombre) FROM usuario WHERE nombre = @nombre AND contrasenia = @contrasenia";
+            Command.Parameters.AddWithValue("@nombre", usuario);
+            Command.Parameters.AddWithValue("@contrasenia", contrasenia);
+
+            var result = Command.ExecuteScalar();
+            int count = Convert.ToInt32(result);
+            Command.Parameters.Clear();
+            return count > 0;
         }
     }
 }
