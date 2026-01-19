@@ -18,6 +18,8 @@ namespace Gestion_Gym
         {
             InitializeComponent();
             txtNombre.Focus();
+            dateTimePickerFNacim.MaxDate = DateTime.Now;
+            //sdateTimePickerFIngreso.MaxDate = DateTime.Now;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -50,15 +52,21 @@ namespace Gestion_Gym
             string cuil = textBox1.Text.ToString();
 
             bool validarDatos =
-                Validacion.ValidarCadenaEstandar(nombre) &&
-                Validacion.ValidarCadenaEstandar(apellido) &&
-                Validacion.ValidarCuil(cuil) &&
-                Validacion.ValidarFecha(fnacim) &&
-                Validacion.ValidarCelular(telefono) &&
-                Validacion.ValidarEmail(email) &&
-                Validacion.ValidarFecha(fingreso) &&
-                Validacion.ValidarCadenaEstandar(direccion)
-                ;
+                Validacion.ValidarCadenaEstandar(nombre, "nombre");
+            bool val8 =
+                Validacion.ValidarCadenaEstandar(apellido, "nombre");
+            bool val2 =
+                Validacion.ValidarCuil(cuil, "Cuil");
+            bool val5 = 
+                Validacion.ValidarFecha(fnacim, "Fecha de nacimiento");
+            bool val3 =
+                Validacion.ValidarCelular(telefono, "Telefono");
+            bool val6 = 
+                Validacion.ValidarEmail(email, "Email");
+            bool val4 =
+                Validacion.ValidarFecha(fingreso, "Fecha de ingreso");
+            bool val7 = 
+                Validacion.ValidarCadenaEstandar(direccion, "Direccion");
 
             //MessageBox.Show(
             //    nombre + Validacion.ValidarCadenaEstandar(nombre) +
@@ -71,7 +79,7 @@ namespace Gestion_Gym
             //    direccion + Validacion.ValidarCadenaEstandar(direccion) 
             //    );
 
-            if (validarDatos)
+            if (validarDatos && val2 && val3 && val4 && val5 && val6 && val7 && val8)
             {
                 GuardarPersonal();
             }
@@ -329,6 +337,26 @@ namespace Gestion_Gym
         private void Nuevo_Personal_Load(object sender, EventArgs e)
         {
             txtNombre.Focus();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerFIngreso_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private Boolean ValidarFecha(DateTimePicker Fecha)
+        {
+            if (Fecha.Value < DateTime.Now)
+            {
+                MessageBox.Show("Fecha demasiado antigua");
+                return false;
+            }
+            return true;
         }
     }
 }

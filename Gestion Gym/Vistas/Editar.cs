@@ -38,6 +38,10 @@ namespace Gestion_Gym.Vistas
                 MasculinoRB.Checked = true;
 
             txtNombre.Focus();
+            DNITB.Enabled = false;
+            DNITB.Enabled = false;
+            FNacimDT.MaxDate = DateTime.Now;
+            //dateTimePickerFIngreso.MinDate = DateTime.Now;
         }
 
         private void nombre_enter(object sender, System.EventArgs e)
@@ -151,26 +155,26 @@ namespace Gestion_Gym.Vistas
         private void btnGuardar_Click(object sender, System.EventArgs e)
         {
             //Ejemplo de uso, por campos
-            Miembro miembro1 = new Miembro();
-            miembro1.Nombre = txtNombre.Text;
-            miembro1.Apellido = txtApellido.Text;
-            miembro1.DNI = DNITB.Text;
-            miembro1.FNacimiento = FNacimDT.Text;
-            miembro1.Telefono = TelefonoTB.Text;
-            miembro1.Email = EmailTB.Text;
-            miembro1.FIngreso = dateTimePickerFIngreso.Text;
-            miembro1.HorarioGYM = HorarioGymCB.Text;
-            miembro1.Direccion = DireccionTB.Text;
-            miembro1.TipoMembrecia = (Membresia)(MembresiaCB.SelectedIndex + 1);
+            Miembro editar = new Miembro();
+            editar.Nombre = txtNombre.Text;
+            editar.Apellido = txtApellido.Text;
+            // NO CAMBIES el DNI
+            editar.FNacimiento = FNacimDT.Text;
+            editar.Telefono = TelefonoTB.Text;
+            editar.Email = EmailTB.Text;
+            editar.FIngreso = dateTimePickerFIngreso.Text;
+            editar.HorarioGYM = HorarioGymCB.Text;
+            editar.Direccion = DireccionTB.Text;
+            editar.TipoMembrecia = (Membresia)(MembresiaCB.SelectedIndex + 1);
 
             if (MasculinoRB.Checked)
-                miembro1.Genero = 'M';
+                editar.Genero = 'M';
             else if (FemeninoRB.Checked)
-                miembro1.Genero = 'F';
+                editar.Genero = 'F';
             else
-                miembro1.Genero = 'X';
+                editar.Genero = 'X';
 
-            miembroDAO.Editar(miembro1);
+            miembroDAO.Editar(editar);
 
             buscar_Miembro.CargarMiembros(miembroDAO.TraerTodos());
             this.Close();
@@ -203,6 +207,14 @@ namespace Gestion_Gym.Vistas
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dateTimePickerFIngreso_ValueChanged(object sender, EventArgs e)
+        {
+            if (this.dateTimePickerFIngreso.Value < DateTime.Now)
+            {
+                MessageBox.Show("error de fecha");
+            }
         }
     }
 }

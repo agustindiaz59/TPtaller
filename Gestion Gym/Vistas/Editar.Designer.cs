@@ -87,8 +87,9 @@
             this.panel1.Controls.Add(this.panelredondoedit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(797, 503);
+            this.panel1.Size = new System.Drawing.Size(1063, 619);
             this.panel1.TabIndex = 55;
             // 
             // DNILBL
@@ -99,9 +100,10 @@
             this.DNILBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.DNILBL.Image = ((System.Drawing.Image)(resources.GetObject("DNILBL.Image")));
             this.DNILBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DNILBL.Location = new System.Drawing.Point(30, 181);
+            this.DNILBL.Location = new System.Drawing.Point(40, 223);
+            this.DNILBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DNILBL.Name = "DNILBL";
-            this.DNILBL.Size = new System.Drawing.Size(99, 23);
+            this.DNILBL.Size = new System.Drawing.Size(132, 28);
             this.DNILBL.TabIndex = 76;
             this.DNILBL.Text = "DNI";
             this.DNILBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -115,9 +117,10 @@
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(0, 444);
+            this.btnGuardar.Location = new System.Drawing.Point(0, 546);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(383, 59);
+            this.btnGuardar.Size = new System.Drawing.Size(511, 73);
             this.btnGuardar.TabIndex = 22;
             this.btnGuardar.Text = " Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -131,9 +134,10 @@
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(32, 332);
+            this.label7.Location = new System.Drawing.Point(43, 409);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 20);
+            this.label7.Size = new System.Drawing.Size(143, 25);
             this.label7.TabIndex = 73;
             this.label7.Text = "F. Ingreso";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -143,9 +147,10 @@
             this.DNITB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DNITB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.DNITB.ForeColor = System.Drawing.Color.Black;
-            this.DNITB.Location = new System.Drawing.Point(157, 181);
+            this.DNITB.Location = new System.Drawing.Point(209, 223);
+            this.DNITB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DNITB.Name = "DNITB";
-            this.DNITB.Size = new System.Drawing.Size(187, 20);
+            this.DNITB.Size = new System.Drawing.Size(249, 22);
             this.DNITB.TabIndex = 75;
             this.DNITB.Text = "Ingresar el DNI";
             this.DNITB.Enter += new System.EventHandler(this.dni_enter);
@@ -159,9 +164,10 @@
             this.label10.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
             this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10.Location = new System.Drawing.Point(32, 385);
+            this.label10.Location = new System.Drawing.Point(43, 474);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(193, 18);
+            this.label10.Size = new System.Drawing.Size(257, 22);
             this.label10.TabIndex = 74;
             this.label10.Text = "Tiempo de Membresia";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -170,10 +176,12 @@
             // 
             this.dateTimePickerFIngreso.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerFIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerFIngreso.Location = new System.Drawing.Point(156, 332);
+            this.dateTimePickerFIngreso.Location = new System.Drawing.Point(208, 409);
+            this.dateTimePickerFIngreso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePickerFIngreso.Name = "dateTimePickerFIngreso";
-            this.dateTimePickerFIngreso.Size = new System.Drawing.Size(96, 20);
+            this.dateTimePickerFIngreso.Size = new System.Drawing.Size(127, 22);
             this.dateTimePickerFIngreso.TabIndex = 67;
+            this.dateTimePickerFIngreso.ValueChanged += new System.EventHandler(this.dateTimePickerFIngreso_ValueChanged);
             // 
             // MembresiaCB
             // 
@@ -185,9 +193,10 @@
             "STANDARD",
             "PREMIUM",
             "PERSONALIZADO"});
-            this.MembresiaCB.Location = new System.Drawing.Point(231, 382);
+            this.MembresiaCB.Location = new System.Drawing.Point(308, 470);
+            this.MembresiaCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MembresiaCB.Name = "MembresiaCB";
-            this.MembresiaCB.Size = new System.Drawing.Size(111, 21);
+            this.MembresiaCB.Size = new System.Drawing.Size(147, 24);
             this.MembresiaCB.TabIndex = 68;
             // 
             // txtNombre
@@ -195,9 +204,10 @@
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.ForeColor = System.Drawing.Color.Black;
-            this.txtNombre.Location = new System.Drawing.Point(157, 84);
+            this.txtNombre.Location = new System.Drawing.Point(209, 103);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(188, 20);
+            this.txtNombre.Size = new System.Drawing.Size(250, 22);
             this.txtNombre.TabIndex = 62;
             this.txtNombre.Text = "Nombre";
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
@@ -212,9 +222,10 @@
             this.NombreLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.NombreLBL.Image = ((System.Drawing.Image)(resources.GetObject("NombreLBL.Image")));
             this.NombreLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NombreLBL.Location = new System.Drawing.Point(30, 83);
+            this.NombreLBL.Location = new System.Drawing.Point(40, 102);
+            this.NombreLBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NombreLBL.Name = "NombreLBL";
-            this.NombreLBL.Size = new System.Drawing.Size(100, 23);
+            this.NombreLBL.Size = new System.Drawing.Size(133, 28);
             this.NombreLBL.TabIndex = 69;
             this.NombreLBL.Text = "Nombre";
             this.NombreLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -224,9 +235,10 @@
             this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtApellido.ForeColor = System.Drawing.Color.Black;
-            this.txtApellido.Location = new System.Drawing.Point(157, 134);
+            this.txtApellido.Location = new System.Drawing.Point(209, 165);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(187, 20);
+            this.txtApellido.Size = new System.Drawing.Size(249, 22);
             this.txtApellido.TabIndex = 63;
             this.txtApellido.Text = "Apellido";
             this.txtApellido.Enter += new System.EventHandler(this.apellido_enter);
@@ -240,9 +252,10 @@
             this.ApellidoLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ApellidoLBL.Image = ((System.Drawing.Image)(resources.GetObject("ApellidoLBL.Image")));
             this.ApellidoLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ApellidoLBL.Location = new System.Drawing.Point(29, 133);
+            this.ApellidoLBL.Location = new System.Drawing.Point(39, 164);
+            this.ApellidoLBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ApellidoLBL.Name = "ApellidoLBL";
-            this.ApellidoLBL.Size = new System.Drawing.Size(99, 23);
+            this.ApellidoLBL.Size = new System.Drawing.Size(132, 28);
             this.ApellidoLBL.TabIndex = 70;
             this.ApellidoLBL.Text = "Apellido";
             this.ApellidoLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -253,9 +266,10 @@
             this.FemeninoRB.AutoSize = true;
             this.FemeninoRB.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FemeninoRB.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FemeninoRB.Location = new System.Drawing.Point(156, 230);
+            this.FemeninoRB.Location = new System.Drawing.Point(208, 283);
+            this.FemeninoRB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FemeninoRB.Name = "FemeninoRB";
-            this.FemeninoRB.Size = new System.Drawing.Size(80, 19);
+            this.FemeninoRB.Size = new System.Drawing.Size(99, 22);
             this.FemeninoRB.TabIndex = 65;
             this.FemeninoRB.TabStop = true;
             this.FemeninoRB.Text = "Femenino";
@@ -267,9 +281,10 @@
             this.MasculinoRB.AutoSize = true;
             this.MasculinoRB.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MasculinoRB.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.MasculinoRB.Location = new System.Drawing.Point(259, 230);
+            this.MasculinoRB.Location = new System.Drawing.Point(345, 283);
+            this.MasculinoRB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MasculinoRB.Name = "MasculinoRB";
-            this.MasculinoRB.Size = new System.Drawing.Size(83, 19);
+            this.MasculinoRB.Size = new System.Drawing.Size(101, 22);
             this.MasculinoRB.TabIndex = 64;
             this.MasculinoRB.TabStop = true;
             this.MasculinoRB.Text = "Masculino";
@@ -283,9 +298,10 @@
             this.GeneroLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.GeneroLBL.Image = ((System.Drawing.Image)(resources.GetObject("GeneroLBL.Image")));
             this.GeneroLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GeneroLBL.Location = new System.Drawing.Point(33, 231);
+            this.GeneroLBL.Location = new System.Drawing.Point(44, 284);
+            this.GeneroLBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.GeneroLBL.Name = "GeneroLBL";
-            this.GeneroLBL.Size = new System.Drawing.Size(96, 22);
+            this.GeneroLBL.Size = new System.Drawing.Size(128, 27);
             this.GeneroLBL.TabIndex = 71;
             this.GeneroLBL.Text = "Genero";
             this.GeneroLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -298,9 +314,10 @@
             this.FNacimLBL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.FNacimLBL.Image = ((System.Drawing.Image)(resources.GetObject("FNacimLBL.Image")));
             this.FNacimLBL.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.FNacimLBL.Location = new System.Drawing.Point(32, 279);
+            this.FNacimLBL.Location = new System.Drawing.Point(43, 343);
+            this.FNacimLBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.FNacimLBL.Name = "FNacimLBL";
-            this.FNacimLBL.Size = new System.Drawing.Size(107, 20);
+            this.FNacimLBL.Size = new System.Drawing.Size(143, 25);
             this.FNacimLBL.TabIndex = 72;
             this.FNacimLBL.Text = "F. Nacim";
             this.FNacimLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -309,9 +326,10 @@
             // 
             this.FNacimDT.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.FNacimDT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.FNacimDT.Location = new System.Drawing.Point(157, 279);
+            this.FNacimDT.Location = new System.Drawing.Point(209, 343);
+            this.FNacimDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FNacimDT.Name = "FNacimDT";
-            this.FNacimDT.Size = new System.Drawing.Size(95, 20);
+            this.FNacimDT.Size = new System.Drawing.Size(125, 22);
             this.FNacimDT.TabIndex = 66;
             // 
             // panel2
@@ -328,9 +346,10 @@
             this.panel2.Controls.Add(this.TelefonoLBL);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(383, 48);
+            this.panel2.Location = new System.Drawing.Point(511, 59);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(414, 455);
+            this.panel2.Size = new System.Drawing.Size(552, 560);
             this.panel2.TabIndex = 60;
             // 
             // btnReiniciar2
@@ -342,9 +361,10 @@
             this.btnReiniciar2.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReiniciar2.ForeColor = System.Drawing.SystemColors.Control;
             this.btnReiniciar2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReiniciar2.Location = new System.Drawing.Point(0, 396);
+            this.btnReiniciar2.Location = new System.Drawing.Point(0, 487);
+            this.btnReiniciar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReiniciar2.Name = "btnReiniciar2";
-            this.btnReiniciar2.Size = new System.Drawing.Size(414, 59);
+            this.btnReiniciar2.Size = new System.Drawing.Size(552, 73);
             this.btnReiniciar2.TabIndex = 23;
             this.btnReiniciar2.Text = "Cancelar";
             this.btnReiniciar2.UseVisualStyleBackColor = false;
@@ -358,9 +378,10 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
             this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Location = new System.Drawing.Point(54, 59);
+            this.label6.Location = new System.Drawing.Point(72, 73);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 20);
+            this.label6.Size = new System.Drawing.Size(148, 25);
             this.label6.TabIndex = 26;
             this.label6.Text = "E-Mail";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -370,9 +391,10 @@
             this.EmailTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EmailTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.EmailTB.ForeColor = System.Drawing.Color.Black;
-            this.EmailTB.Location = new System.Drawing.Point(188, 56);
+            this.EmailTB.Location = new System.Drawing.Point(251, 69);
+            this.EmailTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EmailTB.Name = "EmailTB";
-            this.EmailTB.Size = new System.Drawing.Size(171, 20);
+            this.EmailTB.Size = new System.Drawing.Size(227, 22);
             this.EmailTB.TabIndex = 22;
             this.EmailTB.Text = "correo@ejemplo.com";
             this.EmailTB.Enter += new System.EventHandler(this.correo_enter);
@@ -386,9 +408,10 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Location = new System.Drawing.Point(54, 207);
+            this.label9.Location = new System.Drawing.Point(72, 255);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 26);
+            this.label9.Size = new System.Drawing.Size(140, 32);
             this.label9.TabIndex = 28;
             this.label9.Text = "Direccion";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -399,9 +422,10 @@
             this.DireccionTB.BackColor = System.Drawing.Color.White;
             this.DireccionTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DireccionTB.ForeColor = System.Drawing.Color.Black;
-            this.DireccionTB.Location = new System.Drawing.Point(188, 209);
+            this.DireccionTB.Location = new System.Drawing.Point(251, 257);
+            this.DireccionTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DireccionTB.Name = "DireccionTB";
-            this.DireccionTB.Size = new System.Drawing.Size(171, 96);
+            this.DireccionTB.Size = new System.Drawing.Size(228, 118);
             this.DireccionTB.TabIndex = 23;
             this.DireccionTB.Text = "Ingrese su dirección";
             this.DireccionTB.Enter += new System.EventHandler(this.direccion_enter);
@@ -428,9 +452,10 @@
             "19 PM - 20 PM",
             "20 PM - 21 PM",
             "21 PM - 22 PM"});
-            this.HorarioGymCB.Location = new System.Drawing.Point(188, 156);
+            this.HorarioGymCB.Location = new System.Drawing.Point(251, 192);
+            this.HorarioGymCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HorarioGymCB.Name = "HorarioGymCB";
-            this.HorarioGymCB.Size = new System.Drawing.Size(171, 21);
+            this.HorarioGymCB.Size = new System.Drawing.Size(227, 24);
             this.HorarioGymCB.TabIndex = 24;
             // 
             // label8
@@ -441,9 +466,10 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Location = new System.Drawing.Point(54, 157);
+            this.label8.Location = new System.Drawing.Point(72, 193);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 21);
+            this.label8.Size = new System.Drawing.Size(167, 26);
             this.label8.TabIndex = 27;
             this.label8.Text = "Horario Gym";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -453,9 +479,10 @@
             this.TelefonoTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TelefonoTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TelefonoTB.ForeColor = System.Drawing.Color.Black;
-            this.TelefonoTB.Location = new System.Drawing.Point(188, 109);
+            this.TelefonoTB.Location = new System.Drawing.Point(251, 134);
+            this.TelefonoTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TelefonoTB.Name = "TelefonoTB";
-            this.TelefonoTB.Size = new System.Drawing.Size(171, 20);
+            this.TelefonoTB.Size = new System.Drawing.Size(227, 22);
             this.TelefonoTB.TabIndex = 21;
             this.TelefonoTB.Text = "Ingrese su teléfono";
             this.TelefonoTB.Enter += new System.EventHandler(this.telefono_enter);
@@ -469,19 +496,20 @@
             this.TelefonoLBL.ForeColor = System.Drawing.Color.Black;
             this.TelefonoLBL.Image = ((System.Drawing.Image)(resources.GetObject("TelefonoLBL.Image")));
             this.TelefonoLBL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TelefonoLBL.Location = new System.Drawing.Point(54, 109);
+            this.TelefonoLBL.Location = new System.Drawing.Point(72, 134);
+            this.TelefonoLBL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TelefonoLBL.Name = "TelefonoLBL";
-            this.TelefonoLBL.Size = new System.Drawing.Size(111, 20);
+            this.TelefonoLBL.Size = new System.Drawing.Size(148, 25);
             this.TelefonoLBL.TabIndex = 25;
             this.TelefonoLBL.Text = "Telefono";
             this.TelefonoLBL.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(0, 364);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(0, 448);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(414, 32);
+            this.button1.Size = new System.Drawing.Size(552, 39);
             this.button1.TabIndex = 29;
             this.button1.Text = "Eliminar";
             this.button1.UseVisualStyleBackColor = true;
@@ -495,9 +523,10 @@
             this.panelredondoedit.Controls.Add(this.label1);
             this.panelredondoedit.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelredondoedit.Location = new System.Drawing.Point(0, 0);
+            this.panelredondoedit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelredondoedit.Name = "panelredondoedit";
             this.panelredondoedit.Radio = 1;
-            this.panelredondoedit.Size = new System.Drawing.Size(797, 48);
+            this.panelredondoedit.Size = new System.Drawing.Size(1063, 59);
             this.panelredondoedit.TabIndex = 61;
             // 
             // label1
@@ -506,19 +535,21 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(314, 9);
+            this.label1.Location = new System.Drawing.Point(419, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 25);
+            this.label1.Size = new System.Drawing.Size(225, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Editar Miembros";
             // 
             // Editar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 503);
+            this.ClientSize = new System.Drawing.Size(1063, 619);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Editar";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Editar_Load);
