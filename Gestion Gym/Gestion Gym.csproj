@@ -140,6 +140,12 @@
     <Compile Include="Vistas\Acceso.Designer.cs">
       <DependentUpon>Acceso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Buscar Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Buscar Personal.Designer.cs">
+      <DependentUpon>Buscar Personal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Buscar Miembro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Vistas\Acceso.resx">
       <DependentUpon>Acceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Buscar Personal.resx">
+      <DependentUpon>Buscar Personal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Buscar Miembro.resx">
       <DependentUpon>Buscar Miembro.cs</DependentUpon>

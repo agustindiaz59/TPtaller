@@ -16,7 +16,7 @@ namespace Gestion_Gym
         private Nuevo_Miembro nuevo_Miembro = new Nuevo_Miembro();
         private Nuevo_Personal nuevo_Personal = new Nuevo_Personal();
         private Buscar_Miembro buscar_Miembro = new Buscar_Miembro();
-
+        private Buscar_Personal buscar_personal = new Buscar_Personal();
 
         public Inicio()
         {
@@ -63,7 +63,10 @@ namespace Gestion_Gym
         {
             MostrarFormularioEnPanel(buscar_Miembro);
         }
-
+        private void PersonalBuscar_Click(object sender, EventArgs e)
+        {
+            MostrarFormularioEnPanel(buscar_personal);
+        }
         private void salirbtn_Click(object sender, EventArgs e)
         {
 
@@ -103,29 +106,18 @@ namespace Gestion_Gym
                 }
             }
         }
-        private void menuvertical_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btmenu_Click(object sender, EventArgs e)
         {
             sidebardtimer.Start();
         }
 
-        private void Inicio_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void Inicio_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
-        private void panelRedondo1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
+    
     }
 }
